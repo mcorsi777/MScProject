@@ -1,0 +1,51 @@
+<style>
+h1 {
+    margin: 1em 0 0 0;
+    color: #2e484c;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #0d8ba1;
+}
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #1a5952;
+}
+a:hover, a:focus, a:active {
+    text-decoration: underline;
+    color: #9685BA;
+}
+p {
+    font: "Libre Baskerville", sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+</style>
+
+<h1>Network of Financial Institutions</h1>
+
+<p>
+The circle size is proportional to the centrality of the node, measured via the debt rank. Hover over the circles to see more information about each bank. Use the widgests as follows:
+<p>
+<strong>Data</strong>: Select the netwoork representation to be used for the analysis
+</p>
+<p>
+<strong>Stress Node</strong>: Select a node by clicking on it and then use this button to apply a given stress to the node and simulate its propagation throug the network. 
+Clik on the Refresh icon to display the results and over over the circles to see the the impact on each node. The color intensity is higher for higher impact.
+</p>
+<p>
+<strong>Stress Parameter</strong>: Define the level of stress to be applied to a given node. It needs to be a float between 0 (no stress) and 1 (default).
+</p>
+<p>
+<strong>Back to Original</strong>: Go back to the original graph.
+</p>
+
+<p>
+Inspired by the <a href="https://bokeh.pydata.org/en/latest/docs/gallery.html">Bokeh Gallery</a>.
+</p>
