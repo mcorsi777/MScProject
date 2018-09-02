@@ -1,6 +1,9 @@
-#
-# Set of functions to convert data from csv and json files into sqllite format
-#
+"""
+Year End Project
+@Program:                Data Science
+@author:                 Marco Corsi
+Description: set of functions to convert data from csv and json files into sqllite format
+"""
 
 import sqlite3
 import pandas as pd

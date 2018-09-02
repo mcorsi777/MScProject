@@ -1,8 +1,13 @@
 """
-Created on Tue Jul 24 09:46:00 2018
-
-@author: marcocorsi
+Year End Project
+@Program:                Data Science
+@author:                 Marco Corsi
+@Description: take raw information from csv files related to equity ownership, static caracteristics of the nodes and historical prices, clean and 
+consolidate the data and then store the final results into a series of SQL tables
 """
+
+
+
 
 import pandas as pd
 import numpy as np

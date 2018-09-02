@@ -1,8 +1,12 @@
 """
-Created on Mon Aug 13 00:54:17 2018
-
-@author: marcocorsi
+Year End Project
+Program:                Data Science
+@author:                Marco Corsi
+@Description: Create a graphical interface to visualise a Financial Network and simulate the propagation of a distress over a given node across the structure.
+              The three different networks previously created can be used for this exercise.
+    
 """
+
 import numpy as np
 from os.path import dirname, join
 import pandas as pd
@@ -29,7 +33,7 @@ desc = Div(text=open(join(dirname(__file__), "description.html")).read(), width=
 # Create Input controls
 
 textInput = TextInput(value="1", title="Stress Parameter:")#, width=1000)
-textOutput = TextInput(value=" ", title="Error Messages:", width=1000)
+textOutput = TextInput(value=" ", title="Error Messages:")#, width=1000)
 distressButton = Button(label="Distress Node")
 backToOriginalButton = Button(label="Back To Original")
 dataSource = Select(title="Data", options=['G_2010', 'G_2018', 'G_2018Corr'], value= 'G_2018')
@@ -206,7 +210,7 @@ inputs3 = row(widgetbox(distressButton, backToOriginalButton, textInput, textOut
 
 l = layout([
     [desc],
-    [plot, inputs2]
+    [plot, inputs]
 ], sizing_mode=sizingMode)
 
 

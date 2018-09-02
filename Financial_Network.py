@@ -2,6 +2,8 @@
 Year End Project
 Program:                Data Science
 @author:                Marco Corsi
+@Description: Define the class FinancialNetwork and use it to construct 3 different networks based on ownership data (in 2010 and 2018) and correlation data (for 2018).
+For each network the centrality debtRank measure is calculated on each node. The final networks and attributes are then stored in .gexf file.
 """
 
 # File Structure: 

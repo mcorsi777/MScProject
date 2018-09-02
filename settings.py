@@ -1,11 +1,16 @@
+"""
+Use this file to set up the values for all the parameters to be used in the project
+"""
+
+
 # path where the database tables are stored
 PATH = '/Users/Marco/Documents/MSc/Project/Code/'
 
 # names for the differemt databases (this needs to be modified only if you are creating the DBs)
 DB = PATH + 'nodesStatic_db'   # static information for each node
-DB1 = PATH + 'nodesWeights_db' # weights of the network (historical)
+DB1 = PATH + 'nodesWeights_db' # weights of the network based on the equity ownership 
 DB2 = PATH + 'priceHistory_db' # historical prices and mkt_cap of the nodes
-DB3 = PATH + 'nodesWeightsCorrel_db' # historical prices and mkt_cap of the nodes 
+DB3 = PATH + 'nodesWeightsCorrel_db' # weights of the network based on the correlation
 DB4 = PATH + 'priceHistoryUSD_db' # historical USD prices and USD mkt_cap of the nodes 
 
 # para,meter used for the debt rank algorithm (in the final version this functionality is not used as it proved to be unstable)
