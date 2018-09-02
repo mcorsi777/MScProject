@@ -2,7 +2,8 @@
 
 In order to run the final system execute the following oprations:
 
-1. MAKE CHROME YOUR DEFAULT BROWSER
+1. Ensure the Bokeh library is installed (see: https://bokeh.pydata.org/en/latest/docs/installation.html)
+2. MAKE CHROME YOUR DEFAULT BROWSER
 2. OPEN PROMPT AND TAPE: bokeh serve --show PATH/GUI.py
 where PATH is the location where you have stored locally all the project
 
@@ -39,23 +40,21 @@ AllPricesUSD.csv
 # Priod: historical - since 2010
 # For each node (as a columns and identified via its yahoo ticker) provides the daily clsing price in USD currency since 2010. 
 
-nodesStatic_db 
+allData_db: SQLite database containing the following tables
+
+nodesStatic
 # SQLITE table with static information for each node - primary key is the node yahoo ticker
 
-nodesWeights_db
-# SQLITE table with the weights of the network based on the equity ownership data. There is a DATE feed indicating the year to which the data refer to (2018 or 2010)
-# Primary key is the pair (Yahoo ticker, DATE)
+nodesWeights
+# SQLITE table with the weights of the network based on the equity ownership data or on the correlation data. There is a DATE feed indicating the year to which the data refer to (2018 or 2010)
+# Primary key is the pair (Yahoo ticker, DATE, method), where method can be 'equityOwnership' or 'correlation'
 
-priceHistory_db
+priceHistory
 # SQLITE table with the historical prices and mkt_cap of the nodes in local currency. Primary key is the pair (Yahoo ticker, DATE)
 
-priceHistoryUSD_db
+priceHistoryUSD
 # SQLITE table with the historical prices and mkt_cap of the nodes in USD currency. Primary key is the pair (Yahoo ticker, DATE) 
 
-
-nodesWeightsCorrel_db
-# SQLITE table with the weights of the network based on correlation. There is a DATE feed indicating the year to which the data refer to (2018 or 2010)
-# Primary key is the pair (Yahoo ticker, DATE)
 
 
 G_2010.gexf

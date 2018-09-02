@@ -62,6 +62,7 @@ def populateNodes(DB, nodesAttributes):
 #  contain the percentage of that company owned by the node_id
 #  @param DB is a string with the name and path of the database
 #  @nodesAttributes dictionary - keys are node identifiers and values are list of attributes (one attribute must be current mkt_cap)
+#  @method string with the name of the method used for the weights generation
 #
 def createNodesWeights(DB, nodesAttributes):
     db = sqlite3.connect(DB)  
@@ -70,7 +71,8 @@ def createNodesWeights(DB, nodesAttributes):
     		CREATE TABLE nodesWeights (
     		node_id     varchar NOT NULL REFERENCES nodes(node_id),  --foreign key  
     		date        YEAR         NOT NULL,
-         PRIMARY KEY (node_id, date) 
+         method      varchar NOT NULL,
+         PRIMARY KEY (node_id, date, method) 
     			);
     		''')
     
@@ -88,17 +90,12 @@ def createNodesWeights(DB, nodesAttributes):
 #  @param DB is a string with the name and path of the database
 #  @param nodesAttributes dictionary - keys are node identifiers and values are list of attributes (one attribute must be current mkt_cap)
 #  @param network: dataFrame - rown and columns labelled based on nodes id - position
+#  @_method string with the name of the method used for the weights generation
 #
-def populateNodesWeights(DB, year, nodesAttributes, network):
+def populateNodesWeights(DB, year, nodesAttributes, network, _method):
     db = sqlite3.connect(DB)  
     cursor = db.cursor() 
    
-    
-#    network  = pd.read_csv(PATH + "network_" + year + ".csv")
-#    network.index = network[network.columns[0]]
-#    del network[network.columns[0]]
-
-
     
     allColumns = {}
     
@@ -109,13 +106,13 @@ def populateNodesWeights(DB, year, nodesAttributes, network):
     for k in nodesAttributes.keys():
         date = year
         node_id = nodesAttributes[k][1]
-        cursor.execute("""INSERT INTO nodesWeights (node_id, date ) VALUES (?,?) """, 
-                       (node_id, date))
+        cursor.execute("""INSERT INTO nodesWeights (node_id, date, method ) VALUES (?,?,?) """, 
+                       (node_id, date, _method))
         
         for c in allColumns.keys():
             value = network.loc[k, allColumns[c]]
-            cursor.execute("UPDATE nodesWeights SET " + c + "=? WHERE node_id=? AND date=?",
-                           (value, node_id, date))
+            cursor.execute("UPDATE nodesWeights SET " + c + "=? WHERE node_id=? AND date=? AND method=?",
+                           (value, node_id, date, _method))
         
     db.commit()
     db.close()
@@ -132,7 +129,7 @@ def createPriceHistoryUSD(DB):
     db = sqlite3.connect(DB)  
     cursor = db.cursor() 
     cursor.execute('''
-    		CREATE TABLE priceHistory (
+    		CREATE TABLE priceHistoryUSD (
     		node_id     varchar NOT NULL REFERENCES nodes(node_id),  --foreign key  
     		date        DATE        NOT NULL,
          price       DOUBLE,
@@ -165,14 +162,14 @@ def populatePriceHistoryUSD(DB, nodesAttributes, allPrices):
         mktCap = nodesAttributes[k][0]
         nbShares = mktCap/allPrices.loc[day, node_id]
         price = allPrices.loc[day, node_id]
-        cursor.execute("""INSERT INTO priceHistory (node_id, date, market_cap, nb_shares, price) VALUES (?,?,?,?,?) """, 
+        cursor.execute("""INSERT INTO priceHistoryUSD (node_id, date, market_cap, nb_shares, price) VALUES (?,?,?,?,?) """, 
                        (node_id, day,mktCap,nbShares, price))
         
         
         for c in allPrices1.index:
             value = allPrices1.loc[c, node_id]
             mktCap = nbShares * value
-            cursor.execute("""INSERT INTO priceHistory (node_id, date, market_cap, nb_shares, price) VALUES (?,?,?,?,?) """, 
+            cursor.execute("""INSERT INTO priceHistoryUSD (node_id, date, market_cap, nb_shares, price) VALUES (?,?,?,?,?) """, 
                        (node_id, c, mktCap,nbShares, value))
         
     db.commit()
@@ -213,8 +210,6 @@ def populatePriceHistory(DB, nodesAttributes, allPrices):
     
     db = sqlite3.connect(DB)  
     cursor = db.cursor() 
-    #day = '2018-08-10' #last day of available information
-    #allPrices1 = allPrices.drop(day)
 
     for k in nodesAttributes.keys():
         
@@ -252,11 +247,11 @@ def getNodesAttributes(DB):
 #  @param DB is a string with the name and path of the database
 #  @param year is a string with the reference year for the weights
 #
-def getNodesWeights(DB, year):
+def getNodesWeights(DB, year, _method):
     
     db = sqlite3.connect(DB)
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM nodesWeights WHERE date = ? ", (year,))
+    cursor.execute("SELECT * FROM nodesWeights WHERE date = ? AND method = ?", (year,_method))
     all_rows = cursor.fetchall()
     allNames = {}
     for r in all_rows:
@@ -269,8 +264,8 @@ def getNodesWeights(DB, year):
     
     for n in allNames.values():
         for m in allNames.keys():
-            cursor.execute("SELECT " + m + " FROM nodesWeights WHERE date = ? AND node_id = ?", 
-                           (year,n))
+            cursor.execute("SELECT " + m + " FROM nodesWeights WHERE date = ? AND node_id = ? AND method = ?", 
+                           (year,n,_method))
             value = cursor.fetchone()
             weights.loc[n,m] = float(value[0])
     

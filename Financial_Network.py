@@ -230,18 +230,18 @@ def main():
     
     # get weighst and nodes attributes
     nodesAttributes = dbm.getNodesAttributes(settings.DB)
-    weights2010 = dbm.getNodesWeights(settings.DB1, '2010')
-    weights2018 = dbm.getNodesWeights(settings.DB1, '2018')
-    weights2018Corr = dbm.getNodesWeights(settings.DB3, '2018')
+    weights2010 = dbm.getNodesWeights(settings.DB, '2010', 'equityOwnership')
+    weights2018 = dbm.getNodesWeights(settings.DB, '2018', 'equityOwnership')
+    weights2018Corr = dbm.getNodesWeights(settings.DB, '2018', 'correlation')
     
     G2010 = FinancialNetwork(weights2010, nodesAttributes, listAttributes)
     G2018 = FinancialNetwork(weights2018, nodesAttributes, listAttributes)
     G2018Corr = FinancialNetwork(weights2018Corr, nodesAttributes, listAttributes)
     
     # Get market cap for each node as of the last available day (in USD)
-    db = sqlite3.connect(settings.DB4)
+    db = sqlite3.connect(settings.DB)
     cursor = db.cursor()
-    cursor.execute("SELECT node_id, market_cap FROM priceHistory WHERE date = '2018-06-12' ")
+    cursor.execute("SELECT node_id, market_cap FROM priceHistoryUSD WHERE date = '2018-06-12' ")
     all_rows = cursor.fetchall()
     marketCaps2018 = {}
     for i in range(len(all_rows)):
@@ -249,9 +249,9 @@ def main():
     db.close()
     
     # Get market cap for each node as of the last available day (in USD)
-    db = sqlite3.connect(settings.DB4)
+    db = sqlite3.connect(settings.DB)
     cursor = db.cursor()
-    cursor.execute("SELECT node_id, market_cap FROM priceHistory WHERE date = '2010-07-21' ")
+    cursor.execute("SELECT node_id, market_cap FROM priceHistoryUSD WHERE date = '2010-07-21' ")
     all_rows = cursor.fetchall()
     marketCaps2010 = {}
     for i in range(len(all_rows)):
@@ -268,9 +268,6 @@ def main():
     G2018.debtRankCentrality(marketCaps2018)
     G2018Corr.debtRankCentrality(marketCaps2018)
     
-#    G2010.mainStats()
-#    G2018.mainStats()
-#    G2018Corr.mainStats()
     
     G2010.saveNetwork(settings.PATH + "G_2010")
     G2018.saveNetwork(settings.PATH + "G_2018")

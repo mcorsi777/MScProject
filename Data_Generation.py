@@ -241,22 +241,21 @@ def main():
     db.createNodesAttributes(settings.DB)
     db.populateNodes(settings.DB, nodesAttributes)
     
-    db.createNodesWeights(settings.DB1, nodesAttributes)
-    db.createNodesWeights(settings.DB3, nodesAttributes)
+    db.createNodesWeights(settings.DB, nodesAttributes)
     
-    db.createPriceHistory(settings.DB2)
-    db.populatePriceHistory(settings.DB2, nodesAttributes, allPrices)
+    db.createPriceHistory(settings.DB)
+    db.populatePriceHistory(settings.DB, nodesAttributes, allPrices)
     
-    db.createPriceHistoryUSD(settings.DB4)
-    db.populatePriceHistoryUSD(settings.DB4, nodesAttributes, allPricesUSD)
+    db.createPriceHistoryUSD(settings.DB)
+    db.populatePriceHistoryUSD(settings.DB, nodesAttributes, allPricesUSD)
     
     for extension in extensionList:
         year = extension[0:4]
         position = allPrices.index.get_loc(extension)
-        db.populateNodesWeights(settings.DB1, year, nodesAttributes, networkAdj[year])
+        db.populateNodesWeights(settings.DB, year, nodesAttributes, networkAdj[year], 'equityOwnership')
         
         if position >=100:
-            db.populateNodesWeights(settings.DB3, year, nodesAttributes, correlationAdj[year])
+            db.populateNodesWeights(settings.DB, year, nodesAttributes, correlationAdj[year], 'correlation')
 
 
 

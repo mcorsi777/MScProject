@@ -204,9 +204,7 @@ for control in controls:
         
 sizingMode = 'fixed' 
 
-#inputs = row(widgetbox(distressButton, backToOriginalButton, textInput, textOutput, dataSource, stats))
-inputs2 = column(widgetbox(distressButton, backToOriginalButton, textInput, textOutput, dataSource, stats))
-inputs3 = row(widgetbox(distressButton, backToOriginalButton, textInput, textOutput, dataSource, stats))
+inputs = row(widgetbox(distressButton, backToOriginalButton, textInput, textOutput, dataSource, stats))
 
 l = layout([
     [desc],
