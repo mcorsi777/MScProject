@@ -52,8 +52,6 @@ class FinancialNetwork(nx.DiGraph):
         
         else:
         
-            
-           
             #  Reorganize the dataframe weights (where the position (i,j) contains the weight of the edge from j to i)
             #  into a list tuples where each tuple contains origin node, destination node and weight
             
@@ -73,7 +71,7 @@ class FinancialNetwork(nx.DiGraph):
             count = 0
             for n in attributeNames:
                 attributes = {s : staticAttributes[s][count] for s in self}
-                nx.set_node_attributes(self, n, attributes)
+                nx.set_node_attributes(self, attributes, n)
                 count = count + 1
             
             
@@ -113,8 +111,8 @@ class FinancialNetwork(nx.DiGraph):
         
         inDegree = mirrorG.in_degree()
         outDegree = mirrorG.out_degree()
-        avgInDegree = np.mean(list(inDegree.values()))
-        avgOutnDegree = np.mean(list(outDegree.values()))
+        avgInDegree = np.mean(list(zip(*inDegree))[1])
+        avgOutnDegree = np.mean(list(zip(*outDegree))[1])
         
         density = nx.density(mirrorG)
         
@@ -143,7 +141,28 @@ class FinancialNetwork(nx.DiGraph):
             h = 1
             R[k] = debtRank(self, SD, h, relevance)[0]
         
-        nx.set_node_attributes(self, 'debtRankCentrality', R)
+        nx.set_node_attributes(self, R, 'debtRankCentrality')
+
+
+    ## Calculate for each node the position on a 2-dimensional chart using the 
+    #  Fruchterman-Reingold force-directed algorithm and store the results into 2 new node attributes called x and y
+    #  @param: _scale, _threshold, _k, _iterations are all the parameters required by the 
+    #           nx.spring_layout function (see relevant documentation)
+    #
+    def generateLayout(self, _scale, _threshold, _k, _iterations):    
+        
+        layout = nx.spring_layout(self, scale  = _scale, threshold = _threshold, k = _k, iterations = _iterations)         
+        
+        x = {}
+        y = {}
+        
+        for k in layout.keys():
+            x[k] = float(layout[k][0])
+            y[k] = float(layout[k][1])
+            
+        nx.set_node_attributes(self, x, 'x')
+        nx.set_node_attributes(self, y, 'y')
+
 
 
 
@@ -258,17 +277,22 @@ def main():
         marketCaps2010[all_rows[i][0]] = float(all_rows[i][1])
     db.close()    
     
-        
-    nx.set_node_attributes(G2010, 'mktCap', marketCaps2010)
-    nx.set_node_attributes(G2018, 'mktCap', marketCaps2018)
-    nx.set_node_attributes(G2018Corr, 'mktCap', marketCaps2018)
+    # add mkt cap as attribute
+    nx.set_node_attributes(G2010, marketCaps2010, 'mktCap')
+    nx.set_node_attributes(G2018, marketCaps2018, 'mktCap')
+    nx.set_node_attributes(G2018Corr, marketCaps2018, 'mktCap')
     
+    # add layout (i.e. chart coordinates) as attribute
+    G2010.generateLayout(settings.SCALE, settings.LIMIT, settings.IDEAL_DIST, settings.MAX_ITER)
+    G2018.generateLayout(settings.SCALE, settings.LIMIT, settings.IDEAL_DIST, settings.MAX_ITER)
+    G2018Corr.generateLayout(settings.SCALE, settings.LIMIT, settings.IDEAL_DIST, settings.MAX_ITER)
     
+    # add debt rank centrality as attribute
     G2010.debtRankCentrality(marketCaps2010)
     G2018.debtRankCentrality(marketCaps2018)
     G2018Corr.debtRankCentrality(marketCaps2018)
     
-    
+    # save
     G2010.saveNetwork(settings.PATH + "G_2010")
     G2018.saveNetwork(settings.PATH + "G_2018")
     G2018Corr.saveNetwork(settings.PATH + "G_2018Corr")

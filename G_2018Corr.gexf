@@ -1,13 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
-  <graph defaultedgetype="directed" mode="static">
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
     <attributes class="node" mode="static">
       <attribute id="0" title="name" type="string" />
       <attribute id="1" title="currency" type="string" />
       <attribute id="2" title="benchmark" type="string" />
       <attribute id="3" title="mktCap" type="double" />
-      <attribute id="4" title="debtRankCentrality" type="double" />
+      <attribute id="4" title="x" type="double" />
+      <attribute id="5" title="y" type="double" />
+      <attribute id="6" title="debtRankCentrality" type="double" />
     </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>04/09/2018</lastmodified>
+    </meta>
     <nodes>
       <node id="MS" label="MS">
         <attvalues>
@@ -15,7 +21,9 @@
           <attvalue for="1" value="USD" />
           <attvalue for="2" value="^GSPC" />
           <attvalue for="3" value="88.392" />
-          <attvalue for="4" value="0.9621331503806763" />
+          <attvalue for="4" value="0.7532755246756353" />
+          <attvalue for="5" value="-0.17007799890387962" />
+          <attvalue for="6" value="0.9621331503806763" />
         </attvalues>
       </node>
       <node id="RY.TO" label="RY.TO">
@@ -24,7 +32,9 @@
           <attvalue for="1" value="CAD" />
           <attvalue for="2" value="^GSPTSE" />
           <attvalue for="3" value="111.577" />
-          <attvalue for="4" value="0.955317987532529" />
+          <attvalue for="4" value="-0.2120333362094631" />
+          <attvalue for="5" value="-0.4925476060529881" />
+          <attvalue for="6" value="0.955317987532529" />
         </attvalues>
       </node>
       <node id="RBS.L" label="RBS.L">
@@ -33,7 +43,9 @@
           <attvalue for="1" value="GBP" />
           <attvalue for="2" value="^FTSE" />
           <attvalue for="3" value="39.37" />
-          <attvalue for="4" value="0.9765430237100647" />
+          <attvalue for="4" value="-0.22575087174852043" />
+          <attvalue for="5" value="0.6018722374747816" />
+          <attvalue for="6" value="0.9765430237100647" />
         </attvalues>
       </node>
       <node id="SAN.MC" label="SAN.MC">
@@ -42,7 +54,9 @@
           <attvalue for="1" value="EUR" />
           <attvalue for="2" value="^STOXX50E" />
           <attvalue for="3" value="87.3" />
-          <attvalue for="4" value="0.9624541405825385" />
+          <attvalue for="4" value="0.1098046645997996" />
+          <attvalue for="5" value="0.495956292899064" />
+          <attvalue for="6" value="0.9624541405825385" />
         </attvalues>
       </node>
       <node id="GLE.PA" label="GLE.PA">
@@ -51,7 +65,9 @@
           <attvalue for="1" value="EUR" />
           <attvalue for="2" value="^STOXX50E" />
           <attvalue for="3" value="37.38" />
-          <attvalue for="4" value="0.9771279783819566" />
+          <attvalue for="4" value="0.45135914392709336" />
+          <attvalue for="5" value="0.2902842875489467" />
+          <attvalue for="6" value="0.9771279783819566" />
         </attvalues>
       </node>
       <node id="STAN.L" label="STAN.L">
@@ -60,7 +76,9 @@
           <attvalue for="1" value="GBP" />
           <attvalue for="2" value="^FTSE" />
           <attvalue for="3" value="29.37" />
-          <attvalue for="4" value="0.9794824944230892" />
+          <attvalue for="4" value="0.6575144015402111" />
+          <attvalue for="5" value="0.6585230592710722" />
+          <attvalue for="6" value="0.9794824944230892" />
         </attvalues>
       </node>
       <node id="STT" label="STT">
@@ -69,7 +87,9 @@
           <attvalue for="1" value="USD" />
           <attvalue for="2" value="^GSPC" />
           <attvalue for="3" value="33.149" />
-          <attvalue for="4" value="0.9783716684406373" />
+          <attvalue for="4" value="0.22328305768689144" />
+          <attvalue for="5" value="-0.5740371520089027" />
+          <attvalue for="6" value="0.9783716684406373" />
         </attvalues>
       </node>
       <node id="8316.T" label="8316.T">
@@ -78,7 +98,9 @@
           <attvalue for="1" value="JPY" />
           <attvalue for="2" value="^N225" />
           <attvalue for="3" value="55.756" />
-          <attvalue for="4" value="0.9717264069997029" />
+          <attvalue for="4" value="-0.5671866271289149" />
+          <attvalue for="5" value="0.5959739639985162" />
+          <attvalue for="6" value="0.9717264069997029" />
         </attvalues>
       </node>
       <node id="UBSG.VX" label="UBSG.VX">
@@ -87,7 +109,9 @@
           <attvalue for="1" value="CHF" />
           <attvalue for="2" value="^SSMI" />
           <attvalue for="3" value="59.959" />
-          <attvalue for="4" value="0.9704909474590186" />
+          <attvalue for="4" value="-0.2615499304407363" />
+          <attvalue for="5" value="0.3064394310801336" />
+          <attvalue for="6" value="0.9704909474590186" />
         </attvalues>
       </node>
       <node id="UCG.MI" label="UCG.MI">
@@ -96,7 +120,9 @@
           <attvalue for="1" value="EUR" />
           <attvalue for="2" value="^STOXX50E" />
           <attvalue for="3" value="38.12" />
-          <attvalue for="4" value="0.9769104575491928" />
+          <attvalue for="4" value="0.3327062427950635" />
+          <attvalue for="5" value="0.5103736234812756" />
+          <attvalue for="6" value="0.9769104575491928" />
         </attvalues>
       </node>
       <node id="BK" label="BK">
@@ -105,7 +131,9 @@
           <attvalue for="1" value="USD" />
           <attvalue for="2" value="^GSPC" />
           <attvalue for="3" value="53.182" />
-          <attvalue for="4" value="0.9724830267612353" />
+          <attvalue for="4" value="-0.8180695558186336" />
+          <attvalue for="5" value="-0.7973360840076925" />
+          <attvalue for="6" value="0.9724830267612353" />
         </attvalues>
       </node>
       <node id="CSGN.VX" label="CSGN.VX">
@@ -114,7 +142,9 @@
           <attvalue for="1" value="CHF" />
           <attvalue for="2" value="^SSMI" />
           <attvalue for="3" value="40.712" />
-          <attvalue for="4" value="0.9761485467403769" />
+          <attvalue for="4" value="0.520046715285618" />
+          <attvalue for="5" value="-0.39123744874364846" />
+          <attvalue for="6" value="0.9761485467403769" />
         </attvalues>
       </node>
       <node id="ACA.PA" label="ACA.PA">
@@ -123,7 +153,9 @@
           <attvalue for="1" value="EUR" />
           <attvalue for="2" value="^STOXX50E" />
           <attvalue for="3" value="41.48" />
-          <attvalue for="4" value="0.9759227953896166" />
+          <attvalue for="4" value="0.05674891685050203" />
+          <attvalue for="5" value="0.8441164368586485" />
+          <attvalue for="6" value="0.9759227953896166" />
         </attvalues>
       </node>
       <node id="INGA.AS" label="INGA.AS">
@@ -132,7 +164,9 @@
           <attvalue for="1" value="EUR" />
           <attvalue for="2" value="^STOXX50E" />
           <attvalue for="3" value="58.605" />
-          <attvalue for="4" value="0.9708889517935622" />
+          <attvalue for="4" value="-0.29853200702781574" />
+          <attvalue for="5" value="0.0351204946505991" />
+          <attvalue for="6" value="0.9708889517935622" />
         </attvalues>
       </node>
       <node id="8411.T" label="8411.T">
@@ -141,7 +175,9 @@
           <attvalue for="1" value="JPY" />
           <attvalue for="2" value="^N225" />
           <attvalue for="3" value="45.028" />
-          <attvalue for="4" value="0.9748798711806356" />
+          <attvalue for="4" value="-0.7386705064756428" />
+          <attvalue for="5" value="0.04610664879428542" />
+          <attvalue for="6" value="0.9748798711806356" />
         </attvalues>
       </node>
       <node id="NDA-SEK.ST" label="NDA-SEK.ST">
@@ -150,7 +186,9 @@
           <attvalue for="1" value="SEK" />
           <attvalue for="2" value="^STOXX50E" />
           <attvalue for="3" value="40.43" />
-          <attvalue for="4" value="0.0" />
+          <attvalue for="4" value="1.2311125812234518" />
+          <attvalue for="5" value="-0.08193628473128849" />
+          <attvalue for="6" value="0.0" />
         </attvalues>
       </node>
       <node id="BAC" label="BAC">
@@ -159,7 +197,9 @@
           <attvalue for="1" value="USD" />
           <attvalue for="2" value="^GSPC" />
           <attvalue for="3" value="315.978" />
-          <attvalue for="4" value="0.8952349122112375" />
+          <attvalue for="4" value="0.08343032584374206" />
+          <attvalue for="5" value="-0.12641532528219165" />
+          <attvalue for="6" value="0.8952349122112375" />
         </attvalues>
       </node>
       <node id="JPM" label="JPM">
@@ -168,7 +208,9 @@
           <attvalue for="1" value="USD" />
           <attvalue for="2" value="^GSPC" />
           <attvalue for="3" value="396.195" />
-          <attvalue for="4" value="0.871655359992569" />
+          <attvalue for="4" value="0.20663814012759482" />
+          <attvalue for="5" value="-0.3198683470596306" />
+          <attvalue for="6" value="0.871655359992569" />
         </attvalues>
       </node>
       <node id="C" label="C">
@@ -177,7 +219,9 @@
           <attvalue for="1" value="USD" />
           <attvalue for="2" value="^GSPC" />
           <attvalue for="3" value="182.227" />
-          <attvalue for="4" value="0.9345506269450111" />
+          <attvalue for="4" value="0.5001246290613143" />
+          <attvalue for="5" value="-0.11051743206462909" />
+          <attvalue for="6" value="0.9345506269450111" />
         </attvalues>
       </node>
       <node id="DBK.DE" label="DBK.DE">
@@ -186,7 +230,9 @@
           <attvalue for="1" value="EUR" />
           <attvalue for="2" value="^STOXX50E" />
           <attvalue for="3" value="26.448" />
-          <attvalue for="4" value="0.980341407765435" />
+          <attvalue for="4" value="0.8431413159024841" />
+          <attvalue for="5" value="0.352326188657914" />
+          <attvalue for="6" value="0.980341407765435" />
         </attvalues>
       </node>
       <node id="HSBA.L" label="HSBA.L">
@@ -195,7 +241,9 @@
           <attvalue for="1" value="GBP" />
           <attvalue for="2" value="^FTSE" />
           <attvalue for="3" value="189.389" />
-          <attvalue for="4" value="0.932445378020343" />
+          <attvalue for="4" value="-0.35074431578397025" />
+          <attvalue for="5" value="-0.23166292520905227" />
+          <attvalue for="6" value="0.932445378020343" />
         </attvalues>
       </node>
       <node id="3988.HK" label="3988.HK">
@@ -204,7 +252,9 @@
           <attvalue for="1" value="HKD" />
           <attvalue for="2" value="^HSI" />
           <attvalue for="3" value="163.96" />
-          <attvalue for="4" value="0.9399201580964929" />
+          <attvalue for="4" value="-0.9397002686654794" />
+          <attvalue for="5" value="0.8019882501494033" />
+          <attvalue for="6" value="0.9399201580964929" />
         </attvalues>
       </node>
       <node id="BARC.L" label="BARC.L">
@@ -213,7 +263,9 @@
           <attvalue for="1" value="GBP" />
           <attvalue for="2" value="^FTSE" />
           <attvalue for="3" value="42.929" />
-          <attvalue for="4" value="0.9754968660832993" />
+          <attvalue for="4" value="1.004744100067976" />
+          <attvalue for="5" value="-0.5435126699395402" />
+          <attvalue for="6" value="0.9754968660832993" />
         </attvalues>
       </node>
       <node id="BNP.PA" label="BNP.PA">
@@ -222,7 +274,9 @@
           <attvalue for="1" value="EUR" />
           <attvalue for="2" value="^STOXX50E" />
           <attvalue for="3" value="79.01" />
-          <attvalue for="4" value="0.9648909618036358" />
+          <attvalue for="4" value="0.015604945917249147" />
+          <attvalue for="5" value="0.15653151399704987" />
+          <attvalue for="6" value="0.9648909618036358" />
         </attvalues>
       </node>
       <node id="0939.HK" label="0939.HK">
@@ -231,7 +285,9 @@
           <attvalue for="1" value="HKD" />
           <attvalue for="2" value="^HSI" />
           <attvalue for="3" value="275.68" />
-          <attvalue for="4" value="0.9070803912905835" />
+          <attvalue for="4" value="-1.4552046957612637" />
+          <attvalue for="5" value="0.008085781250686883" />
+          <attvalue for="6" value="0.9070803912905835" />
         </attvalues>
       </node>
       <node id="GS" label="GS">
@@ -240,7 +296,9 @@
           <attvalue for="1" value="USD" />
           <attvalue for="2" value="^GSPC" />
           <attvalue for="3" value="89.794" />
-          <attvalue for="4" value="0.9617210365867102" />
+          <attvalue for="4" value="-0.13651248042867858" />
+          <attvalue for="5" value="-0.7634708793480567" />
+          <attvalue for="6" value="0.9617210365867102" />
         </attvalues>
       </node>
       <node id="1398.HK" label="1398.HK">
@@ -249,7 +307,9 @@
           <attvalue for="1" value="HKD" />
           <attvalue for="2" value="^HSI" />
           <attvalue for="3" value="255.3" />
-          <attvalue for="4" value="0.9130710326037274" />
+          <attvalue for="4" value="-0.907316396086035" />
+          <attvalue for="5" value="-1.0877258953966469" />
+          <attvalue for="6" value="0.9130710326037274" />
         </attvalues>
       </node>
       <node id="8306.T" label="8306.T">
@@ -258,7 +318,9 @@
           <attvalue for="1" value="JPY" />
           <attvalue for="2" value="^N225" />
           <attvalue for="3" value="80.531" />
-          <attvalue for="4" value="0.9644438683081847" />
+          <attvalue for="4" value="0.2865063808115959" />
+          <attvalue for="5" value="0.07215143783142405" />
+          <attvalue for="6" value="0.9644438683081847" />
         </attvalues>
       </node>
       <node id="WFC" label="WFC">
@@ -267,7 +329,9 @@
           <attvalue for="1" value="USD" />
           <attvalue for="2" value="^GSPC" />
           <attvalue for="3" value="285.222" />
-          <attvalue for="4" value="0.9042755483362155" />
+          <attvalue for="4" value="1.1352299052589314" />
+          <attvalue for="5" value="0.26497821694873763" />
+          <attvalue for="6" value="0.9042755483362155" />
         </attvalues>
       </node>
       <node id="1288.HK" label="1288.HK">
@@ -276,7 +340,9 @@
           <attvalue for="1" value="HKD" />
           <attvalue for="2" value="^HSI" />
           <attvalue for="3" value="159.5" />
-          <attvalue for="4" value="0.9412311620345017" />
+          <attvalue for="4" value="-1.5000000000000002" />
+          <attvalue for="5" value="-0.3504818161443915" />
+          <attvalue for="6" value="0.9412311620345017" />
         </attvalues>
       </node>
     </nodes>

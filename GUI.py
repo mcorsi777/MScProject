@@ -32,8 +32,8 @@ desc = Div(text=open(join(dirname(__file__), "description.html")).read(), width=
 
 # Create Input controls
 
-textInput = TextInput(value="1", title="Stress Parameter:")#, width=1000)
-textOutput = TextInput(value=" ", title="Error Messages:")#, width=1000)
+textInput = TextInput(value="1", title="Stress Parameter:")
+textOutput = TextInput(value=" ", title="Error Messages:")
 distressButton = Button(label="Distress Node")
 backToOriginalButton = Button(label="Back To Original")
 dataSource = Select(title="Data", options=['G_2010', 'G_2018', 'G_2018Corr'], value= 'G_2018')
@@ -60,12 +60,12 @@ TOOLTIPS=[
 
 plot = figure(plot_height=settings.PLOT_H, plot_width=settings.PLOT_W, title="network",
               tools=['tap', 'reset', 'box_zoom'], 
-              x_range=[-1, 11], y_range=[-1, 11])
+              x_range=[settings.X_MIN, settings.X_MAX], y_range=[settings.Y_MIN, settings.Y_MAX])
 
 
-r_circles = plot.circle('x', 'y', source=nodeSource, size=10, color='navy', level='overlay', alpha='alphas', fill_alpha = 'alphas')
+r_circles = plot.circle('x', 'y', source=nodeSource, size=settings.SIZE_CIRCLES, color=settings.COL_CIRCLES, level='overlay', alpha='alphas', fill_alpha = 'alphas')
 
-r_lines = plot.multi_line('xs', 'ys', line_width=1, alpha='alphas', color='gray',
+r_lines = plot.multi_line('xs', 'ys', line_width=1, alpha='alphas', color=settings.COL_LINES,
                           source=lines_source)
 
 r_circles.glyph.size = 'sizeParameter'
@@ -80,11 +80,13 @@ def update():
     source = dataSource.value
     G = nx.read_gexf(settings.PATH + source + '.gexf')
     G = fnc.FinancialNetwork(None, None, None, G)
-    layout = nx.spring_layout(G, scale  = 10) # dictionary with nodes coordinates
     centrality = nx.get_node_attributes(G,'debtRankCentrality')  # dictionary with nodex centrality  
     names = nx.get_node_attributes(G,'name')
-    nodes, nodes_coordinates = zip(*sorted(layout.items()))
-    nodes_xs, nodes_ys = list(zip(*nodes_coordinates))
+    x = nx.get_node_attributes(G,'x')
+    y = nx.get_node_attributes(G,'y')
+    nodes = list(zip(*sorted(x.items())))[0]
+    nodes_xs  = list(zip(*sorted(x.items())))[1]
+    nodes_ys  = list(zip(*sorted(y.items())))[1]
     nodesCentrality = list(zip(*sorted(centrality.items())))[1]
     nodesNames = list(zip(*sorted(names.items())))[1]
     nodeSource.data = dict(
@@ -92,14 +94,14 @@ def update():
         x=nodes_xs,
         y=nodes_ys,
         names = list(nodesNames),
-        sizeParameter = [7 + 20 * t / max(nodesCentrality) for t in nodesCentrality],
+        sizeParameter = [settings.SIZE_CIRCLE_1  + settings.SIZE_CIRCLE_2 * t / max(nodesCentrality) for t in nodesCentrality],
         centrality = [t  for t in nodesCentrality],
         inducedStress = len(centrality) * ['-'],
         alphas = len(centrality) * [1]       
         )
     graphStats = pd.DataFrame.from_dict(G.mainStats(), orient='index')
     graphStats = graphStats.rename(columns={0: 'Stats'})
-    lines_source.data = get_edges_specs(G, layout)
+    lines_source.data = get_edges_specs(G)
     stats.text = str(graphStats)
 
 ##  Associated to the backToOriginalButton widget. Reset the graph to its original state.
@@ -108,7 +110,7 @@ def update():
 def backToOriginal():
 
     nodesCentrality = nodeSource.data['centrality']
-    nodeSource.data['sizeParameter'] = [7 + 20 * t / max(nodesCentrality) for t in nodesCentrality]
+    nodeSource.data['sizeParameter'] = [settings.SIZE_CIRCLE_1 + settings.SIZE_CIRCLE_2 * t / max(nodesCentrality) for t in nodesCentrality]
     nodeSource.data['inducedStress'] = len(nodesCentrality ) * ['-']
     nodeSource.data['alphas']  = len(nodesCentrality ) * [1]
     textOutput.value = ""
@@ -148,7 +150,7 @@ def distress_node():
         impact = {k: affectedNodes[k][1] for k in affectedNodes.keys()}
         # Update graph
         nodeSource.data['inducedStress'] = [impact[t] for t in sorted(impact.keys())]
-        nodeSource.data['alphas'] = [min(1, 1.3 * impact[t]) for t in sorted(impact.keys())]
+        nodeSource.data['alphas'] = [min(1, settings.DISTRESS_SCALING * impact[t]) for t in sorted(impact.keys())]
         textOutput.value = ""
     
     except ValueError:
@@ -168,18 +170,20 @@ def distress_node():
 
     
 
-##  Create edges of the graphs and the the intensity of their colour
+##  Create edges for the graphs and define the the intensity of their colour
 #
 #
-def get_edges_specs(graph, layout):
+def get_edges_specs(graph):
     d = dict(xs=[], ys=[], alphas=[], weights=[])
     weights = [d['weight'] for u, v, d in graph.edges(data=True)]
     max_weight = max(weights)
-    calcAlpha = lambda h:  0.5 * (h / max_weight)
+    calcAlpha = lambda h:  settings.EDGE_SCALING * (h / max_weight)
+    x = nx.get_node_attributes(graph,'x')
+    y = nx.get_node_attributes(graph,'y')
 
     for u, v, data in graph.edges(data=True):
-        d['xs'].append([layout[u][0], layout[v][0]])
-        d['ys'].append([layout[u][1], layout[v][1]])
+        d['xs'].append([x[u], x[v]])
+        d['ys'].append([y[u], y[v]])
         d['alphas'].append(calcAlpha(data['weight']))
         d['weights'].append(data['weight'])
     
