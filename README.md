@@ -8,23 +8,26 @@ In order to run the final system execute the following oprations:
 where PATH is the location where you have stored locally all the project
 
 
-############################################################
+
+
 
 # IMPORTANT: 
 
 This project require the usage of the most recent version of the library networkx (version 2.1). 
 Update older version by using: $ pip install --upgrade networkx
 
-############################################################
 
 
 
 
-############################################################
+
+
+
 
 # DATA
 
-############################################################
+
+
 
 The project is based on a set of 30 financial institutions that in the following will be called nodes (of the network). refer to the project documentation for more details.
 
@@ -81,11 +84,13 @@ G_2018Corr.gexf
 
 
 
-##################################################################
 
-# PYTHON FILES
 
-##################################################################
+
+# # PYTHON FILES
+
+
+
 
 # settings.py
  File to set up the values for all the parameters to be used in the project
