@@ -10,7 +10,6 @@ Program:                Data Science
 import numpy as np
 from os.path import dirname, join
 import pandas as pd
-import warnings
 import networkx as nx
 
 import settings
@@ -219,8 +218,3 @@ l = layout([
 update()  # initial load of the data
 
 curdoc().add_root(l)
-
-
-
-
-

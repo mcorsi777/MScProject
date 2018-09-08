@@ -95,15 +95,17 @@ G_2018Corr.gexf
 # settings.py
  File to set up the values for all the parameters to be used in the project
 
-# DB_construction.py
+# DB_Utilities.py
  Set of functions to convert data from csv and json files into sqllite format
 
-# Data_Generation.py
+# DB_Generation.py
  Take raw information from csv files related to equity ownership, static caracteristics of the nodes and historical prices, clean and 
   consolidate the data and then store the final results into a series of SQL tables
 
 # Financial_Network.py
- Define the class FinancialNetwork and use it to construct 3 different networks based on ownership data (in 2010 and 2018) and correlation data (for 2018).
+ Define the class FinancialNetwork and the utility function to calculate the debt rank
+ 
+# Graph_Builder.py construct 3 different networks based on ownership data (in 2010 and 2018) and correlation data (for 2018).
  For each network the centrality debtRank measure is calculated on each node. The final networks and attributes are then stored in .gexf file.
 
 # Description.html

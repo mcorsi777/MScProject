@@ -2,1251 +2,1251 @@
 <gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
   <graph defaultedgetype="directed" mode="static" name="">
     <attributes class="node" mode="static">
-      <attribute id="0" title="name" type="string" />
-      <attribute id="1" title="currency" type="string" />
-      <attribute id="2" title="benchmark" type="string" />
+      <attribute id="0" title="currency" type="string" />
+      <attribute id="1" title="y" type="double" />
+      <attribute id="2" title="debtRankCentrality" type="double" />
       <attribute id="3" title="mktCap" type="double" />
-      <attribute id="4" title="x" type="double" />
-      <attribute id="5" title="y" type="double" />
-      <attribute id="6" title="debtRankCentrality" type="double" />
+      <attribute id="4" title="name" type="string" />
+      <attribute id="5" title="x" type="double" />
+      <attribute id="6" title="benchmark" type="string" />
     </attributes>
     <meta>
       <creator>NetworkX 2.1</creator>
-      <lastmodified>04/09/2018</lastmodified>
+      <lastmodified>08/09/2018</lastmodified>
     </meta>
     <nodes>
-      <node id="MS" label="MS">
-        <attvalues>
-          <attvalue for="0" value="Morgan Stanley" />
-          <attvalue for="1" value="USD" />
-          <attvalue for="2" value="^GSPC" />
-          <attvalue for="3" value="88.392" />
-          <attvalue for="4" value="-0.11665720025834599" />
-          <attvalue for="5" value="-1.3788382872873899" />
-          <attvalue for="6" value="0.1172241916038389" />
-        </attvalues>
-      </node>
-      <node id="RY.TO" label="RY.TO">
-        <attvalues>
-          <attvalue for="0" value="Royal Bank of Canada" />
-          <attvalue for="1" value="CAD" />
-          <attvalue for="2" value="^GSPTSE" />
-          <attvalue for="3" value="111.577" />
-          <attvalue for="4" value="-1.128717007641688" />
-          <attvalue for="5" value="-0.8509599792444443" />
-          <attvalue for="6" value="0.022593778808471333" />
-        </attvalues>
-      </node>
-      <node id="RBS.L" label="RBS.L">
-        <attvalues>
-          <attvalue for="0" value="Royal Bank of Scotland" />
-          <attvalue for="1" value="GBP" />
-          <attvalue for="2" value="^FTSE" />
-          <attvalue for="3" value="39.37" />
-          <attvalue for="4" value="1.3323587911484307" />
-          <attvalue for="5" value="-0.5821629215066844" />
-          <attvalue for="6" value="0.018554686281577505" />
-        </attvalues>
-      </node>
-      <node id="SAN.MC" label="SAN.MC">
-        <attvalues>
-          <attvalue for="0" value="Santander" />
-          <attvalue for="1" value="EUR" />
-          <attvalue for="2" value="^STOXX50E" />
-          <attvalue for="3" value="87.3" />
-          <attvalue for="4" value="-1.3627023115354537" />
-          <attvalue for="5" value="0.05913486726890584" />
-          <attvalue for="6" value="0.033750461320344316" />
-        </attvalues>
-      </node>
-      <node id="GLE.PA" label="GLE.PA">
-        <attvalues>
-          <attvalue for="0" value="Societe Generale" />
-          <attvalue for="1" value="EUR" />
-          <attvalue for="2" value="^STOXX50E" />
-          <attvalue for="3" value="37.38" />
-          <attvalue for="4" value="1.0711982354555385" />
-          <attvalue for="5" value="0.9735816331789925" />
-          <attvalue for="6" value="0.04045999590258841" />
-        </attvalues>
-      </node>
-      <node id="STAN.L" label="STAN.L">
-        <attvalues>
-          <attvalue for="0" value="Standard Chartered" />
-          <attvalue for="1" value="GBP" />
-          <attvalue for="2" value="^FTSE" />
-          <attvalue for="3" value="29.37" />
-          <attvalue for="4" value="0.2596705694543442" />
-          <attvalue for="5" value="-0.9851565618926342" />
-          <attvalue for="6" value="0.12642990285479863" />
-        </attvalues>
-      </node>
-      <node id="STT" label="STT">
-        <attvalues>
-          <attvalue for="0" value="State Street" />
-          <attvalue for="1" value="USD" />
-          <attvalue for="2" value="^GSPC" />
-          <attvalue for="3" value="33.149" />
-          <attvalue for="4" value="-1.222335976309157" />
-          <attvalue for="5" value="0.5812818003761702" />
-          <attvalue for="6" value="0.08905303634825293" />
-        </attvalues>
-      </node>
-      <node id="8316.T" label="8316.T">
-        <attvalues>
-          <attvalue for="0" value="Sumitomo Mitsui" />
-          <attvalue for="1" value="JPY" />
-          <attvalue for="2" value="^N225" />
-          <attvalue for="3" value="55.756" />
-          <attvalue for="4" value="0.9272722761267336" />
-          <attvalue for="5" value="-1.0200929586079144" />
-          <attvalue for="6" value="0.02528251897974597" />
-        </attvalues>
-      </node>
-      <node id="UBSG.VX" label="UBSG.VX">
-        <attvalues>
-          <attvalue for="0" value="UBS" />
-          <attvalue for="1" value="CHF" />
-          <attvalue for="2" value="^SSMI" />
-          <attvalue for="3" value="59.959" />
-          <attvalue for="4" value="-0.7397999311951575" />
-          <attvalue for="5" value="0.9973977302221408" />
-          <attvalue for="6" value="0.078216062166181" />
-        </attvalues>
-      </node>
-      <node id="UCG.MI" label="UCG.MI">
-        <attvalues>
-          <attvalue for="0" value="Unicredit" />
-          <attvalue for="1" value="EUR" />
-          <attvalue for="2" value="^STOXX50E" />
-          <attvalue for="3" value="38.12" />
-          <attvalue for="4" value="1.190896094197685" />
-          <attvalue for="5" value="-0.84973077307762" />
-          <attvalue for="6" value="0.02207521187872298" />
-        </attvalues>
-      </node>
-      <node id="BK" label="BK">
-        <attvalues>
-          <attvalue for="0" value="BNYM" />
-          <attvalue for="1" value="USD" />
-          <attvalue for="2" value="^GSPC" />
-          <attvalue for="3" value="53.182" />
-          <attvalue for="4" value="-0.8610972545814266" />
-          <attvalue for="5" value="-0.936992695486371" />
-          <attvalue for="6" value="0.07654226442812573" />
-        </attvalues>
-      </node>
-      <node id="CSGN.VX" label="CSGN.VX">
-        <attvalues>
-          <attvalue for="0" value="Credit Suisse" />
-          <attvalue for="1" value="CHF" />
-          <attvalue for="2" value="^SSMI" />
-          <attvalue for="3" value="40.712" />
-          <attvalue for="4" value="1.5" />
-          <attvalue for="5" value="0.04477278402760015" />
-          <attvalue for="6" value="0.01910307557161233" />
-        </attvalues>
-      </node>
-      <node id="ACA.PA" label="ACA.PA">
-        <attvalues>
-          <attvalue for="0" value="Credit Agricole" />
-          <attvalue for="1" value="EUR" />
-          <attvalue for="2" value="^STOXX50E" />
-          <attvalue for="3" value="41.48" />
-          <attvalue for="4" value="-0.7237004431396342" />
-          <attvalue for="5" value="1.3205391016767827" />
-          <attvalue for="6" value="0.016920934738358893" />
-        </attvalues>
-      </node>
-      <node id="INGA.AS" label="INGA.AS">
-        <attvalues>
-          <attvalue for="0" value="ING" />
-          <attvalue for="1" value="EUR" />
-          <attvalue for="2" value="^STOXX50E" />
-          <attvalue for="3" value="58.605" />
-          <attvalue for="4" value="1.292473078185177" />
-          <attvalue for="5" value="0.7463623322245645" />
-          <attvalue for="6" value="0.060876140943868576" />
-        </attvalues>
-      </node>
-      <node id="8411.T" label="8411.T">
-        <attvalues>
-          <attvalue for="0" value="Mizuho" />
-          <attvalue for="1" value="JPY" />
-          <attvalue for="2" value="^N225" />
-          <attvalue for="3" value="45.028" />
-          <attvalue for="4" value="-0.6720628878259982" />
-          <attvalue for="5" value="-1.265470383131811" />
-          <attvalue for="6" value="0.04096330902334242" />
-        </attvalues>
-      </node>
-      <node id="NDA-SEK.ST" label="NDA-SEK.ST">
-        <attvalues>
-          <attvalue for="0" value="Nordea" />
-          <attvalue for="1" value="SEK" />
-          <attvalue for="2" value="^STOXX50E" />
-          <attvalue for="3" value="40.43" />
-          <attvalue for="4" value="0.08451033169956146" />
-          <attvalue for="5" value="1.470924650380047" />
-          <attvalue for="6" value="0.019364299688553945" />
-        </attvalues>
-      </node>
-      <node id="BAC" label="BAC">
-        <attvalues>
-          <attvalue for="0" value="Bank of America" />
-          <attvalue for="1" value="USD" />
-          <attvalue for="2" value="^GSPC" />
-          <attvalue for="3" value="315.978" />
-          <attvalue for="4" value="-0.33908889058167496" />
-          <attvalue for="5" value="1.4335279201120945" />
-          <attvalue for="6" value="0.0920361345148773" />
-        </attvalues>
-      </node>
       <node id="JPM" label="JPM">
         <attvalues>
-          <attvalue for="0" value="JPM" />
-          <attvalue for="1" value="USD" />
-          <attvalue for="2" value="^GSPC" />
+          <attvalue for="0" value="USD" />
+          <attvalue for="1" value="-0.2093421460398574" />
+          <attvalue for="2" value="0.13842429304104875" />
           <attvalue for="3" value="396.195" />
-          <attvalue for="4" value="0.6077970140756425" />
-          <attvalue for="5" value="0.9788698042521361" />
-          <attvalue for="6" value="0.12779401900444678" />
-        </attvalues>
-      </node>
-      <node id="C" label="C">
-        <attvalues>
-          <attvalue for="0" value="Citigroup" />
-          <attvalue for="1" value="USD" />
-          <attvalue for="2" value="^GSPC" />
-          <attvalue for="3" value="182.227" />
-          <attvalue for="4" value="-1.207826663655044" />
-          <attvalue for="5" value="-0.49634930770449187" />
-          <attvalue for="6" value="0.12454721171189008" />
-        </attvalues>
-      </node>
-      <node id="DBK.DE" label="DBK.DE">
-        <attvalues>
-          <attvalue for="0" value="Deutsche Bank" />
-          <attvalue for="1" value="EUR" />
-          <attvalue for="2" value="^STOXX50E" />
-          <attvalue for="3" value="26.448" />
-          <attvalue for="4" value="-1.3942606369481165" />
-          <attvalue for="5" value="0.4020053514240869" />
-          <attvalue for="6" value="0.14699238837742432" />
-        </attvalues>
-      </node>
-      <node id="HSBA.L" label="HSBA.L">
-        <attvalues>
-          <attvalue for="0" value="HSBC" />
-          <attvalue for="1" value="GBP" />
-          <attvalue for="2" value="^FTSE" />
-          <attvalue for="3" value="189.389" />
-          <attvalue for="4" value="0.61807957859411" />
-          <attvalue for="5" value="0.47715491350747685" />
-          <attvalue for="6" value="0.11663423733105689" />
-        </attvalues>
-      </node>
-      <node id="3988.HK" label="3988.HK">
-        <attvalues>
-          <attvalue for="0" value="Bank of China" />
-          <attvalue for="1" value="HKD" />
-          <attvalue for="2" value="^HSI" />
-          <attvalue for="3" value="163.96" />
-          <attvalue for="4" value="-0.1962770881461385" />
-          <attvalue for="5" value="0.8441606832003948" />
-          <attvalue for="6" value="0.08042475347974853" />
-        </attvalues>
-      </node>
-      <node id="BARC.L" label="BARC.L">
-        <attvalues>
-          <attvalue for="0" value="Barclays" />
-          <attvalue for="1" value="GBP" />
-          <attvalue for="2" value="^FTSE" />
-          <attvalue for="3" value="42.929" />
-          <attvalue for="4" value="-1.3976311244973172" />
-          <attvalue for="5" value="-0.25375982423292287" />
-          <attvalue for="6" value="0.08735635328196623" />
-        </attvalues>
-      </node>
-      <node id="BNP.PA" label="BNP.PA">
-        <attvalues>
-          <attvalue for="0" value="BNP Paribas" />
-          <attvalue for="1" value="EUR" />
-          <attvalue for="2" value="^STOXX50E" />
-          <attvalue for="3" value="79.01" />
-          <attvalue for="4" value="-1.1853744954877865" />
-          <attvalue for="5" value="0.9183785724246711" />
-          <attvalue for="6" value="0.036402204421566706" />
-        </attvalues>
-      </node>
-      <node id="0939.HK" label="0939.HK">
-        <attvalues>
-          <attvalue for="0" value="China Construction Bank" />
-          <attvalue for="1" value="HKD" />
-          <attvalue for="2" value="^HSI" />
-          <attvalue for="3" value="275.68" />
-          <attvalue for="4" value="0.461697705499453" />
-          <attvalue for="5" value="1.3514700760948402" />
-          <attvalue for="6" value="0.0652449932278383" />
+          <attvalue for="4" value="JPM" />
+          <attvalue for="5" value="-1.0613069129859307" />
+          <attvalue for="6" value="^GSPC" />
         </attvalues>
       </node>
       <node id="GS" label="GS">
         <attvalues>
-          <attvalue for="0" value="Goldman Sachs" />
-          <attvalue for="1" value="USD" />
-          <attvalue for="2" value="^GSPC" />
+          <attvalue for="0" value="USD" />
+          <attvalue for="1" value="1.1525070955162797" />
+          <attvalue for="2" value="0.13945760826085393" />
           <attvalue for="3" value="89.794" />
-          <attvalue for="4" value="0.2008919703679276" />
-          <attvalue for="5" value="-1.422443942133906" />
-          <attvalue for="6" value="0.1322066632258689" />
+          <attvalue for="4" value="Goldman Sachs" />
+          <attvalue for="5" value="-0.41867956142487894" />
+          <attvalue for="6" value="^GSPC" />
         </attvalues>
       </node>
-      <node id="1398.HK" label="1398.HK">
+      <node id="C" label="C">
         <attvalues>
-          <attvalue for="0" value="ICBC" />
-          <attvalue for="1" value="HKD" />
-          <attvalue for="2" value="^HSI" />
-          <attvalue for="3" value="255.3" />
-          <attvalue for="4" value="-0.4555888870695595" />
-          <attvalue for="5" value="-1.3622687963090427" />
-          <attvalue for="6" value="0.04494483868133216" />
+          <attvalue for="0" value="USD" />
+          <attvalue for="1" value="-0.7529301809554986" />
+          <attvalue for="2" value="0.12949263033945982" />
+          <attvalue for="3" value="182.227" />
+          <attvalue for="4" value="Citigroup" />
+          <attvalue for="5" value="0.6261976861893307" />
+          <attvalue for="6" value="^GSPC" />
         </attvalues>
       </node>
-      <node id="8306.T" label="8306.T">
+      <node id="BARC.L" label="BARC.L">
         <attvalues>
-          <attvalue for="0" value="Mitsubishi FG" />
-          <attvalue for="1" value="JPY" />
-          <attvalue for="2" value="^N225" />
-          <attvalue for="3" value="80.531" />
-          <attvalue for="4" value="0.7076055724468052" />
-          <attvalue for="5" value="-1.2525124535024192" />
-          <attvalue for="6" value="0.01848973653772687" />
+          <attvalue for="0" value="GBP" />
+          <attvalue for="1" value="0.42177684750176375" />
+          <attvalue for="2" value="0.08061110272420685" />
+          <attvalue for="3" value="42.929" />
+          <attvalue for="4" value="Barclays" />
+          <attvalue for="5" value="-1.3023689414357733" />
+          <attvalue for="6" value="^FTSE" />
         </attvalues>
       </node>
-      <node id="WFC" label="WFC">
+      <node id="BNP.PA" label="BNP.PA">
         <attvalues>
-          <attvalue for="0" value="Wells Fargo" />
-          <attvalue for="1" value="USD" />
-          <attvalue for="2" value="^GSPC" />
-          <attvalue for="3" value="285.222" />
-          <attvalue for="4" value="1.353590054696635" />
-          <attvalue for="5" value="-0.28010756610405657" />
-          <attvalue for="6" value="0.07310805408301621" />
+          <attvalue for="0" value="EUR" />
+          <attvalue for="1" value="-0.9772893893172219" />
+          <attvalue for="2" value="0.038621240330680415" />
+          <attvalue for="3" value="79.01" />
+          <attvalue for="4" value="BNP Paribas" />
+          <attvalue for="5" value="1.1139941729355278" />
+          <attvalue for="6" value="^STOXX50E" />
+        </attvalues>
+      </node>
+      <node id="STT" label="STT">
+        <attvalues>
+          <attvalue for="0" value="USD" />
+          <attvalue for="1" value="1.466497754992587" />
+          <attvalue for="2" value="0.09526685326808935" />
+          <attvalue for="3" value="33.149" />
+          <attvalue for="4" value="State Street" />
+          <attvalue for="5" value="-0.17073926317257265" />
+          <attvalue for="6" value="^GSPC" />
+        </attvalues>
+      </node>
+      <node id="NDA-SEK.ST" label="NDA-SEK.ST">
+        <attvalues>
+          <attvalue for="0" value="SEK" />
+          <attvalue for="1" value="1.207346738619375" />
+          <attvalue for="2" value="0.02018240934828986" />
+          <attvalue for="3" value="40.43" />
+          <attvalue for="4" value="Nordea" />
+          <attvalue for="5" value="0.6836601359994742" />
+          <attvalue for="6" value="^STOXX50E" />
+        </attvalues>
+      </node>
+      <node id="3988.HK" label="3988.HK">
+        <attvalues>
+          <attvalue for="0" value="HKD" />
+          <attvalue for="1" value="-0.802918660774473" />
+          <attvalue for="2" value="0.08640883642868971" />
+          <attvalue for="3" value="163.96" />
+          <attvalue for="4" value="Bank of China" />
+          <attvalue for="5" value="-0.2801274426955371" />
+          <attvalue for="6" value="^HSI" />
+        </attvalues>
+      </node>
+      <node id="SAN.MC" label="SAN.MC">
+        <attvalues>
+          <attvalue for="0" value="EUR" />
+          <attvalue for="1" value="1.109777797295933" />
+          <attvalue for="2" value="0.035229762327738376" />
+          <attvalue for="3" value="87.3" />
+          <attvalue for="4" value="Santander" />
+          <attvalue for="5" value="-1.0561697124929164" />
+          <attvalue for="6" value="^STOXX50E" />
+        </attvalues>
+      </node>
+      <node id="ACA.PA" label="ACA.PA">
+        <attvalues>
+          <attvalue for="0" value="EUR" />
+          <attvalue for="1" value="1.385312265070121" />
+          <attvalue for="2" value="0.018549898726700834" />
+          <attvalue for="3" value="41.48" />
+          <attvalue for="4" value="Credit Agricole" />
+          <attvalue for="5" value="0.38551671049740355" />
+          <attvalue for="6" value="^STOXX50E" />
+        </attvalues>
+      </node>
+      <node id="8411.T" label="8411.T">
+        <attvalues>
+          <attvalue for="0" value="JPY" />
+          <attvalue for="1" value="-0.7366153813157671" />
+          <attvalue for="2" value="0.041118043633331686" />
+          <attvalue for="3" value="45.028" />
+          <attvalue for="4" value="Mizuho" />
+          <attvalue for="5" value="1.044304674820032" />
+          <attvalue for="6" value="^N225" />
+        </attvalues>
+      </node>
+      <node id="UBSG.VX" label="UBSG.VX">
+        <attvalues>
+          <attvalue for="0" value="CHF" />
+          <attvalue for="1" value="-1.3865088591213244" />
+          <attvalue for="2" value="0.07964335594032974" />
+          <attvalue for="3" value="59.959" />
+          <attvalue for="4" value="UBS" />
+          <attvalue for="5" value="-0.548660230858305" />
+          <attvalue for="6" value="^SSMI" />
+        </attvalues>
+      </node>
+      <node id="UCG.MI" label="UCG.MI">
+        <attvalues>
+          <attvalue for="0" value="EUR" />
+          <attvalue for="1" value="1.2036736017821985" />
+          <attvalue for="2" value="0.022584285151370523" />
+          <attvalue for="3" value="38.12" />
+          <attvalue for="4" value="Unicredit" />
+          <attvalue for="5" value="-0.7623711500143668" />
+          <attvalue for="6" value="^STOXX50E" />
+        </attvalues>
+      </node>
+      <node id="DBK.DE" label="DBK.DE">
+        <attvalues>
+          <attvalue for="0" value="EUR" />
+          <attvalue for="1" value="0.08162788220323339" />
+          <attvalue for="2" value="0.15028911294804373" />
+          <attvalue for="3" value="26.448" />
+          <attvalue for="4" value="Deutsche Bank" />
+          <attvalue for="5" value="-0.5546981475174578" />
+          <attvalue for="6" value="^STOXX50E" />
         </attvalues>
       </node>
       <node id="1288.HK" label="1288.HK">
         <attvalues>
-          <attvalue for="0" value="Agricultural Bank of China" />
-          <attvalue for="1" value="HKD" />
-          <attvalue for="2" value="^HSI" />
+          <attvalue for="0" value="HKD" />
+          <attvalue for="1" value="-1.405823337807494" />
+          <attvalue for="2" value="0.01525469240705224" />
           <attvalue for="3" value="159.5" />
-          <attvalue for="4" value="1.3950795269244551" />
-          <attvalue for="5" value="0.33728422985080503" />
-          <attvalue for="6" value="0.014778880091272553" />
+          <attvalue for="4" value="Agricultural Bank of China" />
+          <attvalue for="5" value="0.4513911847123143" />
+          <attvalue for="6" value="^HSI" />
+        </attvalues>
+      </node>
+      <node id="1398.HK" label="1398.HK">
+        <attvalues>
+          <attvalue for="0" value="HKD" />
+          <attvalue for="1" value="1.319281632071507" />
+          <attvalue for="2" value="0.04719811362862521" />
+          <attvalue for="3" value="255.3" />
+          <attvalue for="4" value="ICBC" />
+          <attvalue for="5" value="0.08615618820651211" />
+          <attvalue for="6" value="^HSI" />
+        </attvalues>
+      </node>
+      <node id="RBS.L" label="RBS.L">
+        <attvalues>
+          <attvalue for="0" value="GBP" />
+          <attvalue for="1" value="-1.3342519089032923" />
+          <attvalue for="2" value="0.019212255578677246" />
+          <attvalue for="3" value="39.37" />
+          <attvalue for="4" value="Royal Bank of Scotland" />
+          <attvalue for="5" value="0.7720873831180212" />
+          <attvalue for="6" value="^FTSE" />
+        </attvalues>
+      </node>
+      <node id="HSBA.L" label="HSBA.L">
+        <attvalues>
+          <attvalue for="0" value="GBP" />
+          <attvalue for="1" value="0.3488529115123185" />
+          <attvalue for="2" value="0.12738719614012822" />
+          <attvalue for="3" value="189.389" />
+          <attvalue for="4" value="HSBC" />
+          <attvalue for="5" value="0.6381330272817026" />
+          <attvalue for="6" value="^FTSE" />
+        </attvalues>
+      </node>
+      <node id="8316.T" label="8316.T">
+        <attvalues>
+          <attvalue for="0" value="JPY" />
+          <attvalue for="1" value="-0.8427094365676766" />
+          <attvalue for="2" value="0.025516238374246675" />
+          <attvalue for="3" value="55.756" />
+          <attvalue for="4" value="Sumitomo Mitsui" />
+          <attvalue for="5" value="-1.2115987998181916" />
+          <attvalue for="6" value="^N225" />
+        </attvalues>
+      </node>
+      <node id="WFC" label="WFC">
+        <attvalues>
+          <attvalue for="0" value="USD" />
+          <attvalue for="1" value="-1.424938246376049" />
+          <attvalue for="2" value="0.07965345807277974" />
+          <attvalue for="3" value="285.222" />
+          <attvalue for="4" value="Wells Fargo" />
+          <attvalue for="5" value="0.1099841514372296" />
+          <attvalue for="6" value="^GSPC" />
+        </attvalues>
+      </node>
+      <node id="8306.T" label="8306.T">
+        <attvalues>
+          <attvalue for="0" value="JPY" />
+          <attvalue for="1" value="1.1434428674086263" />
+          <attvalue for="2" value="0.019826894279080225" />
+          <attvalue for="3" value="80.531" />
+          <attvalue for="4" value="Mitsubishi FG" />
+          <attvalue for="5" value="0.9685132243437022" />
+          <attvalue for="6" value="^N225" />
+        </attvalues>
+      </node>
+      <node id="RY.TO" label="RY.TO">
+        <attvalues>
+          <attvalue for="0" value="CAD" />
+          <attvalue for="1" value="0.049838916890352546" />
+          <attvalue for="2" value="0.024348733621887282" />
+          <attvalue for="3" value="111.577" />
+          <attvalue for="4" value="Royal Bank of Canada" />
+          <attvalue for="5" value="1.5000000000000002" />
+          <attvalue for="6" value="^GSPTSE" />
+        </attvalues>
+      </node>
+      <node id="BK" label="BK">
+        <attvalues>
+          <attvalue for="0" value="USD" />
+          <attvalue for="1" value="0.8313209259869013" />
+          <attvalue for="2" value="0.08197750057857514" />
+          <attvalue for="3" value="53.182" />
+          <attvalue for="4" value="BNYM" />
+          <attvalue for="5" value="1.1678536752530277" />
+          <attvalue for="6" value="^GSPC" />
+        </attvalues>
+      </node>
+      <node id="GLE.PA" label="GLE.PA">
+        <attvalues>
+          <attvalue for="0" value="EUR" />
+          <attvalue for="1" value="-1.1506238030784202" />
+          <attvalue for="2" value="0.04297610521374814" />
+          <attvalue for="3" value="37.38" />
+          <attvalue for="4" value="Societe Generale" />
+          <attvalue for="5" value="-1.0000765843834425" />
+          <attvalue for="6" value="^STOXX50E" />
+        </attvalues>
+      </node>
+      <node id="BAC" label="BAC">
+        <attvalues>
+          <attvalue for="0" value="USD" />
+          <attvalue for="1" value="-0.46708081102087146" />
+          <attvalue for="2" value="0.09613736906188519" />
+          <attvalue for="3" value="315.978" />
+          <attvalue for="4" value="Bank of America" />
+          <attvalue for="5" value="-1.4131069882554936" />
+          <attvalue for="6" value="^GSPC" />
+        </attvalues>
+      </node>
+      <node id="INGA.AS" label="INGA.AS">
+        <attvalues>
+          <attvalue for="0" value="EUR" />
+          <attvalue for="1" value="0.805966145161973" />
+          <attvalue for="2" value="0.06455368440083958" />
+          <attvalue for="3" value="58.605" />
+          <attvalue for="4" value="ING" />
+          <attvalue for="5" value="-1.2887806185105952" />
+          <attvalue for="6" value="^STOXX50E" />
+        </attvalues>
+      </node>
+      <node id="0939.HK" label="0939.HK">
+        <attvalues>
+          <attvalue for="0" value="HKD" />
+          <attvalue for="1" value="-1.3581230025437532" />
+          <attvalue for="2" value="0.06999990263471463" />
+          <attvalue for="3" value="275.68" />
+          <attvalue for="4" value="China Construction Bank" />
+          <attvalue for="5" value="-0.23401925829645068" />
+          <attvalue for="6" value="^HSI" />
+        </attvalues>
+      </node>
+      <node id="MS" label="MS">
+        <attvalues>
+          <attvalue for="0" value="USD" />
+          <attvalue for="1" value="0.4645360889240484" />
+          <attvalue for="2" value="0.1271666840269922" />
+          <attvalue for="3" value="88.392" />
+          <attvalue for="4" value="Morgan Stanley" />
+          <attvalue for="5" value="1.2983425597767113" />
+          <attvalue for="6" value="^GSPC" />
+        </attvalues>
+      </node>
+      <node id="STAN.L" label="STAN.L">
+        <attvalues>
+          <attvalue for="0" value="GBP" />
+          <attvalue for="1" value="0.19998093735332328" />
+          <attvalue for="2" value="0.13143702297895032" />
+          <attvalue for="3" value="29.37" />
+          <attvalue for="4" value="Standard Chartered" />
+          <attvalue for="5" value="-1.0115926662024408" />
+          <attvalue for="6" value="^FTSE" />
+        </attvalues>
+      </node>
+      <node id="CSGN.VX" label="CSGN.VX">
+        <attvalues>
+          <attvalue for="0" value="CHF" />
+          <attvalue for="1" value="-0.3425852444688446" />
+          <attvalue for="2" value="0.020023324396557764" />
+          <attvalue for="3" value="40.712" />
+          <attvalue for="4" value="Credit Suisse" />
+          <attvalue for="5" value="1.4681615034933642" />
+          <attvalue for="6" value="^SSMI" />
         </attvalues>
       </node>
     </nodes>
     <edges>
-      <edge id="0" source="MS" target="MS" weight="0.0" />
-      <edge id="1" source="MS" target="RY.TO" weight="0.0727272727272727" />
-      <edge id="2" source="MS" target="RBS.L" weight="0.0" />
-      <edge id="3" source="MS" target="SAN.MC" weight="0.0128205128205128" />
-      <edge id="4" source="MS" target="GLE.PA" weight="0.010752688172043" />
-      <edge id="5" source="MS" target="STAN.L" weight="0.0" />
-      <edge id="6" source="MS" target="STT" weight="0.00570613409415121" />
-      <edge id="7" source="MS" target="8316.T" weight="0.00341296928327645" />
-      <edge id="8" source="MS" target="UBSG.VX" weight="0.0326721120186698" />
-      <edge id="9" source="MS" target="UCG.MI" weight="0.0" />
-      <edge id="10" source="MS" target="BK" weight="0.0646630236794171" />
-      <edge id="11" source="MS" target="CSGN.VX" weight="0.0242774566473988" />
-      <edge id="12" source="MS" target="ACA.PA" weight="0.0" />
-      <edge id="13" source="MS" target="INGA.AS" weight="0.0" />
-      <edge id="14" source="MS" target="8411.T" weight="0.0" />
-      <edge id="15" source="MS" target="NDA-SEK.ST" weight="0.010752688172043" />
-      <edge id="16" source="MS" target="BAC" weight="0.1015625" />
-      <edge id="17" source="MS" target="JPM" weight="0.129423170140572" />
-      <edge id="18" source="MS" target="C" weight="0.0546875" />
-      <edge id="19" source="MS" target="DBK.DE" weight="0.035036496350365" />
-      <edge id="20" source="MS" target="HSBA.L" weight="0.0254668930390492" />
-      <edge id="21" source="MS" target="3988.HK" weight="0.0" />
-      <edge id="22" source="MS" target="BARC.L" weight="0.098159509202454" />
-      <edge id="23" source="MS" target="BNP.PA" weight="0.00737463126843658" />
-      <edge id="24" source="MS" target="0939.HK" weight="0.0" />
-      <edge id="25" source="MS" target="GS" weight="0.0649188514357053" />
-      <edge id="26" source="MS" target="1398.HK" weight="0.0" />
-      <edge id="27" source="MS" target="8306.T" weight="0.878172588832487" />
-      <edge id="28" source="MS" target="WFC" weight="0.0606060606060606" />
-      <edge id="29" source="MS" target="1288.HK" weight="0.0" />
-      <edge id="30" source="RY.TO" target="MS" weight="0.010016694490818" />
-      <edge id="31" source="RY.TO" target="RY.TO" weight="0.0" />
-      <edge id="32" source="RY.TO" target="RBS.L" weight="0.0" />
-      <edge id="33" source="RY.TO" target="SAN.MC" weight="0.0" />
-      <edge id="34" source="RY.TO" target="GLE.PA" weight="0.0" />
-      <edge id="35" source="RY.TO" target="STAN.L" weight="0.0" />
-      <edge id="36" source="RY.TO" target="STT" weight="0.00855920114122682" />
-      <edge id="37" source="RY.TO" target="8316.T" weight="0.00170648464163823" />
-      <edge id="38" source="RY.TO" target="UBSG.VX" weight="0.00350058343057176" />
-      <edge id="39" source="RY.TO" target="UCG.MI" weight="0.0" />
-      <edge id="40" source="RY.TO" target="BK" weight="0.0136612021857923" />
-      <edge id="41" source="RY.TO" target="CSGN.VX" weight="0.0242774566473988" />
-      <edge id="42" source="RY.TO" target="ACA.PA" weight="0.0" />
-      <edge id="43" source="RY.TO" target="INGA.AS" weight="0.0" />
-      <edge id="44" source="RY.TO" target="8411.T" weight="0.0" />
-      <edge id="45" source="RY.TO" target="NDA-SEK.ST" weight="0.010752688172043" />
-      <edge id="46" source="RY.TO" target="BAC" weight="0.0234375" />
-      <edge id="47" source="RY.TO" target="JPM" weight="0.00339311682016481" />
-      <edge id="48" source="RY.TO" target="C" weight="0.015625" />
-      <edge id="49" source="RY.TO" target="DBK.DE" weight="0.0306569343065693" />
-      <edge id="50" source="RY.TO" target="HSBA.L" weight="0.032258064516129" />
-      <edge id="51" source="RY.TO" target="3988.HK" weight="0.0" />
-      <edge id="52" source="RY.TO" target="BARC.L" weight="0.0306748466257669" />
-      <edge id="53" source="RY.TO" target="BNP.PA" weight="0.00294985250737463" />
-      <edge id="54" source="RY.TO" target="0939.HK" weight="0.0" />
-      <edge id="55" source="RY.TO" target="GS" weight="0.0124843945068664" />
-      <edge id="56" source="RY.TO" target="1398.HK" weight="0.0" />
-      <edge id="57" source="RY.TO" target="8306.T" weight="0.0" />
-      <edge id="58" source="RY.TO" target="WFC" weight="0.00757575757575758" />
-      <edge id="59" source="RY.TO" target="1288.HK" weight="0.0" />
-      <edge id="60" source="RBS.L" target="MS" weight="0.01669449081803" />
-      <edge id="61" source="RBS.L" target="RY.TO" weight="0.0" />
-      <edge id="62" source="RBS.L" target="RBS.L" weight="0.0" />
-      <edge id="63" source="RBS.L" target="SAN.MC" weight="0.0128205128205128" />
-      <edge id="64" source="RBS.L" target="GLE.PA" weight="0.010752688172043" />
-      <edge id="65" source="RBS.L" target="STAN.L" weight="0.0" />
-      <edge id="66" source="RBS.L" target="STT" weight="0.0164051355206847" />
-      <edge id="67" source="RBS.L" target="8316.T" weight="0.0068259385665529" />
-      <edge id="68" source="RBS.L" target="UBSG.VX" weight="0.0268378063010502" />
-      <edge id="69" source="RBS.L" target="UCG.MI" weight="0.0" />
-      <edge id="70" source="RBS.L" target="BK" weight="0.0063752276867031" />
-      <edge id="71" source="RBS.L" target="CSGN.VX" weight="0.0023121387283237" />
-      <edge id="72" source="RBS.L" target="ACA.PA" weight="0.0" />
-      <edge id="73" source="RBS.L" target="INGA.AS" weight="0.0166666666666667" />
-      <edge id="74" source="RBS.L" target="8411.T" weight="0.0303030303030303" />
-      <edge id="75" source="RBS.L" target="NDA-SEK.ST" weight="0.0161290322580645" />
-      <edge id="76" source="RBS.L" target="BAC" weight="0.0" />
-      <edge id="77" source="RBS.L" target="JPM" weight="0.00436257876878333" />
-      <edge id="78" source="RBS.L" target="C" weight="0.0" />
-      <edge id="79" source="RBS.L" target="DBK.DE" weight="0.00291970802919708" />
-      <edge id="80" source="RBS.L" target="HSBA.L" weight="0.0458404074702886" />
-      <edge id="81" source="RBS.L" target="3988.HK" weight="0.0" />
-      <edge id="82" source="RBS.L" target="BARC.L" weight="0.0" />
-      <edge id="83" source="RBS.L" target="BNP.PA" weight="0.00147492625368732" />
-      <edge id="84" source="RBS.L" target="0939.HK" weight="0.0" />
-      <edge id="85" source="RBS.L" target="GS" weight="0.00499375780274657" />
-      <edge id="86" source="RBS.L" target="1398.HK" weight="0.0" />
-      <edge id="87" source="RBS.L" target="8306.T" weight="0.0" />
-      <edge id="88" source="RBS.L" target="WFC" weight="0.00378787878787879" />
-      <edge id="89" source="RBS.L" target="1288.HK" weight="0.0" />
-      <edge id="90" source="SAN.MC" target="MS" weight="0.00333889816360601" />
-      <edge id="91" source="SAN.MC" target="RY.TO" weight="0.0" />
-      <edge id="92" source="SAN.MC" target="RBS.L" weight="0.0" />
-      <edge id="93" source="SAN.MC" target="SAN.MC" weight="0.0" />
-      <edge id="94" source="SAN.MC" target="GLE.PA" weight="0.0" />
-      <edge id="95" source="SAN.MC" target="STAN.L" weight="0.0" />
-      <edge id="96" source="SAN.MC" target="STT" weight="0.0470756062767475" />
-      <edge id="97" source="SAN.MC" target="8316.T" weight="0.00341296928327645" />
-      <edge id="98" source="SAN.MC" target="UBSG.VX" weight="0.0221703617269545" />
-      <edge id="99" source="SAN.MC" target="UCG.MI" weight="0.0" />
-      <edge id="100" source="SAN.MC" target="BK" weight="0.0355191256830601" />
-      <edge id="101" source="SAN.MC" target="CSGN.VX" weight="0.0138728323699422" />
-      <edge id="102" source="SAN.MC" target="ACA.PA" weight="0.0" />
-      <edge id="103" source="SAN.MC" target="INGA.AS" weight="0.1" />
-      <edge id="104" source="SAN.MC" target="8411.T" weight="0.0" />
-      <edge id="105" source="SAN.MC" target="NDA-SEK.ST" weight="0.010752688172043" />
-      <edge id="106" source="SAN.MC" target="BAC" weight="0.0" />
-      <edge id="107" source="SAN.MC" target="JPM" weight="0.0164808531265148" />
-      <edge id="108" source="SAN.MC" target="C" weight="0.0" />
-      <edge id="109" source="SAN.MC" target="DBK.DE" weight="0.0496350364963504" />
-      <edge id="110" source="SAN.MC" target="HSBA.L" weight="0.0186757215619694" />
-      <edge id="111" source="SAN.MC" target="3988.HK" weight="0.0" />
-      <edge id="112" source="SAN.MC" target="BARC.L" weight="0.0" />
-      <edge id="113" source="SAN.MC" target="BNP.PA" weight="0.123893805309734" />
-      <edge id="114" source="SAN.MC" target="0939.HK" weight="0.0" />
-      <edge id="115" source="SAN.MC" target="GS" weight="0.0149812734082397" />
-      <edge id="116" source="SAN.MC" target="1398.HK" weight="0.0" />
-      <edge id="117" source="SAN.MC" target="8306.T" weight="0.000725163161711385" />
-      <edge id="118" source="SAN.MC" target="WFC" weight="0.0" />
-      <edge id="119" source="SAN.MC" target="1288.HK" weight="0.0" />
-      <edge id="120" source="GLE.PA" target="MS" weight="0.00500834724540901" />
-      <edge id="121" source="GLE.PA" target="RY.TO" weight="0.0" />
-      <edge id="122" source="GLE.PA" target="RBS.L" weight="0.0" />
-      <edge id="123" source="GLE.PA" target="SAN.MC" weight="0.0769230769230769" />
-      <edge id="124" source="GLE.PA" target="GLE.PA" weight="0.0" />
-      <edge id="125" source="GLE.PA" target="STAN.L" weight="0.0" />
-      <edge id="126" source="GLE.PA" target="STT" weight="0.0534950071326676" />
-      <edge id="127" source="GLE.PA" target="8316.T" weight="0.00341296928327645" />
-      <edge id="128" source="GLE.PA" target="UBSG.VX" weight="0.02975495915986" />
-      <edge id="129" source="GLE.PA" target="UCG.MI" weight="0.0" />
-      <edge id="130" source="GLE.PA" target="BK" weight="0.00455373406193078" />
-      <edge id="131" source="GLE.PA" target="CSGN.VX" weight="0.015028901734104" />
-      <edge id="132" source="GLE.PA" target="ACA.PA" weight="0.0" />
-      <edge id="133" source="GLE.PA" target="INGA.AS" weight="0.1" />
-      <edge id="134" source="GLE.PA" target="8411.T" weight="0.0" />
-      <edge id="135" source="GLE.PA" target="NDA-SEK.ST" weight="0.0053763440860215" />
-      <edge id="136" source="GLE.PA" target="BAC" weight="0.0" />
-      <edge id="137" source="GLE.PA" target="JPM" weight="0.00290838584585555" />
-      <edge id="138" source="GLE.PA" target="C" weight="0.0" />
-      <edge id="139" source="GLE.PA" target="DBK.DE" weight="0.0437956204379562" />
-      <edge id="140" source="GLE.PA" target="HSBA.L" weight="0.0475382003395586" />
-      <edge id="141" source="GLE.PA" target="3988.HK" weight="0.0" />
-      <edge id="142" source="GLE.PA" target="BARC.L" weight="0.00613496932515337" />
-      <edge id="143" source="GLE.PA" target="BNP.PA" weight="0.200589970501475" />
-      <edge id="144" source="GLE.PA" target="0939.HK" weight="0.0" />
-      <edge id="145" source="GLE.PA" target="GS" weight="0.0162297128589263" />
-      <edge id="146" source="GLE.PA" target="1398.HK" weight="0.0" />
-      <edge id="147" source="GLE.PA" target="8306.T" weight="0.000725163161711385" />
-      <edge id="148" source="GLE.PA" target="WFC" weight="0.0" />
-      <edge id="149" source="GLE.PA" target="1288.HK" weight="0.0" />
-      <edge id="150" source="STAN.L" target="MS" weight="0.0" />
-      <edge id="151" source="STAN.L" target="RY.TO" weight="0.0145454545454545" />
-      <edge id="152" source="STAN.L" target="RBS.L" weight="0.0" />
-      <edge id="153" source="STAN.L" target="SAN.MC" weight="0.474358974358974" />
-      <edge id="154" source="STAN.L" target="GLE.PA" weight="0.139784946236559" />
-      <edge id="155" source="STAN.L" target="STAN.L" weight="0.0" />
-      <edge id="156" source="STAN.L" target="STT" weight="0.0791726105563481" />
-      <edge id="157" source="STAN.L" target="8316.T" weight="0.0136518771331058" />
-      <edge id="158" source="STAN.L" target="UBSG.VX" weight="0.02975495915986" />
-      <edge id="159" source="STAN.L" target="UCG.MI" weight="1.0" />
-      <edge id="160" source="STAN.L" target="BK" weight="0.0828779599271403" />
-      <edge id="161" source="STAN.L" target="CSGN.VX" weight="0.0242774566473988" />
-      <edge id="162" source="STAN.L" target="ACA.PA" weight="0.0" />
-      <edge id="163" source="STAN.L" target="INGA.AS" weight="0.0666666666666667" />
-      <edge id="164" source="STAN.L" target="8411.T" weight="0.424242424242424" />
-      <edge id="165" source="STAN.L" target="NDA-SEK.ST" weight="0.0" />
-      <edge id="166" source="STAN.L" target="BAC" weight="0.0" />
-      <edge id="167" source="STAN.L" target="JPM" weight="0.0668928744546777" />
-      <edge id="168" source="STAN.L" target="C" weight="0.0859375" />
-      <edge id="169" source="STAN.L" target="DBK.DE" weight="0.0102189781021898" />
-      <edge id="170" source="STAN.L" target="HSBA.L" weight="0.0611205432937182" />
-      <edge id="171" source="STAN.L" target="3988.HK" weight="0.0" />
-      <edge id="172" source="STAN.L" target="BARC.L" weight="0.0" />
-      <edge id="173" source="STAN.L" target="BNP.PA" weight="0.0752212389380531" />
-      <edge id="174" source="STAN.L" target="0939.HK" weight="0.0" />
-      <edge id="175" source="STAN.L" target="GS" weight="0.0149812734082397" />
-      <edge id="176" source="STAN.L" target="1398.HK" weight="0.0" />
-      <edge id="177" source="STAN.L" target="8306.T" weight="0.000362581580855692" />
-      <edge id="178" source="STAN.L" target="WFC" weight="0.00378787878787879" />
-      <edge id="179" source="STAN.L" target="1288.HK" weight="0.0" />
-      <edge id="180" source="STT" target="MS" weight="0.0517529215358932" />
-      <edge id="181" source="STT" target="RY.TO" weight="0.0836363636363636" />
-      <edge id="182" source="STT" target="RBS.L" weight="0.0" />
-      <edge id="183" source="STT" target="SAN.MC" weight="0.0" />
-      <edge id="184" source="STT" target="GLE.PA" weight="0.021505376344086" />
-      <edge id="185" source="STT" target="STAN.L" weight="0.0" />
-      <edge id="186" source="STT" target="STT" weight="0.0" />
-      <edge id="187" source="STT" target="8316.T" weight="0.00341296928327645" />
-      <edge id="188" source="STT" target="UBSG.VX" weight="0.0367561260210035" />
-      <edge id="189" source="STT" target="UCG.MI" weight="0.0" />
-      <edge id="190" source="STT" target="BK" weight="0.0865209471766849" />
-      <edge id="191" source="STT" target="CSGN.VX" weight="0.0312138728323699" />
-      <edge id="192" source="STT" target="ACA.PA" weight="0.0" />
-      <edge id="193" source="STT" target="INGA.AS" weight="0.0" />
-      <edge id="194" source="STT" target="8411.T" weight="0.0" />
-      <edge id="195" source="STT" target="NDA-SEK.ST" weight="0.032258064516129" />
-      <edge id="196" source="STT" target="BAC" weight="0.068359375" />
-      <edge id="197" source="STT" target="JPM" weight="0.0465341735336888" />
-      <edge id="198" source="STT" target="C" weight="0.0078125" />
-      <edge id="199" source="STT" target="DBK.DE" weight="0.0437956204379562" />
-      <edge id="200" source="STT" target="HSBA.L" weight="0.0305602716468591" />
-      <edge id="201" source="STT" target="3988.HK" weight="0.0" />
-      <edge id="202" source="STT" target="BARC.L" weight="0.116564417177914" />
-      <edge id="203" source="STT" target="BNP.PA" weight="0.0162241887905605" />
-      <edge id="204" source="STT" target="0939.HK" weight="0.0" />
-      <edge id="205" source="STT" target="GS" weight="0.146067415730337" />
-      <edge id="206" source="STT" target="1398.HK" weight="0.0" />
-      <edge id="207" source="STT" target="8306.T" weight="0.00833937635968092" />
-      <edge id="208" source="STT" target="WFC" weight="0.106060606060606" />
-      <edge id="209" source="STT" target="1288.HK" weight="0.0" />
-      <edge id="210" source="8316.T" target="MS" weight="0.0200333889816361" />
-      <edge id="211" source="8316.T" target="RY.TO" weight="0.0254545454545455" />
-      <edge id="212" source="8316.T" target="RBS.L" weight="0.0" />
-      <edge id="213" source="8316.T" target="SAN.MC" weight="0.0" />
-      <edge id="214" source="8316.T" target="GLE.PA" weight="0.0" />
-      <edge id="215" source="8316.T" target="STAN.L" weight="0.0" />
-      <edge id="216" source="8316.T" target="STT" weight="0.0242510699001427" />
-      <edge id="217" source="8316.T" target="8316.T" weight="0.0" />
-      <edge id="218" source="8316.T" target="UBSG.VX" weight="0.00991831971995333" />
-      <edge id="219" source="8316.T" target="UCG.MI" weight="0.0" />
-      <edge id="220" source="8316.T" target="BK" weight="0.0455373406193078" />
-      <edge id="221" source="8316.T" target="CSGN.VX" weight="0.0104046242774566" />
-      <edge id="222" source="8316.T" target="ACA.PA" weight="0.0" />
-      <edge id="223" source="8316.T" target="INGA.AS" weight="0.0333333333333333" />
-      <edge id="224" source="8316.T" target="8411.T" weight="0.0" />
-      <edge id="225" source="8316.T" target="NDA-SEK.ST" weight="0.043010752688172" />
-      <edge id="226" source="8316.T" target="BAC" weight="0.0" />
-      <edge id="227" source="8316.T" target="JPM" weight="0.0266602035870092" />
-      <edge id="228" source="8316.T" target="C" weight="0.0" />
-      <edge id="229" source="8316.T" target="DBK.DE" weight="0.0072992700729927" />
-      <edge id="230" source="8316.T" target="HSBA.L" weight="0.0118845500848896" />
-      <edge id="231" source="8316.T" target="3988.HK" weight="0.0" />
-      <edge id="232" source="8316.T" target="BARC.L" weight="0.0" />
-      <edge id="233" source="8316.T" target="BNP.PA" weight="0.00884955752212389" />
-      <edge id="234" source="8316.T" target="0939.HK" weight="0.0" />
-      <edge id="235" source="8316.T" target="GS" weight="0.0199750312109863" />
-      <edge id="236" source="8316.T" target="1398.HK" weight="0.0" />
-      <edge id="237" source="8316.T" target="8306.T" weight="0.0181290790427846" />
-      <edge id="238" source="8316.T" target="WFC" weight="0.0" />
-      <edge id="239" source="8316.T" target="1288.HK" weight="0.0" />
-      <edge id="240" source="UBSG.VX" target="MS" weight="0.0350584307178631" />
-      <edge id="241" source="UBSG.VX" target="RY.TO" weight="0.0218181818181818" />
-      <edge id="242" source="UBSG.VX" target="RBS.L" weight="0.0" />
-      <edge id="243" source="UBSG.VX" target="SAN.MC" weight="0.0" />
-      <edge id="244" source="UBSG.VX" target="GLE.PA" weight="0.0" />
-      <edge id="245" source="UBSG.VX" target="STAN.L" weight="0.0" />
-      <edge id="246" source="UBSG.VX" target="STT" weight="0.0278174037089872" />
-      <edge id="247" source="UBSG.VX" target="8316.T" weight="0.00170648464163823" />
-      <edge id="248" source="UBSG.VX" target="UBSG.VX" weight="0.0" />
-      <edge id="249" source="UBSG.VX" target="UCG.MI" weight="0.0" />
-      <edge id="250" source="UBSG.VX" target="BK" weight="0.0227686703096539" />
-      <edge id="251" source="UBSG.VX" target="CSGN.VX" weight="0.411560693641618" />
-      <edge id="252" source="UBSG.VX" target="ACA.PA" weight="0.0" />
-      <edge id="253" source="UBSG.VX" target="INGA.AS" weight="0.0" />
-      <edge id="254" source="UBSG.VX" target="8411.T" weight="0.0" />
-      <edge id="255" source="UBSG.VX" target="NDA-SEK.ST" weight="0.0" />
-      <edge id="256" source="UBSG.VX" target="BAC" weight="0.03515625" />
-      <edge id="257" source="UBSG.VX" target="JPM" weight="0.0479883664566166" />
-      <edge id="258" source="UBSG.VX" target="C" weight="0.125" />
-      <edge id="259" source="UBSG.VX" target="DBK.DE" weight="0.0700729927007299" />
-      <edge id="260" source="UBSG.VX" target="HSBA.L" weight="0.0373514431239389" />
-      <edge id="261" source="UBSG.VX" target="3988.HK" weight="0.0" />
-      <edge id="262" source="UBSG.VX" target="BARC.L" weight="0.0" />
-      <edge id="263" source="UBSG.VX" target="BNP.PA" weight="0.00294985250737463" />
-      <edge id="264" source="UBSG.VX" target="0939.HK" weight="0.0" />
-      <edge id="265" source="UBSG.VX" target="GS" weight="0.0511860174781523" />
-      <edge id="266" source="UBSG.VX" target="1398.HK" weight="0.0" />
-      <edge id="267" source="UBSG.VX" target="8306.T" weight="0.0" />
-      <edge id="268" source="UBSG.VX" target="WFC" weight="0.0606060606060606" />
-      <edge id="269" source="UBSG.VX" target="1288.HK" weight="0.0" />
-      <edge id="270" source="UCG.MI" target="MS" weight="0.001669449081803" />
-      <edge id="271" source="UCG.MI" target="RY.TO" weight="0.0" />
-      <edge id="272" source="UCG.MI" target="RBS.L" weight="0.0" />
-      <edge id="273" source="UCG.MI" target="SAN.MC" weight="0.00641025641025641" />
-      <edge id="274" source="UCG.MI" target="GLE.PA" weight="0.021505376344086" />
-      <edge id="275" source="UCG.MI" target="STAN.L" weight="0.0" />
-      <edge id="276" source="UCG.MI" target="STT" weight="0.0263908701854494" />
-      <edge id="277" source="UCG.MI" target="8316.T" weight="0.00170648464163823" />
-      <edge id="278" source="UCG.MI" target="UBSG.VX" weight="0.0180863477246208" />
-      <edge id="279" source="UCG.MI" target="UCG.MI" weight="0.0" />
-      <edge id="280" source="UCG.MI" target="BK" weight="0.00182149362477231" />
-      <edge id="281" source="UCG.MI" target="CSGN.VX" weight="0.0138728323699422" />
-      <edge id="282" source="UCG.MI" target="ACA.PA" weight="0.0" />
-      <edge id="283" source="UCG.MI" target="INGA.AS" weight="0.0666666666666667" />
-      <edge id="284" source="UCG.MI" target="8411.T" weight="0.0" />
-      <edge id="285" source="UCG.MI" target="NDA-SEK.ST" weight="0.010752688172043" />
-      <edge id="286" source="UCG.MI" target="BAC" weight="0.0" />
-      <edge id="287" source="UCG.MI" target="JPM" weight="0.0261754726127" />
-      <edge id="288" source="UCG.MI" target="C" weight="0.0" />
-      <edge id="289" source="UCG.MI" target="DBK.DE" weight="0.0072992700729927" />
-      <edge id="290" source="UCG.MI" target="HSBA.L" weight="0.0356536502546689" />
-      <edge id="291" source="UCG.MI" target="3988.HK" weight="0.0" />
-      <edge id="292" source="UCG.MI" target="BARC.L" weight="0.0" />
-      <edge id="293" source="UCG.MI" target="BNP.PA" weight="0.0117994100294985" />
-      <edge id="294" source="UCG.MI" target="0939.HK" weight="0.0" />
-      <edge id="295" source="UCG.MI" target="GS" weight="0.00499375780274657" />
-      <edge id="296" source="UCG.MI" target="1398.HK" weight="0.0" />
-      <edge id="297" source="UCG.MI" target="8306.T" weight="0.000362581580855692" />
-      <edge id="298" source="UCG.MI" target="WFC" weight="0.0" />
-      <edge id="299" source="UCG.MI" target="1288.HK" weight="0.0" />
-      <edge id="300" source="BK" target="MS" weight="0.0851419031719532" />
-      <edge id="301" source="BK" target="RY.TO" weight="0.0472727272727273" />
-      <edge id="302" source="BK" target="RBS.L" weight="0.0" />
-      <edge id="303" source="BK" target="SAN.MC" weight="0.0" />
-      <edge id="304" source="BK" target="GLE.PA" weight="0.021505376344086" />
-      <edge id="305" source="BK" target="STAN.L" weight="0.0" />
-      <edge id="306" source="BK" target="STT" weight="0.00784593437945792" />
-      <edge id="307" source="BK" target="8316.T" weight="0.00341296928327645" />
-      <edge id="308" source="BK" target="UBSG.VX" weight="0.0449241540256709" />
-      <edge id="309" source="BK" target="UCG.MI" weight="0.0" />
-      <edge id="310" source="BK" target="BK" weight="0.0" />
-      <edge id="311" source="BK" target="CSGN.VX" weight="0.0289017341040462" />
-      <edge id="312" source="BK" target="ACA.PA" weight="0.0" />
-      <edge id="313" source="BK" target="INGA.AS" weight="0.0166666666666667" />
-      <edge id="314" source="BK" target="8411.T" weight="0.0" />
-      <edge id="315" source="BK" target="NDA-SEK.ST" weight="0.10752688172043" />
-      <edge id="316" source="BK" target="BAC" weight="0.03515625" />
-      <edge id="317" source="BK" target="JPM" weight="0.0397479398933592" />
-      <edge id="318" source="BK" target="C" weight="0.0546875" />
-      <edge id="319" source="BK" target="DBK.DE" weight="0.0715328467153284" />
-      <edge id="320" source="BK" target="HSBA.L" weight="0.0186757215619694" />
-      <edge id="321" source="BK" target="3988.HK" weight="0.0" />
-      <edge id="322" source="BK" target="BARC.L" weight="0.110429447852761" />
-      <edge id="323" source="BK" target="BNP.PA" weight="0.00884955752212389" />
-      <edge id="324" source="BK" target="0939.HK" weight="0.0" />
-      <edge id="325" source="BK" target="GS" weight="0.0898876404494382" />
-      <edge id="326" source="BK" target="1398.HK" weight="0.0" />
-      <edge id="327" source="BK" target="8306.T" weight="0.00797679477882523" />
-      <edge id="328" source="BK" target="WFC" weight="0.0643939393939394" />
-      <edge id="329" source="BK" target="1288.HK" weight="0.0" />
-      <edge id="330" source="CSGN.VX" target="MS" weight="0.001669449081803" />
-      <edge id="331" source="CSGN.VX" target="RY.TO" weight="0.0" />
-      <edge id="332" source="CSGN.VX" target="RBS.L" weight="0.0" />
-      <edge id="333" source="CSGN.VX" target="SAN.MC" weight="0.0" />
-      <edge id="334" source="CSGN.VX" target="GLE.PA" weight="0.0" />
-      <edge id="335" source="CSGN.VX" target="STAN.L" weight="0.0" />
-      <edge id="336" source="CSGN.VX" target="STT" weight="0.0378031383737518" />
-      <edge id="337" source="CSGN.VX" target="8316.T" weight="0.00170648464163823" />
-      <edge id="338" source="CSGN.VX" target="UBSG.VX" weight="0.101516919486581" />
-      <edge id="339" source="CSGN.VX" target="UCG.MI" weight="0.0" />
-      <edge id="340" source="CSGN.VX" target="BK" weight="0.00364298724954463" />
-      <edge id="341" source="CSGN.VX" target="CSGN.VX" weight="0.0" />
-      <edge id="342" source="CSGN.VX" target="ACA.PA" weight="0.0" />
-      <edge id="343" source="CSGN.VX" target="INGA.AS" weight="0.0" />
-      <edge id="344" source="CSGN.VX" target="8411.T" weight="0.0" />
-      <edge id="345" source="CSGN.VX" target="NDA-SEK.ST" weight="0.021505376344086" />
-      <edge id="346" source="CSGN.VX" target="BAC" weight="0.0" />
-      <edge id="347" source="CSGN.VX" target="JPM" weight="0.0222976248182259" />
-      <edge id="348" source="CSGN.VX" target="C" weight="0.0" />
-      <edge id="349" source="CSGN.VX" target="DBK.DE" weight="0.0102189781021898" />
-      <edge id="350" source="CSGN.VX" target="HSBA.L" weight="0.0067911714770798" />
-      <edge id="351" source="CSGN.VX" target="3988.HK" weight="0.0" />
-      <edge id="352" source="CSGN.VX" target="BARC.L" weight="0.0" />
-      <edge id="353" source="CSGN.VX" target="BNP.PA" weight="0.00589970501474926" />
-      <edge id="354" source="CSGN.VX" target="0939.HK" weight="0.0" />
-      <edge id="355" source="CSGN.VX" target="GS" weight="0.00499375780274657" />
-      <edge id="356" source="CSGN.VX" target="1398.HK" weight="0.0" />
-      <edge id="357" source="CSGN.VX" target="8306.T" weight="0.000362581580855692" />
-      <edge id="358" source="CSGN.VX" target="WFC" weight="0.0" />
-      <edge id="359" source="CSGN.VX" target="1288.HK" weight="0.0" />
-      <edge id="360" source="ACA.PA" target="MS" weight="0.0" />
-      <edge id="361" source="ACA.PA" target="RY.TO" weight="0.0" />
-      <edge id="362" source="ACA.PA" target="RBS.L" weight="0.0" />
-      <edge id="363" source="ACA.PA" target="SAN.MC" weight="0.0" />
-      <edge id="364" source="ACA.PA" target="GLE.PA" weight="0.0967741935483871" />
-      <edge id="365" source="ACA.PA" target="STAN.L" weight="0.0" />
-      <edge id="366" source="ACA.PA" target="STT" weight="0.0106990014265335" />
-      <edge id="367" source="ACA.PA" target="8316.T" weight="0.00170648464163823" />
-      <edge id="368" source="ACA.PA" target="UBSG.VX" weight="0.0157526254375729" />
-      <edge id="369" source="ACA.PA" target="UCG.MI" weight="0.0" />
-      <edge id="370" source="ACA.PA" target="BK" weight="0.00273224043715847" />
-      <edge id="371" source="ACA.PA" target="CSGN.VX" weight="0.0069364161849711" />
-      <edge id="372" source="ACA.PA" target="ACA.PA" weight="0.0" />
-      <edge id="373" source="ACA.PA" target="INGA.AS" weight="0.0" />
-      <edge id="374" source="ACA.PA" target="8411.T" weight="0.0" />
-      <edge id="375" source="ACA.PA" target="NDA-SEK.ST" weight="0.0053763440860215" />
-      <edge id="376" source="ACA.PA" target="BAC" weight="0.0" />
-      <edge id="377" source="ACA.PA" target="JPM" weight="0.0184197770237518" />
-      <edge id="378" source="ACA.PA" target="C" weight="0.0" />
-      <edge id="379" source="ACA.PA" target="DBK.DE" weight="0.00437956204379562" />
-      <edge id="380" source="ACA.PA" target="HSBA.L" weight="0.0237691001697793" />
-      <edge id="381" source="ACA.PA" target="3988.HK" weight="0.0" />
-      <edge id="382" source="ACA.PA" target="BARC.L" weight="0.00613496932515337" />
-      <edge id="383" source="ACA.PA" target="BNP.PA" weight="0.0398230088495575" />
-      <edge id="384" source="ACA.PA" target="0939.HK" weight="0.0" />
-      <edge id="385" source="ACA.PA" target="GS" weight="0.00124843945068664" />
-      <edge id="386" source="ACA.PA" target="1398.HK" weight="0.0" />
-      <edge id="387" source="ACA.PA" target="8306.T" weight="0.000725163161711385" />
-      <edge id="388" source="ACA.PA" target="WFC" weight="0.0" />
-      <edge id="389" source="ACA.PA" target="1288.HK" weight="0.0" />
-      <edge id="390" source="INGA.AS" target="MS" weight="0.0283806343906511" />
-      <edge id="391" source="INGA.AS" target="RY.TO" weight="0.0290909090909091" />
-      <edge id="392" source="INGA.AS" target="RBS.L" weight="0.0" />
-      <edge id="393" source="INGA.AS" target="SAN.MC" weight="0.0705128205128205" />
-      <edge id="394" source="INGA.AS" target="GLE.PA" weight="0.021505376344086" />
-      <edge id="395" source="INGA.AS" target="STAN.L" weight="0.0" />
-      <edge id="396" source="INGA.AS" target="STT" weight="0.0456490727532097" />
-      <edge id="397" source="INGA.AS" target="8316.T" weight="0.00341296928327645" />
-      <edge id="398" source="INGA.AS" target="UBSG.VX" weight="0.0338389731621937" />
-      <edge id="399" source="INGA.AS" target="UCG.MI" weight="0.0" />
-      <edge id="400" source="INGA.AS" target="BK" weight="0.00455373406193078" />
-      <edge id="401" source="INGA.AS" target="CSGN.VX" weight="0.015028901734104" />
-      <edge id="402" source="INGA.AS" target="ACA.PA" weight="0.0" />
-      <edge id="403" source="INGA.AS" target="INGA.AS" weight="0.0" />
-      <edge id="404" source="INGA.AS" target="8411.T" weight="0.0" />
-      <edge id="405" source="INGA.AS" target="NDA-SEK.ST" weight="0.0268817204301075" />
-      <edge id="406" source="INGA.AS" target="BAC" weight="0.0" />
-      <edge id="407" source="INGA.AS" target="JPM" weight="0.0659234125060592" />
-      <edge id="408" source="INGA.AS" target="C" weight="0.0" />
-      <edge id="409" source="INGA.AS" target="DBK.DE" weight="0.147445255474453" />
-      <edge id="410" source="INGA.AS" target="HSBA.L" weight="0.0288624787775891" />
-      <edge id="411" source="INGA.AS" target="3988.HK" weight="0.0" />
-      <edge id="412" source="INGA.AS" target="BARC.L" weight="0.00613496932515337" />
-      <edge id="413" source="INGA.AS" target="BNP.PA" weight="0.196165191740413" />
-      <edge id="414" source="INGA.AS" target="0939.HK" weight="0.0" />
-      <edge id="415" source="INGA.AS" target="GS" weight="0.00499375780274657" />
-      <edge id="416" source="INGA.AS" target="1398.HK" weight="0.0" />
-      <edge id="417" source="INGA.AS" target="8306.T" weight="0.000362581580855692" />
-      <edge id="418" source="INGA.AS" target="WFC" weight="0.0" />
-      <edge id="419" source="INGA.AS" target="1288.HK" weight="0.0" />
-      <edge id="420" source="8411.T" target="MS" weight="0.013355592654424" />
-      <edge id="421" source="8411.T" target="RY.TO" weight="0.0290909090909091" />
-      <edge id="422" source="8411.T" target="RBS.L" weight="0.0" />
-      <edge id="423" source="8411.T" target="SAN.MC" weight="0.0" />
-      <edge id="424" source="8411.T" target="GLE.PA" weight="0.0" />
-      <edge id="425" source="8411.T" target="STAN.L" weight="0.0" />
-      <edge id="426" source="8411.T" target="STT" weight="0.0192582025677603" />
-      <edge id="427" source="8411.T" target="8316.T" weight="0.83617747440273" />
-      <edge id="428" source="8411.T" target="UBSG.VX" weight="0.00758459743290548" />
-      <edge id="429" source="8411.T" target="UCG.MI" weight="0.0" />
-      <edge id="430" source="8411.T" target="BK" weight="0.0382513661202186" />
-      <edge id="431" source="8411.T" target="CSGN.VX" weight="0.0104046242774566" />
-      <edge id="432" source="8411.T" target="ACA.PA" weight="0.0" />
-      <edge id="433" source="8411.T" target="INGA.AS" weight="0.0" />
-      <edge id="434" source="8411.T" target="8411.T" weight="0.0" />
-      <edge id="435" source="8411.T" target="NDA-SEK.ST" weight="0.0" />
-      <edge id="436" source="8411.T" target="BAC" weight="0.0" />
-      <edge id="437" source="8411.T" target="JPM" weight="0.000969461948618517" />
-      <edge id="438" source="8411.T" target="C" weight="0.0" />
-      <edge id="439" source="8411.T" target="DBK.DE" weight="0.00437956204379562" />
-      <edge id="440" source="8411.T" target="HSBA.L" weight="0.0118845500848896" />
-      <edge id="441" source="8411.T" target="3988.HK" weight="0.0" />
-      <edge id="442" source="8411.T" target="BARC.L" weight="0.0" />
-      <edge id="443" source="8411.T" target="BNP.PA" weight="0.0117994100294985" />
-      <edge id="444" source="8411.T" target="0939.HK" weight="0.0" />
-      <edge id="445" source="8411.T" target="GS" weight="0.00624219725343321" />
-      <edge id="446" source="8411.T" target="1398.HK" weight="0.0" />
-      <edge id="447" source="8411.T" target="8306.T" weight="0.0174039158810732" />
-      <edge id="448" source="8411.T" target="WFC" weight="0.0" />
-      <edge id="449" source="8411.T" target="1288.HK" weight="0.0" />
-      <edge id="450" source="NDA-SEK.ST" target="MS" weight="0.00834724540901502" />
-      <edge id="451" source="NDA-SEK.ST" target="RY.TO" weight="0.0981818181818182" />
-      <edge id="452" source="NDA-SEK.ST" target="RBS.L" weight="0.0" />
-      <edge id="453" source="NDA-SEK.ST" target="SAN.MC" weight="0.00641025641025641" />
-      <edge id="454" source="NDA-SEK.ST" target="GLE.PA" weight="0.0" />
-      <edge id="455" source="NDA-SEK.ST" target="STAN.L" weight="0.0" />
-      <edge id="456" source="NDA-SEK.ST" target="STT" weight="0.014265335235378" />
-      <edge id="457" source="NDA-SEK.ST" target="8316.T" weight="0.00170648464163823" />
-      <edge id="458" source="NDA-SEK.ST" target="UBSG.VX" weight="0.0373395565927655" />
-      <edge id="459" source="NDA-SEK.ST" target="UCG.MI" weight="0.0" />
-      <edge id="460" source="NDA-SEK.ST" target="BK" weight="0.0063752276867031" />
-      <edge id="461" source="NDA-SEK.ST" target="CSGN.VX" weight="0.00578034682080925" />
-      <edge id="462" source="NDA-SEK.ST" target="ACA.PA" weight="0.0" />
-      <edge id="463" source="NDA-SEK.ST" target="INGA.AS" weight="0.0" />
-      <edge id="464" source="NDA-SEK.ST" target="8411.T" weight="0.0" />
-      <edge id="465" source="NDA-SEK.ST" target="NDA-SEK.ST" weight="0.0" />
-      <edge id="466" source="NDA-SEK.ST" target="BAC" weight="0.0" />
-      <edge id="467" source="NDA-SEK.ST" target="JPM" weight="0.0126030053320407" />
-      <edge id="468" source="NDA-SEK.ST" target="C" weight="0.0" />
-      <edge id="469" source="NDA-SEK.ST" target="DBK.DE" weight="0.0233576642335766" />
-      <edge id="470" source="NDA-SEK.ST" target="HSBA.L" weight="0.00509337860780985" />
-      <edge id="471" source="NDA-SEK.ST" target="3988.HK" weight="0.0" />
-      <edge id="472" source="NDA-SEK.ST" target="BARC.L" weight="0.0" />
-      <edge id="473" source="NDA-SEK.ST" target="BNP.PA" weight="0.0442477876106195" />
-      <edge id="474" source="NDA-SEK.ST" target="0939.HK" weight="0.0" />
-      <edge id="475" source="NDA-SEK.ST" target="GS" weight="0.00249687890137328" />
-      <edge id="476" source="NDA-SEK.ST" target="1398.HK" weight="0.0" />
-      <edge id="477" source="NDA-SEK.ST" target="8306.T" weight="0.000362581580855692" />
-      <edge id="478" source="NDA-SEK.ST" target="WFC" weight="0.0" />
-      <edge id="479" source="NDA-SEK.ST" target="1288.HK" weight="0.0" />
-      <edge id="480" source="BAC" target="MS" weight="0.0934891485809683" />
-      <edge id="481" source="BAC" target="RY.TO" weight="0.112727272727273" />
-      <edge id="482" source="BAC" target="RBS.L" weight="0.0" />
-      <edge id="483" source="BAC" target="SAN.MC" weight="0.00641025641025641" />
-      <edge id="484" source="BAC" target="GLE.PA" weight="0.043010752688172" />
-      <edge id="485" source="BAC" target="STAN.L" weight="0.0" />
-      <edge id="486" source="BAC" target="STT" weight="0.00927246790299572" />
-      <edge id="487" source="BAC" target="8316.T" weight="0.00341296928327645" />
-      <edge id="488" source="BAC" target="UBSG.VX" weight="0.0396732788798133" />
-      <edge id="489" source="BAC" target="UCG.MI" weight="0.0" />
-      <edge id="490" source="BAC" target="BK" weight="0.0810564663023679" />
-      <edge id="491" source="BAC" target="CSGN.VX" weight="0.0289017341040462" />
-      <edge id="492" source="BAC" target="ACA.PA" weight="0.0" />
-      <edge id="493" source="BAC" target="INGA.AS" weight="0.25" />
-      <edge id="494" source="BAC" target="8411.T" weight="0.0" />
-      <edge id="495" source="BAC" target="NDA-SEK.ST" weight="0.032258064516129" />
-      <edge id="496" source="BAC" target="BAC" weight="0.0" />
-      <edge id="497" source="BAC" target="JPM" weight="0.086282113427048" />
-      <edge id="498" source="BAC" target="C" weight="0.0546875" />
-      <edge id="499" source="BAC" target="DBK.DE" weight="0.0437956204379562" />
-      <edge id="500" source="BAC" target="HSBA.L" weight="0.0271646859083192" />
-      <edge id="501" source="BAC" target="3988.HK" weight="0.0" />
-      <edge id="502" source="BAC" target="BARC.L" weight="0.110429447852761" />
-      <edge id="503" source="BAC" target="BNP.PA" weight="0.0103244837758112" />
-      <edge id="504" source="BAC" target="0939.HK" weight="0.0" />
-      <edge id="505" source="BAC" target="GS" weight="0.079900124843945" />
-      <edge id="506" source="BAC" target="1398.HK" weight="0.0" />
-      <edge id="507" source="BAC" target="8306.T" weight="0.00797679477882523" />
-      <edge id="508" source="BAC" target="WFC" weight="0.0833333333333333" />
-      <edge id="509" source="BAC" target="1288.HK" weight="0.0" />
-      <edge id="510" source="JPM" target="MS" weight="0.165275459098497" />
-      <edge id="511" source="JPM" target="RY.TO" weight="0.127272727272727" />
-      <edge id="512" source="JPM" target="RBS.L" weight="0.0" />
-      <edge id="513" source="JPM" target="SAN.MC" weight="0.0128205128205128" />
-      <edge id="514" source="JPM" target="GLE.PA" weight="0.021505376344086" />
-      <edge id="515" source="JPM" target="STAN.L" weight="0.0" />
-      <edge id="516" source="JPM" target="STT" weight="0.00784593437945792" />
-      <edge id="517" source="JPM" target="8316.T" weight="0.00511945392491468" />
-      <edge id="518" source="JPM" target="UBSG.VX" weight="0.058343057176196" />
-      <edge id="519" source="JPM" target="UCG.MI" weight="0.0" />
-      <edge id="520" source="JPM" target="BK" weight="0.0865209471766849" />
-      <edge id="521" source="JPM" target="CSGN.VX" weight="0.0346820809248555" />
-      <edge id="522" source="JPM" target="ACA.PA" weight="0.0" />
-      <edge id="523" source="JPM" target="INGA.AS" weight="0.0333333333333333" />
-      <edge id="524" source="JPM" target="8411.T" weight="0.0" />
-      <edge id="525" source="JPM" target="NDA-SEK.ST" weight="0.102150537634409" />
-      <edge id="526" source="JPM" target="BAC" weight="0.169921875" />
-      <edge id="527" source="JPM" target="JPM" weight="0.0" />
-      <edge id="528" source="JPM" target="C" weight="0.09375" />
-      <edge id="529" source="JPM" target="DBK.DE" weight="0.0554744525547445" />
-      <edge id="530" source="JPM" target="HSBA.L" weight="0.032258064516129" />
-      <edge id="531" source="JPM" target="3988.HK" weight="0.0" />
-      <edge id="532" source="JPM" target="BARC.L" weight="0.116564417177914" />
-      <edge id="533" source="JPM" target="BNP.PA" weight="0.0103244837758112" />
-      <edge id="534" source="JPM" target="0939.HK" weight="0.0" />
-      <edge id="535" source="JPM" target="GS" weight="0.083645443196005" />
-      <edge id="536" source="JPM" target="1398.HK" weight="0.0" />
-      <edge id="537" source="JPM" target="8306.T" weight="0.00833937635968092" />
-      <edge id="538" source="JPM" target="WFC" weight="0.287878787878788" />
-      <edge id="539" source="JPM" target="1288.HK" weight="0.0" />
-      <edge id="540" source="C" target="MS" weight="0.118530884808013" />
-      <edge id="541" source="C" target="RY.TO" weight="0.145454545454545" />
-      <edge id="542" source="C" target="RBS.L" weight="0.0" />
-      <edge id="543" source="C" target="SAN.MC" weight="0.0128205128205128" />
-      <edge id="544" source="C" target="GLE.PA" weight="0.0537634408602151" />
-      <edge id="545" source="C" target="STAN.L" weight="0.0" />
-      <edge id="546" source="C" target="STT" weight="0.00855920114122682" />
-      <edge id="547" source="C" target="8316.T" weight="0.00341296928327645" />
-      <edge id="548" source="C" target="UBSG.VX" weight="0.0344224037339557" />
-      <edge id="549" source="C" target="UCG.MI" weight="0.0" />
-      <edge id="550" source="C" target="BK" weight="0.109289617486339" />
-      <edge id="551" source="C" target="CSGN.VX" weight="0.038150289017341" />
-      <edge id="552" source="C" target="ACA.PA" weight="0.0" />
-      <edge id="553" source="C" target="INGA.AS" weight="0.0333333333333333" />
-      <edge id="554" source="C" target="8411.T" weight="0.0" />
-      <edge id="555" source="C" target="NDA-SEK.ST" weight="0.10752688172043" />
-      <edge id="556" source="C" target="BAC" weight="0.142578125" />
-      <edge id="557" source="C" target="JPM" weight="0.0872515753756665" />
-      <edge id="558" source="C" target="C" weight="0.0" />
-      <edge id="559" source="C" target="DBK.DE" weight="0.0467153284671533" />
-      <edge id="560" source="C" target="HSBA.L" weight="0.0356536502546689" />
-      <edge id="561" source="C" target="3988.HK" weight="0.0" />
-      <edge id="562" source="C" target="BARC.L" weight="0.141104294478528" />
-      <edge id="563" source="C" target="BNP.PA" weight="0.051622418879056" />
-      <edge id="564" source="C" target="0939.HK" weight="0.0" />
-      <edge id="565" source="C" target="GS" weight="0.0823970037453183" />
-      <edge id="566" source="C" target="1398.HK" weight="0.0" />
-      <edge id="567" source="C" target="8306.T" weight="0.00833937635968092" />
-      <edge id="568" source="C" target="WFC" weight="0.178030303030303" />
-      <edge id="569" source="C" target="1288.HK" weight="0.0" />
-      <edge id="570" source="DBK.DE" target="MS" weight="0.00834724540901502" />
-      <edge id="571" source="DBK.DE" target="RY.TO" weight="0.0218181818181818" />
-      <edge id="572" source="DBK.DE" target="RBS.L" weight="0.0" />
-      <edge id="573" source="DBK.DE" target="SAN.MC" weight="0.166666666666667" />
-      <edge id="574" source="DBK.DE" target="GLE.PA" weight="0.021505376344086" />
-      <edge id="575" source="DBK.DE" target="STAN.L" weight="0.0" />
-      <edge id="576" source="DBK.DE" target="STT" weight="0.0770328102710414" />
-      <edge id="577" source="DBK.DE" target="8316.T" weight="0.00170648464163823" />
-      <edge id="578" source="DBK.DE" target="UBSG.VX" weight="0.00116686114352392" />
-      <edge id="579" source="DBK.DE" target="UCG.MI" weight="0.0" />
-      <edge id="580" source="DBK.DE" target="BK" weight="0.0236794171220401" />
-      <edge id="581" source="DBK.DE" target="CSGN.VX" weight="0.0716763005780347" />
-      <edge id="582" source="DBK.DE" target="ACA.PA" weight="1.0" />
-      <edge id="583" source="DBK.DE" target="INGA.AS" weight="0.0" />
-      <edge id="584" source="DBK.DE" target="8411.T" weight="0.0" />
-      <edge id="585" source="DBK.DE" target="NDA-SEK.ST" weight="0.0" />
-      <edge id="586" source="DBK.DE" target="BAC" weight="0.158203125" />
-      <edge id="587" source="DBK.DE" target="JPM" weight="0.0305380513814833" />
-      <edge id="588" source="DBK.DE" target="C" weight="0.2421875" />
-      <edge id="589" source="DBK.DE" target="DBK.DE" weight="0.0" />
-      <edge id="590" source="DBK.DE" target="HSBA.L" weight="0.0882852292020373" />
-      <edge id="591" source="DBK.DE" target="3988.HK" weight="0.0" />
-      <edge id="592" source="DBK.DE" target="BARC.L" weight="0.0245398773006135" />
-      <edge id="593" source="DBK.DE" target="BNP.PA" weight="0.0988200589970501" />
-      <edge id="594" source="DBK.DE" target="0939.HK" weight="0.0" />
-      <edge id="595" source="DBK.DE" target="GS" weight="0.14107365792759" />
-      <edge id="596" source="DBK.DE" target="1398.HK" weight="0.0" />
-      <edge id="597" source="DBK.DE" target="8306.T" weight="0.0" />
-      <edge id="598" source="DBK.DE" target="WFC" weight="0.0" />
-      <edge id="599" source="DBK.DE" target="1288.HK" weight="0.0" />
-      <edge id="600" source="HSBA.L" target="MS" weight="0.0" />
-      <edge id="601" source="HSBA.L" target="RY.TO" weight="0.0" />
-      <edge id="602" source="HSBA.L" target="RBS.L" weight="0.0" />
-      <edge id="603" source="HSBA.L" target="SAN.MC" weight="0.0192307692307692" />
-      <edge id="604" source="HSBA.L" target="GLE.PA" weight="0.172043010752688" />
-      <edge id="605" source="HSBA.L" target="STAN.L" weight="0.8" />
-      <edge id="606" source="HSBA.L" target="STT" weight="0.072039942938659" />
-      <edge id="607" source="HSBA.L" target="8316.T" weight="0.0136518771331058" />
-      <edge id="608" source="HSBA.L" target="UBSG.VX" weight="0.0536756126021003" />
-      <edge id="609" source="HSBA.L" target="UCG.MI" weight="0.0" />
-      <edge id="610" source="HSBA.L" target="BK" weight="0.017304189435337" />
-      <edge id="611" source="HSBA.L" target="CSGN.VX" weight="0.0208092485549133" />
-      <edge id="612" source="HSBA.L" target="ACA.PA" weight="0.0" />
-      <edge id="613" source="HSBA.L" target="INGA.AS" weight="0.0166666666666667" />
-      <edge id="614" source="HSBA.L" target="8411.T" weight="0.424242424242424" />
-      <edge id="615" source="HSBA.L" target="NDA-SEK.ST" weight="0.010752688172043" />
-      <edge id="616" source="HSBA.L" target="BAC" weight="0.0" />
-      <edge id="617" source="HSBA.L" target="JPM" weight="0.0290838584585555" />
-      <edge id="618" source="HSBA.L" target="C" weight="0.015625" />
-      <edge id="619" source="HSBA.L" target="DBK.DE" weight="0.0116788321167883" />
-      <edge id="620" source="HSBA.L" target="HSBA.L" weight="0.0" />
-      <edge id="621" source="HSBA.L" target="3988.HK" weight="0.0" />
-      <edge id="622" source="HSBA.L" target="BARC.L" weight="0.00613496932515337" />
-      <edge id="623" source="HSBA.L" target="BNP.PA" weight="0.0176991150442478" />
-      <edge id="624" source="HSBA.L" target="0939.HK" weight="0.0" />
-      <edge id="625" source="HSBA.L" target="GS" weight="0.00499375780274657" />
-      <edge id="626" source="HSBA.L" target="1398.HK" weight="0.0" />
-      <edge id="627" source="HSBA.L" target="8306.T" weight="0.000362581580855692" />
-      <edge id="628" source="HSBA.L" target="WFC" weight="0.00378787878787879" />
-      <edge id="629" source="HSBA.L" target="1288.HK" weight="0.0" />
-      <edge id="630" source="3988.HK" target="MS" weight="0.0417362270450751" />
-      <edge id="631" source="3988.HK" target="RY.TO" weight="0.0" />
-      <edge id="632" source="3988.HK" target="RBS.L" weight="0.0" />
-      <edge id="633" source="3988.HK" target="SAN.MC" weight="0.0" />
-      <edge id="634" source="3988.HK" target="GLE.PA" weight="0.0" />
-      <edge id="635" source="3988.HK" target="STAN.L" weight="0.0" />
-      <edge id="636" source="3988.HK" target="STT" weight="0.0784593437945792" />
-      <edge id="637" source="3988.HK" target="8316.T" weight="0.00341296928327645" />
-      <edge id="638" source="3988.HK" target="UBSG.VX" weight="0.00933488914819136" />
-      <edge id="639" source="3988.HK" target="UCG.MI" weight="0.0" />
-      <edge id="640" source="3988.HK" target="BK" weight="0.0300546448087432" />
-      <edge id="641" source="3988.HK" target="CSGN.VX" weight="0.0173410404624277" />
-      <edge id="642" source="3988.HK" target="ACA.PA" weight="0.0" />
-      <edge id="643" source="3988.HK" target="INGA.AS" weight="0.0" />
-      <edge id="644" source="3988.HK" target="8411.T" weight="0.0" />
-      <edge id="645" source="3988.HK" target="NDA-SEK.ST" weight="0.064516129032258" />
-      <edge id="646" source="3988.HK" target="BAC" weight="0.0" />
-      <edge id="647" source="3988.HK" target="JPM" weight="0.00824042656325739" />
-      <edge id="648" source="3988.HK" target="C" weight="0.0" />
-      <edge id="649" source="3988.HK" target="DBK.DE" weight="0.0131386861313869" />
-      <edge id="650" source="3988.HK" target="HSBA.L" weight="0.0509337860780985" />
-      <edge id="651" source="3988.HK" target="3988.HK" weight="0.0" />
-      <edge id="652" source="3988.HK" target="BARC.L" weight="0.0" />
-      <edge id="653" source="3988.HK" target="BNP.PA" weight="0.00294985250737463" />
-      <edge id="654" source="3988.HK" target="0939.HK" weight="0.0" />
-      <edge id="655" source="3988.HK" target="GS" weight="0.00998751560549313" />
-      <edge id="656" source="3988.HK" target="1398.HK" weight="0.5" />
-      <edge id="657" source="3988.HK" target="8306.T" weight="0.0228426395939086" />
-      <edge id="658" source="3988.HK" target="WFC" weight="0.0" />
-      <edge id="659" source="3988.HK" target="1288.HK" weight="0.0" />
-      <edge id="660" source="BARC.L" target="MS" weight="0.013355592654424" />
-      <edge id="661" source="BARC.L" target="RY.TO" weight="0.0" />
-      <edge id="662" source="BARC.L" target="RBS.L" weight="0.0" />
-      <edge id="663" source="BARC.L" target="SAN.MC" weight="0.032051282051282" />
-      <edge id="664" source="BARC.L" target="GLE.PA" weight="0.161290322580645" />
-      <edge id="665" source="BARC.L" target="STAN.L" weight="0.2" />
-      <edge id="666" source="BARC.L" target="STT" weight="0.119828815977175" />
-      <edge id="667" source="BARC.L" target="8316.T" weight="0.0204778156996587" />
-      <edge id="668" source="BARC.L" target="UBSG.VX" weight="0.193698949824971" />
-      <edge id="669" source="BARC.L" target="UCG.MI" weight="0.0" />
-      <edge id="670" source="BARC.L" target="BK" weight="0.017304189435337" />
-      <edge id="671" source="BARC.L" target="CSGN.VX" weight="0.0265895953757225" />
-      <edge id="672" source="BARC.L" target="ACA.PA" weight="0.0" />
-      <edge id="673" source="BARC.L" target="INGA.AS" weight="0.0" />
-      <edge id="674" source="BARC.L" target="8411.T" weight="0.121212121212121" />
-      <edge id="675" source="BARC.L" target="NDA-SEK.ST" weight="0.0" />
-      <edge id="676" source="BARC.L" target="BAC" weight="0.0" />
-      <edge id="677" source="BARC.L" target="JPM" weight="0.016965584100824" />
-      <edge id="678" source="BARC.L" target="C" weight="0.0234375" />
-      <edge id="679" source="BARC.L" target="DBK.DE" weight="0.0262773722627737" />
-      <edge id="680" source="BARC.L" target="HSBA.L" weight="0.103565365025467" />
-      <edge id="681" source="BARC.L" target="3988.HK" weight="0.0" />
-      <edge id="682" source="BARC.L" target="BARC.L" weight="0.0" />
-      <edge id="683" source="BARC.L" target="BNP.PA" weight="0.0103244837758112" />
-      <edge id="684" source="BARC.L" target="0939.HK" weight="0.0" />
-      <edge id="685" source="BARC.L" target="GS" weight="0.0" />
-      <edge id="686" source="BARC.L" target="1398.HK" weight="0.0" />
-      <edge id="687" source="BARC.L" target="8306.T" weight="0.000362581580855692" />
-      <edge id="688" source="BARC.L" target="WFC" weight="0.0" />
-      <edge id="689" source="BARC.L" target="1288.HK" weight="0.0" />
-      <edge id="690" source="BNP.PA" target="MS" weight="0.0183639398998331" />
-      <edge id="691" source="BNP.PA" target="RY.TO" weight="0.00363636363636364" />
-      <edge id="692" source="BNP.PA" target="RBS.L" weight="0.0" />
-      <edge id="693" source="BNP.PA" target="SAN.MC" weight="0.0576923076923077" />
-      <edge id="694" source="BNP.PA" target="GLE.PA" weight="0.129032258064516" />
-      <edge id="695" source="BNP.PA" target="STAN.L" weight="0.0" />
-      <edge id="696" source="BNP.PA" target="STT" weight="0.043509272467903" />
-      <edge id="697" source="BNP.PA" target="8316.T" weight="0.00170648464163823" />
-      <edge id="698" source="BNP.PA" target="UBSG.VX" weight="0.0367561260210035" />
-      <edge id="699" source="BNP.PA" target="UCG.MI" weight="0.0" />
-      <edge id="700" source="BNP.PA" target="BK" weight="0.00819672131147541" />
-      <edge id="701" source="BNP.PA" target="CSGN.VX" weight="0.015028901734104" />
-      <edge id="702" source="BNP.PA" target="ACA.PA" weight="0.0" />
-      <edge id="703" source="BNP.PA" target="INGA.AS" weight="0.1" />
-      <edge id="704" source="BNP.PA" target="8411.T" weight="0.0" />
-      <edge id="705" source="BNP.PA" target="NDA-SEK.ST" weight="0.032258064516129" />
-      <edge id="706" source="BNP.PA" target="BAC" weight="0.0" />
-      <edge id="707" source="BNP.PA" target="JPM" weight="0.041202132816287" />
-      <edge id="708" source="BNP.PA" target="C" weight="0.0" />
-      <edge id="709" source="BNP.PA" target="DBK.DE" weight="0.0233576642335766" />
-      <edge id="710" source="BNP.PA" target="HSBA.L" weight="0.0152801358234295" />
-      <edge id="711" source="BNP.PA" target="3988.HK" weight="0.0" />
-      <edge id="712" source="BNP.PA" target="BARC.L" weight="0.00613496932515337" />
-      <edge id="713" source="BNP.PA" target="BNP.PA" weight="0.0" />
-      <edge id="714" source="BNP.PA" target="0939.HK" weight="0.0" />
-      <edge id="715" source="BNP.PA" target="GS" weight="0.00998751560549313" />
-      <edge id="716" source="BNP.PA" target="1398.HK" weight="0.0" />
-      <edge id="717" source="BNP.PA" target="8306.T" weight="0.000362581580855692" />
-      <edge id="718" source="BNP.PA" target="WFC" weight="0.0" />
-      <edge id="719" source="BNP.PA" target="1288.HK" weight="0.0" />
-      <edge id="720" source="0939.HK" target="MS" weight="0.00834724540901502" />
-      <edge id="721" source="0939.HK" target="RY.TO" weight="0.00363636363636364" />
-      <edge id="722" source="0939.HK" target="RBS.L" weight="0.0" />
-      <edge id="723" source="0939.HK" target="SAN.MC" weight="0.0" />
-      <edge id="724" source="0939.HK" target="GLE.PA" weight="0.0" />
-      <edge id="725" source="0939.HK" target="STAN.L" weight="0.0" />
-      <edge id="726" source="0939.HK" target="STT" weight="0.0335235378031384" />
-      <edge id="727" source="0939.HK" target="8316.T" weight="0.0" />
-      <edge id="728" source="0939.HK" target="UBSG.VX" weight="0.0110851808634772" />
-      <edge id="729" source="0939.HK" target="UCG.MI" weight="0.0" />
-      <edge id="730" source="0939.HK" target="BK" weight="0.00819672131147541" />
-      <edge id="731" source="0939.HK" target="CSGN.VX" weight="0.0069364161849711" />
-      <edge id="732" source="0939.HK" target="ACA.PA" weight="0.0" />
-      <edge id="733" source="0939.HK" target="INGA.AS" weight="0.0" />
-      <edge id="734" source="0939.HK" target="8411.T" weight="0.0" />
-      <edge id="735" source="0939.HK" target="NDA-SEK.ST" weight="0.053763440860215" />
-      <edge id="736" source="0939.HK" target="BAC" weight="0.0" />
-      <edge id="737" source="0939.HK" target="JPM" weight="0.00630150266602036" />
-      <edge id="738" source="0939.HK" target="C" weight="0.0" />
-      <edge id="739" source="0939.HK" target="DBK.DE" weight="0.0102189781021898" />
-      <edge id="740" source="0939.HK" target="HSBA.L" weight="0.0220713073005093" />
-      <edge id="741" source="0939.HK" target="3988.HK" weight="0.0" />
-      <edge id="742" source="0939.HK" target="BARC.L" weight="0.0" />
-      <edge id="743" source="0939.HK" target="BNP.PA" weight="0.00442477876106195" />
-      <edge id="744" source="0939.HK" target="0939.HK" weight="0.0" />
-      <edge id="745" source="0939.HK" target="GS" weight="0.00998751560549313" />
-      <edge id="746" source="0939.HK" target="1398.HK" weight="0.5" />
-      <edge id="747" source="0939.HK" target="8306.T" weight="0.0" />
-      <edge id="748" source="0939.HK" target="WFC" weight="0.0" />
-      <edge id="749" source="0939.HK" target="1288.HK" weight="0.0" />
-      <edge id="750" source="GS" target="MS" weight="0.175292153589315" />
-      <edge id="751" source="GS" target="RY.TO" weight="0.0763636363636364" />
-      <edge id="752" source="GS" target="RBS.L" weight="0.0" />
-      <edge id="753" source="GS" target="SAN.MC" weight="0.032051282051282" />
-      <edge id="754" source="GS" target="GLE.PA" weight="0.043010752688172" />
-      <edge id="755" source="GS" target="STAN.L" weight="0.0" />
-      <edge id="756" source="GS" target="STT" weight="0.0178316690442225" />
-      <edge id="757" source="GS" target="8316.T" weight="0.0068259385665529" />
-      <edge id="758" source="GS" target="UBSG.VX" weight="0.0373395565927655" />
-      <edge id="759" source="GS" target="UCG.MI" weight="0.0" />
-      <edge id="760" source="GS" target="BK" weight="0.0692167577413479" />
-      <edge id="761" source="GS" target="CSGN.VX" weight="0.0312138728323699" />
-      <edge id="762" source="GS" target="ACA.PA" weight="0.0" />
-      <edge id="763" source="GS" target="INGA.AS" weight="0.133333333333333" />
-      <edge id="764" source="GS" target="8411.T" weight="0.0" />
-      <edge id="765" source="GS" target="NDA-SEK.ST" weight="0.0161290322580645" />
-      <edge id="766" source="GS" target="BAC" weight="0.189453125" />
-      <edge id="767" source="GS" target="JPM" weight="0.028114396509937" />
-      <edge id="768" source="GS" target="C" weight="0.1640625" />
-      <edge id="769" source="GS" target="DBK.DE" weight="0.0613138686131387" />
-      <edge id="770" source="GS" target="HSBA.L" weight="0.033955857385399" />
-      <edge id="771" source="GS" target="3988.HK" weight="0.0" />
-      <edge id="772" source="GS" target="BARC.L" weight="0.110429447852761" />
-      <edge id="773" source="GS" target="BNP.PA" weight="0.0117994100294985" />
-      <edge id="774" source="GS" target="0939.HK" weight="0.0" />
-      <edge id="775" source="GS" target="GS" weight="0.0" />
-      <edge id="776" source="GS" target="1398.HK" weight="0.0" />
-      <edge id="777" source="GS" target="8306.T" weight="0.00870195794053662" />
-      <edge id="778" source="GS" target="WFC" weight="0.140151515151515" />
-      <edge id="779" source="GS" target="1288.HK" weight="0.0" />
-      <edge id="780" source="1398.HK" target="MS" weight="0.0" />
-      <edge id="781" source="1398.HK" target="RY.TO" weight="0.00727272727272727" />
-      <edge id="782" source="1398.HK" target="RBS.L" weight="0.0" />
-      <edge id="783" source="1398.HK" target="SAN.MC" weight="0.0" />
-      <edge id="784" source="1398.HK" target="GLE.PA" weight="0.0" />
-      <edge id="785" source="1398.HK" target="STAN.L" weight="0.0" />
-      <edge id="786" source="1398.HK" target="STT" weight="0.0706134094151212" />
-      <edge id="787" source="1398.HK" target="8316.T" weight="0.00341296928327645" />
-      <edge id="788" source="1398.HK" target="UBSG.VX" weight="0.0192532088681447" />
-      <edge id="789" source="1398.HK" target="UCG.MI" weight="0.0" />
-      <edge id="790" source="1398.HK" target="BK" weight="0.0145719489981785" />
-      <edge id="791" source="1398.HK" target="CSGN.VX" weight="0.0127167630057803" />
-      <edge id="792" source="1398.HK" target="ACA.PA" weight="0.0" />
-      <edge id="793" source="1398.HK" target="INGA.AS" weight="0.0" />
-      <edge id="794" source="1398.HK" target="8411.T" weight="0.0" />
-      <edge id="795" source="1398.HK" target="NDA-SEK.ST" weight="0.198924731182796" />
-      <edge id="796" source="1398.HK" target="BAC" weight="0.0" />
-      <edge id="797" source="1398.HK" target="JPM" weight="0.0591371788657295" />
-      <edge id="798" source="1398.HK" target="C" weight="0.0" />
-      <edge id="799" source="1398.HK" target="DBK.DE" weight="0.0306569343065693" />
-      <edge id="800" source="1398.HK" target="HSBA.L" weight="0.0628183361629881" />
-      <edge id="801" source="1398.HK" target="3988.HK" weight="0.0" />
-      <edge id="802" source="1398.HK" target="BARC.L" weight="0.0" />
-      <edge id="803" source="1398.HK" target="BNP.PA" weight="0.00442477876106195" />
-      <edge id="804" source="1398.HK" target="0939.HK" weight="0.0" />
-      <edge id="805" source="1398.HK" target="GS" weight="0.0237203495630462" />
-      <edge id="806" source="1398.HK" target="1398.HK" weight="0.0" />
-      <edge id="807" source="1398.HK" target="8306.T" weight="0.000362581580855692" />
-      <edge id="808" source="1398.HK" target="WFC" weight="0.0" />
-      <edge id="809" source="1398.HK" target="1288.HK" weight="0.0" />
-      <edge id="810" source="8306.T" target="MS" weight="0.0" />
-      <edge id="811" source="8306.T" target="RY.TO" weight="0.0290909090909091" />
-      <edge id="812" source="8306.T" target="RBS.L" weight="0.0" />
-      <edge id="813" source="8306.T" target="SAN.MC" weight="0.0" />
-      <edge id="814" source="8306.T" target="GLE.PA" weight="0.0" />
-      <edge id="815" source="8306.T" target="STAN.L" weight="0.0" />
-      <edge id="816" source="8306.T" target="STT" weight="0.0192582025677603" />
-      <edge id="817" source="8306.T" target="8316.T" weight="0.0443686006825939" />
-      <edge id="818" source="8306.T" target="UBSG.VX" weight="0.00700116686114352" />
-      <edge id="819" source="8306.T" target="UCG.MI" weight="0.0" />
-      <edge id="820" source="8306.T" target="BK" weight="0.0264116575591986" />
-      <edge id="821" source="8306.T" target="CSGN.VX" weight="0.0104046242774566" />
-      <edge id="822" source="8306.T" target="ACA.PA" weight="0.0" />
-      <edge id="823" source="8306.T" target="INGA.AS" weight="0.0166666666666667" />
-      <edge id="824" source="8306.T" target="8411.T" weight="0.0" />
-      <edge id="825" source="8306.T" target="NDA-SEK.ST" weight="0.0161290322580645" />
-      <edge id="826" source="8306.T" target="BAC" weight="0.0" />
-      <edge id="827" source="8306.T" target="JPM" weight="0.0237518177411537" />
-      <edge id="828" source="8306.T" target="C" weight="0.0" />
-      <edge id="829" source="8306.T" target="DBK.DE" weight="0.0145985401459854" />
-      <edge id="830" source="8306.T" target="HSBA.L" weight="0.0118845500848896" />
-      <edge id="831" source="8306.T" target="3988.HK" weight="0.0" />
-      <edge id="832" source="8306.T" target="BARC.L" weight="0.0" />
-      <edge id="833" source="8306.T" target="BNP.PA" weight="0.0103244837758112" />
-      <edge id="834" source="8306.T" target="0939.HK" weight="0.0" />
-      <edge id="835" source="8306.T" target="GS" weight="0.00624219725343321" />
-      <edge id="836" source="8306.T" target="1398.HK" weight="0.0" />
-      <edge id="837" source="8306.T" target="8306.T" weight="0.0" />
-      <edge id="838" source="8306.T" target="WFC" weight="0.0" />
-      <edge id="839" source="8306.T" target="1288.HK" weight="0.0" />
-      <edge id="840" source="WFC" target="MS" weight="0.0767946577629382" />
-      <edge id="841" source="WFC" target="RY.TO" weight="0.0509090909090909" />
-      <edge id="842" source="WFC" target="RBS.L" weight="0.0" />
-      <edge id="843" source="WFC" target="SAN.MC" weight="0.0" />
-      <edge id="844" source="WFC" target="GLE.PA" weight="0.010752688172043" />
-      <edge id="845" source="WFC" target="STAN.L" weight="0.0" />
-      <edge id="846" source="WFC" target="STT" weight="0.00713266761768902" />
-      <edge id="847" source="WFC" target="8316.T" weight="0.00341296928327645" />
-      <edge id="848" source="WFC" target="UBSG.VX" weight="0.0309218203033839" />
-      <edge id="849" source="WFC" target="UCG.MI" weight="0.0" />
-      <edge id="850" source="WFC" target="BK" weight="0.0737704918032787" />
-      <edge id="851" source="WFC" target="CSGN.VX" weight="0.0300578034682081" />
-      <edge id="852" source="WFC" target="ACA.PA" weight="0.0" />
-      <edge id="853" source="WFC" target="INGA.AS" weight="0.0166666666666667" />
-      <edge id="854" source="WFC" target="8411.T" weight="0.0" />
-      <edge id="855" source="WFC" target="NDA-SEK.ST" weight="0.064516129032258" />
-      <edge id="856" source="WFC" target="BAC" weight="0.076171875" />
-      <edge id="857" source="WFC" target="JPM" weight="0.0523509452253999" />
-      <edge id="858" source="WFC" target="C" weight="0.0625" />
-      <edge id="859" source="WFC" target="DBK.DE" weight="0.0948905109489051" />
-      <edge id="860" source="WFC" target="HSBA.L" weight="0.0254668930390492" />
-      <edge id="861" source="WFC" target="3988.HK" weight="0.0" />
-      <edge id="862" source="WFC" target="BARC.L" weight="0.110429447852761" />
-      <edge id="863" source="WFC" target="BNP.PA" weight="0.00589970501474926" />
-      <edge id="864" source="WFC" target="0939.HK" weight="0.0" />
-      <edge id="865" source="WFC" target="GS" weight="0.0736579275905118" />
-      <edge id="866" source="WFC" target="1398.HK" weight="0.0" />
-      <edge id="867" source="WFC" target="8306.T" weight="0.00797679477882523" />
-      <edge id="868" source="WFC" target="WFC" weight="0.0" />
-      <edge id="869" source="WFC" target="1288.HK" weight="0.0" />
-      <edge id="870" source="1288.HK" target="MS" weight="0.0" />
-      <edge id="871" source="1288.HK" target="RY.TO" weight="0.0" />
-      <edge id="872" source="1288.HK" target="RBS.L" weight="0.0" />
-      <edge id="873" source="1288.HK" target="SAN.MC" weight="0.0" />
-      <edge id="874" source="1288.HK" target="GLE.PA" weight="0.0" />
-      <edge id="875" source="1288.HK" target="STAN.L" weight="0.0" />
-      <edge id="876" source="1288.HK" target="STT" weight="0.0106990014265335" />
-      <edge id="877" source="1288.HK" target="8316.T" weight="0.00170648464163823" />
-      <edge id="878" source="1288.HK" target="UBSG.VX" weight="0.0169194865810969" />
-      <edge id="879" source="1288.HK" target="UCG.MI" weight="0.0" />
-      <edge id="880" source="1288.HK" target="BK" weight="0.0145719489981785" />
-      <edge id="881" source="1288.HK" target="CSGN.VX" weight="0.0173410404624277" />
-      <edge id="882" source="1288.HK" target="ACA.PA" weight="0.0" />
-      <edge id="883" source="1288.HK" target="INGA.AS" weight="0.0" />
-      <edge id="884" source="1288.HK" target="8411.T" weight="0.0" />
-      <edge id="885" source="1288.HK" target="NDA-SEK.ST" weight="0.0" />
-      <edge id="886" source="1288.HK" target="BAC" weight="0.0" />
-      <edge id="887" source="1288.HK" target="JPM" weight="0.0" />
-      <edge id="888" source="1288.HK" target="C" weight="0.0" />
-      <edge id="889" source="1288.HK" target="DBK.DE" weight="0.00583941605839416" />
-      <edge id="890" source="1288.HK" target="HSBA.L" weight="0.0492359932088285" />
-      <edge id="891" source="1288.HK" target="3988.HK" weight="0.0" />
-      <edge id="892" source="1288.HK" target="BARC.L" weight="0.0" />
-      <edge id="893" source="1288.HK" target="BNP.PA" weight="0.00294985250737463" />
-      <edge id="894" source="1288.HK" target="0939.HK" weight="0.0" />
-      <edge id="895" source="1288.HK" target="GS" weight="0.0137328339575531" />
-      <edge id="896" source="1288.HK" target="1398.HK" weight="0.0" />
-      <edge id="897" source="1288.HK" target="8306.T" weight="0.000362581580855692" />
-      <edge id="898" source="1288.HK" target="WFC" weight="0.0" />
-      <edge id="899" source="1288.HK" target="1288.HK" weight="0.0" />
+      <edge id="0" source="JPM" target="JPM" weight="0.0" />
+      <edge id="1" source="JPM" target="GS" weight="0.083645443196005" />
+      <edge id="2" source="JPM" target="C" weight="0.09375" />
+      <edge id="3" source="JPM" target="BARC.L" weight="0.116564417177914" />
+      <edge id="4" source="JPM" target="BNP.PA" weight="0.0103244837758112" />
+      <edge id="5" source="JPM" target="STT" weight="0.00784593437945792" />
+      <edge id="6" source="JPM" target="NDA-SEK.ST" weight="0.102150537634409" />
+      <edge id="7" source="JPM" target="3988.HK" weight="0.0" />
+      <edge id="8" source="JPM" target="SAN.MC" weight="0.0128205128205128" />
+      <edge id="9" source="JPM" target="ACA.PA" weight="0.0" />
+      <edge id="10" source="JPM" target="8411.T" weight="0.0" />
+      <edge id="11" source="JPM" target="UBSG.VX" weight="0.058343057176196" />
+      <edge id="12" source="JPM" target="UCG.MI" weight="0.0" />
+      <edge id="13" source="JPM" target="DBK.DE" weight="0.0554744525547445" />
+      <edge id="14" source="JPM" target="1288.HK" weight="0.0" />
+      <edge id="15" source="JPM" target="1398.HK" weight="0.0" />
+      <edge id="16" source="JPM" target="RBS.L" weight="0.0" />
+      <edge id="17" source="JPM" target="HSBA.L" weight="0.032258064516129" />
+      <edge id="18" source="JPM" target="8316.T" weight="0.00511945392491468" />
+      <edge id="19" source="JPM" target="WFC" weight="0.287878787878788" />
+      <edge id="20" source="JPM" target="8306.T" weight="0.00833937635968092" />
+      <edge id="21" source="JPM" target="RY.TO" weight="0.127272727272727" />
+      <edge id="22" source="JPM" target="BK" weight="0.0865209471766849" />
+      <edge id="23" source="JPM" target="GLE.PA" weight="0.021505376344086" />
+      <edge id="24" source="JPM" target="BAC" weight="0.169921875" />
+      <edge id="25" source="JPM" target="INGA.AS" weight="0.0333333333333333" />
+      <edge id="26" source="JPM" target="0939.HK" weight="0.0" />
+      <edge id="27" source="JPM" target="MS" weight="0.165275459098497" />
+      <edge id="28" source="JPM" target="STAN.L" weight="0.0" />
+      <edge id="29" source="JPM" target="CSGN.VX" weight="0.0346820809248555" />
+      <edge id="30" source="GS" target="JPM" weight="0.028114396509937" />
+      <edge id="31" source="GS" target="GS" weight="0.0" />
+      <edge id="32" source="GS" target="C" weight="0.1640625" />
+      <edge id="33" source="GS" target="BARC.L" weight="0.110429447852761" />
+      <edge id="34" source="GS" target="BNP.PA" weight="0.0117994100294985" />
+      <edge id="35" source="GS" target="STT" weight="0.0178316690442225" />
+      <edge id="36" source="GS" target="NDA-SEK.ST" weight="0.0161290322580645" />
+      <edge id="37" source="GS" target="3988.HK" weight="0.0" />
+      <edge id="38" source="GS" target="SAN.MC" weight="0.032051282051282" />
+      <edge id="39" source="GS" target="ACA.PA" weight="0.0" />
+      <edge id="40" source="GS" target="8411.T" weight="0.0" />
+      <edge id="41" source="GS" target="UBSG.VX" weight="0.0373395565927655" />
+      <edge id="42" source="GS" target="UCG.MI" weight="0.0" />
+      <edge id="43" source="GS" target="DBK.DE" weight="0.0613138686131387" />
+      <edge id="44" source="GS" target="1288.HK" weight="0.0" />
+      <edge id="45" source="GS" target="1398.HK" weight="0.0" />
+      <edge id="46" source="GS" target="RBS.L" weight="0.0" />
+      <edge id="47" source="GS" target="HSBA.L" weight="0.033955857385399" />
+      <edge id="48" source="GS" target="8316.T" weight="0.0068259385665529" />
+      <edge id="49" source="GS" target="WFC" weight="0.140151515151515" />
+      <edge id="50" source="GS" target="8306.T" weight="0.00870195794053662" />
+      <edge id="51" source="GS" target="RY.TO" weight="0.0763636363636364" />
+      <edge id="52" source="GS" target="BK" weight="0.0692167577413479" />
+      <edge id="53" source="GS" target="GLE.PA" weight="0.043010752688172" />
+      <edge id="54" source="GS" target="BAC" weight="0.189453125" />
+      <edge id="55" source="GS" target="INGA.AS" weight="0.133333333333333" />
+      <edge id="56" source="GS" target="0939.HK" weight="0.0" />
+      <edge id="57" source="GS" target="MS" weight="0.175292153589315" />
+      <edge id="58" source="GS" target="STAN.L" weight="0.0" />
+      <edge id="59" source="GS" target="CSGN.VX" weight="0.0312138728323699" />
+      <edge id="60" source="C" target="JPM" weight="0.0872515753756665" />
+      <edge id="61" source="C" target="GS" weight="0.0823970037453183" />
+      <edge id="62" source="C" target="C" weight="0.0" />
+      <edge id="63" source="C" target="BARC.L" weight="0.141104294478528" />
+      <edge id="64" source="C" target="BNP.PA" weight="0.051622418879056" />
+      <edge id="65" source="C" target="STT" weight="0.00855920114122682" />
+      <edge id="66" source="C" target="NDA-SEK.ST" weight="0.10752688172043" />
+      <edge id="67" source="C" target="3988.HK" weight="0.0" />
+      <edge id="68" source="C" target="SAN.MC" weight="0.0128205128205128" />
+      <edge id="69" source="C" target="ACA.PA" weight="0.0" />
+      <edge id="70" source="C" target="8411.T" weight="0.0" />
+      <edge id="71" source="C" target="UBSG.VX" weight="0.0344224037339557" />
+      <edge id="72" source="C" target="UCG.MI" weight="0.0" />
+      <edge id="73" source="C" target="DBK.DE" weight="0.0467153284671533" />
+      <edge id="74" source="C" target="1288.HK" weight="0.0" />
+      <edge id="75" source="C" target="1398.HK" weight="0.0" />
+      <edge id="76" source="C" target="RBS.L" weight="0.0" />
+      <edge id="77" source="C" target="HSBA.L" weight="0.0356536502546689" />
+      <edge id="78" source="C" target="8316.T" weight="0.00341296928327645" />
+      <edge id="79" source="C" target="WFC" weight="0.178030303030303" />
+      <edge id="80" source="C" target="8306.T" weight="0.00833937635968092" />
+      <edge id="81" source="C" target="RY.TO" weight="0.145454545454545" />
+      <edge id="82" source="C" target="BK" weight="0.109289617486339" />
+      <edge id="83" source="C" target="GLE.PA" weight="0.0537634408602151" />
+      <edge id="84" source="C" target="BAC" weight="0.142578125" />
+      <edge id="85" source="C" target="INGA.AS" weight="0.0333333333333333" />
+      <edge id="86" source="C" target="0939.HK" weight="0.0" />
+      <edge id="87" source="C" target="MS" weight="0.118530884808013" />
+      <edge id="88" source="C" target="STAN.L" weight="0.0" />
+      <edge id="89" source="C" target="CSGN.VX" weight="0.038150289017341" />
+      <edge id="90" source="BARC.L" target="JPM" weight="0.016965584100824" />
+      <edge id="91" source="BARC.L" target="GS" weight="0.0" />
+      <edge id="92" source="BARC.L" target="C" weight="0.0234375" />
+      <edge id="93" source="BARC.L" target="BARC.L" weight="0.0" />
+      <edge id="94" source="BARC.L" target="BNP.PA" weight="0.0103244837758112" />
+      <edge id="95" source="BARC.L" target="STT" weight="0.119828815977175" />
+      <edge id="96" source="BARC.L" target="NDA-SEK.ST" weight="0.0" />
+      <edge id="97" source="BARC.L" target="3988.HK" weight="0.0" />
+      <edge id="98" source="BARC.L" target="SAN.MC" weight="0.032051282051282" />
+      <edge id="99" source="BARC.L" target="ACA.PA" weight="0.0" />
+      <edge id="100" source="BARC.L" target="8411.T" weight="0.121212121212121" />
+      <edge id="101" source="BARC.L" target="UBSG.VX" weight="0.193698949824971" />
+      <edge id="102" source="BARC.L" target="UCG.MI" weight="0.0" />
+      <edge id="103" source="BARC.L" target="DBK.DE" weight="0.0262773722627737" />
+      <edge id="104" source="BARC.L" target="1288.HK" weight="0.0" />
+      <edge id="105" source="BARC.L" target="1398.HK" weight="0.0" />
+      <edge id="106" source="BARC.L" target="RBS.L" weight="0.0" />
+      <edge id="107" source="BARC.L" target="HSBA.L" weight="0.103565365025467" />
+      <edge id="108" source="BARC.L" target="8316.T" weight="0.0204778156996587" />
+      <edge id="109" source="BARC.L" target="WFC" weight="0.0" />
+      <edge id="110" source="BARC.L" target="8306.T" weight="0.000362581580855692" />
+      <edge id="111" source="BARC.L" target="RY.TO" weight="0.0" />
+      <edge id="112" source="BARC.L" target="BK" weight="0.017304189435337" />
+      <edge id="113" source="BARC.L" target="GLE.PA" weight="0.161290322580645" />
+      <edge id="114" source="BARC.L" target="BAC" weight="0.0" />
+      <edge id="115" source="BARC.L" target="INGA.AS" weight="0.0" />
+      <edge id="116" source="BARC.L" target="0939.HK" weight="0.0" />
+      <edge id="117" source="BARC.L" target="MS" weight="0.013355592654424" />
+      <edge id="118" source="BARC.L" target="STAN.L" weight="0.2" />
+      <edge id="119" source="BARC.L" target="CSGN.VX" weight="0.0265895953757225" />
+      <edge id="120" source="BNP.PA" target="JPM" weight="0.041202132816287" />
+      <edge id="121" source="BNP.PA" target="GS" weight="0.00998751560549313" />
+      <edge id="122" source="BNP.PA" target="C" weight="0.0" />
+      <edge id="123" source="BNP.PA" target="BARC.L" weight="0.00613496932515337" />
+      <edge id="124" source="BNP.PA" target="BNP.PA" weight="0.0" />
+      <edge id="125" source="BNP.PA" target="STT" weight="0.043509272467903" />
+      <edge id="126" source="BNP.PA" target="NDA-SEK.ST" weight="0.032258064516129" />
+      <edge id="127" source="BNP.PA" target="3988.HK" weight="0.0" />
+      <edge id="128" source="BNP.PA" target="SAN.MC" weight="0.0576923076923077" />
+      <edge id="129" source="BNP.PA" target="ACA.PA" weight="0.0" />
+      <edge id="130" source="BNP.PA" target="8411.T" weight="0.0" />
+      <edge id="131" source="BNP.PA" target="UBSG.VX" weight="0.0367561260210035" />
+      <edge id="132" source="BNP.PA" target="UCG.MI" weight="0.0" />
+      <edge id="133" source="BNP.PA" target="DBK.DE" weight="0.0233576642335766" />
+      <edge id="134" source="BNP.PA" target="1288.HK" weight="0.0" />
+      <edge id="135" source="BNP.PA" target="1398.HK" weight="0.0" />
+      <edge id="136" source="BNP.PA" target="RBS.L" weight="0.0" />
+      <edge id="137" source="BNP.PA" target="HSBA.L" weight="0.0152801358234295" />
+      <edge id="138" source="BNP.PA" target="8316.T" weight="0.00170648464163823" />
+      <edge id="139" source="BNP.PA" target="WFC" weight="0.0" />
+      <edge id="140" source="BNP.PA" target="8306.T" weight="0.000362581580855692" />
+      <edge id="141" source="BNP.PA" target="RY.TO" weight="0.00363636363636364" />
+      <edge id="142" source="BNP.PA" target="BK" weight="0.00819672131147541" />
+      <edge id="143" source="BNP.PA" target="GLE.PA" weight="0.129032258064516" />
+      <edge id="144" source="BNP.PA" target="BAC" weight="0.0" />
+      <edge id="145" source="BNP.PA" target="INGA.AS" weight="0.1" />
+      <edge id="146" source="BNP.PA" target="0939.HK" weight="0.0" />
+      <edge id="147" source="BNP.PA" target="MS" weight="0.0183639398998331" />
+      <edge id="148" source="BNP.PA" target="STAN.L" weight="0.0" />
+      <edge id="149" source="BNP.PA" target="CSGN.VX" weight="0.015028901734104" />
+      <edge id="150" source="STT" target="JPM" weight="0.0465341735336888" />
+      <edge id="151" source="STT" target="GS" weight="0.146067415730337" />
+      <edge id="152" source="STT" target="C" weight="0.0078125" />
+      <edge id="153" source="STT" target="BARC.L" weight="0.116564417177914" />
+      <edge id="154" source="STT" target="BNP.PA" weight="0.0162241887905605" />
+      <edge id="155" source="STT" target="STT" weight="0.0" />
+      <edge id="156" source="STT" target="NDA-SEK.ST" weight="0.032258064516129" />
+      <edge id="157" source="STT" target="3988.HK" weight="0.0" />
+      <edge id="158" source="STT" target="SAN.MC" weight="0.0" />
+      <edge id="159" source="STT" target="ACA.PA" weight="0.0" />
+      <edge id="160" source="STT" target="8411.T" weight="0.0" />
+      <edge id="161" source="STT" target="UBSG.VX" weight="0.0367561260210035" />
+      <edge id="162" source="STT" target="UCG.MI" weight="0.0" />
+      <edge id="163" source="STT" target="DBK.DE" weight="0.0437956204379562" />
+      <edge id="164" source="STT" target="1288.HK" weight="0.0" />
+      <edge id="165" source="STT" target="1398.HK" weight="0.0" />
+      <edge id="166" source="STT" target="RBS.L" weight="0.0" />
+      <edge id="167" source="STT" target="HSBA.L" weight="0.0305602716468591" />
+      <edge id="168" source="STT" target="8316.T" weight="0.00341296928327645" />
+      <edge id="169" source="STT" target="WFC" weight="0.106060606060606" />
+      <edge id="170" source="STT" target="8306.T" weight="0.00833937635968092" />
+      <edge id="171" source="STT" target="RY.TO" weight="0.0836363636363636" />
+      <edge id="172" source="STT" target="BK" weight="0.0865209471766849" />
+      <edge id="173" source="STT" target="GLE.PA" weight="0.021505376344086" />
+      <edge id="174" source="STT" target="BAC" weight="0.068359375" />
+      <edge id="175" source="STT" target="INGA.AS" weight="0.0" />
+      <edge id="176" source="STT" target="0939.HK" weight="0.0" />
+      <edge id="177" source="STT" target="MS" weight="0.0517529215358932" />
+      <edge id="178" source="STT" target="STAN.L" weight="0.0" />
+      <edge id="179" source="STT" target="CSGN.VX" weight="0.0312138728323699" />
+      <edge id="180" source="NDA-SEK.ST" target="JPM" weight="0.0126030053320407" />
+      <edge id="181" source="NDA-SEK.ST" target="GS" weight="0.00249687890137328" />
+      <edge id="182" source="NDA-SEK.ST" target="C" weight="0.0" />
+      <edge id="183" source="NDA-SEK.ST" target="BARC.L" weight="0.0" />
+      <edge id="184" source="NDA-SEK.ST" target="BNP.PA" weight="0.0442477876106195" />
+      <edge id="185" source="NDA-SEK.ST" target="STT" weight="0.014265335235378" />
+      <edge id="186" source="NDA-SEK.ST" target="NDA-SEK.ST" weight="0.0" />
+      <edge id="187" source="NDA-SEK.ST" target="3988.HK" weight="0.0" />
+      <edge id="188" source="NDA-SEK.ST" target="SAN.MC" weight="0.00641025641025641" />
+      <edge id="189" source="NDA-SEK.ST" target="ACA.PA" weight="0.0" />
+      <edge id="190" source="NDA-SEK.ST" target="8411.T" weight="0.0" />
+      <edge id="191" source="NDA-SEK.ST" target="UBSG.VX" weight="0.0373395565927655" />
+      <edge id="192" source="NDA-SEK.ST" target="UCG.MI" weight="0.0" />
+      <edge id="193" source="NDA-SEK.ST" target="DBK.DE" weight="0.0233576642335766" />
+      <edge id="194" source="NDA-SEK.ST" target="1288.HK" weight="0.0" />
+      <edge id="195" source="NDA-SEK.ST" target="1398.HK" weight="0.0" />
+      <edge id="196" source="NDA-SEK.ST" target="RBS.L" weight="0.0" />
+      <edge id="197" source="NDA-SEK.ST" target="HSBA.L" weight="0.00509337860780985" />
+      <edge id="198" source="NDA-SEK.ST" target="8316.T" weight="0.00170648464163823" />
+      <edge id="199" source="NDA-SEK.ST" target="WFC" weight="0.0" />
+      <edge id="200" source="NDA-SEK.ST" target="8306.T" weight="0.000362581580855692" />
+      <edge id="201" source="NDA-SEK.ST" target="RY.TO" weight="0.0981818181818182" />
+      <edge id="202" source="NDA-SEK.ST" target="BK" weight="0.0063752276867031" />
+      <edge id="203" source="NDA-SEK.ST" target="GLE.PA" weight="0.0" />
+      <edge id="204" source="NDA-SEK.ST" target="BAC" weight="0.0" />
+      <edge id="205" source="NDA-SEK.ST" target="INGA.AS" weight="0.0" />
+      <edge id="206" source="NDA-SEK.ST" target="0939.HK" weight="0.0" />
+      <edge id="207" source="NDA-SEK.ST" target="MS" weight="0.00834724540901502" />
+      <edge id="208" source="NDA-SEK.ST" target="STAN.L" weight="0.0" />
+      <edge id="209" source="NDA-SEK.ST" target="CSGN.VX" weight="0.00578034682080925" />
+      <edge id="210" source="3988.HK" target="JPM" weight="0.00824042656325739" />
+      <edge id="211" source="3988.HK" target="GS" weight="0.00998751560549313" />
+      <edge id="212" source="3988.HK" target="C" weight="0.0" />
+      <edge id="213" source="3988.HK" target="BARC.L" weight="0.0" />
+      <edge id="214" source="3988.HK" target="BNP.PA" weight="0.00294985250737463" />
+      <edge id="215" source="3988.HK" target="STT" weight="0.0784593437945792" />
+      <edge id="216" source="3988.HK" target="NDA-SEK.ST" weight="0.064516129032258" />
+      <edge id="217" source="3988.HK" target="3988.HK" weight="0.0" />
+      <edge id="218" source="3988.HK" target="SAN.MC" weight="0.0" />
+      <edge id="219" source="3988.HK" target="ACA.PA" weight="0.0" />
+      <edge id="220" source="3988.HK" target="8411.T" weight="0.0" />
+      <edge id="221" source="3988.HK" target="UBSG.VX" weight="0.00933488914819136" />
+      <edge id="222" source="3988.HK" target="UCG.MI" weight="0.0" />
+      <edge id="223" source="3988.HK" target="DBK.DE" weight="0.0131386861313869" />
+      <edge id="224" source="3988.HK" target="1288.HK" weight="0.0" />
+      <edge id="225" source="3988.HK" target="1398.HK" weight="0.5" />
+      <edge id="226" source="3988.HK" target="RBS.L" weight="0.0" />
+      <edge id="227" source="3988.HK" target="HSBA.L" weight="0.0509337860780985" />
+      <edge id="228" source="3988.HK" target="8316.T" weight="0.00341296928327645" />
+      <edge id="229" source="3988.HK" target="WFC" weight="0.0" />
+      <edge id="230" source="3988.HK" target="8306.T" weight="0.0228426395939086" />
+      <edge id="231" source="3988.HK" target="RY.TO" weight="0.0" />
+      <edge id="232" source="3988.HK" target="BK" weight="0.0300546448087432" />
+      <edge id="233" source="3988.HK" target="GLE.PA" weight="0.0" />
+      <edge id="234" source="3988.HK" target="BAC" weight="0.0" />
+      <edge id="235" source="3988.HK" target="INGA.AS" weight="0.0" />
+      <edge id="236" source="3988.HK" target="0939.HK" weight="0.0" />
+      <edge id="237" source="3988.HK" target="MS" weight="0.0417362270450751" />
+      <edge id="238" source="3988.HK" target="STAN.L" weight="0.0" />
+      <edge id="239" source="3988.HK" target="CSGN.VX" weight="0.0173410404624277" />
+      <edge id="240" source="SAN.MC" target="JPM" weight="0.0164808531265148" />
+      <edge id="241" source="SAN.MC" target="GS" weight="0.0149812734082397" />
+      <edge id="242" source="SAN.MC" target="C" weight="0.0" />
+      <edge id="243" source="SAN.MC" target="BARC.L" weight="0.0" />
+      <edge id="244" source="SAN.MC" target="BNP.PA" weight="0.123893805309734" />
+      <edge id="245" source="SAN.MC" target="STT" weight="0.0470756062767475" />
+      <edge id="246" source="SAN.MC" target="NDA-SEK.ST" weight="0.010752688172043" />
+      <edge id="247" source="SAN.MC" target="3988.HK" weight="0.0" />
+      <edge id="248" source="SAN.MC" target="SAN.MC" weight="0.0" />
+      <edge id="249" source="SAN.MC" target="ACA.PA" weight="0.0" />
+      <edge id="250" source="SAN.MC" target="8411.T" weight="0.0" />
+      <edge id="251" source="SAN.MC" target="UBSG.VX" weight="0.0221703617269545" />
+      <edge id="252" source="SAN.MC" target="UCG.MI" weight="0.0" />
+      <edge id="253" source="SAN.MC" target="DBK.DE" weight="0.0496350364963504" />
+      <edge id="254" source="SAN.MC" target="1288.HK" weight="0.0" />
+      <edge id="255" source="SAN.MC" target="1398.HK" weight="0.0" />
+      <edge id="256" source="SAN.MC" target="RBS.L" weight="0.0" />
+      <edge id="257" source="SAN.MC" target="HSBA.L" weight="0.0186757215619694" />
+      <edge id="258" source="SAN.MC" target="8316.T" weight="0.00341296928327645" />
+      <edge id="259" source="SAN.MC" target="WFC" weight="0.0" />
+      <edge id="260" source="SAN.MC" target="8306.T" weight="0.000725163161711385" />
+      <edge id="261" source="SAN.MC" target="RY.TO" weight="0.0" />
+      <edge id="262" source="SAN.MC" target="BK" weight="0.0355191256830601" />
+      <edge id="263" source="SAN.MC" target="GLE.PA" weight="0.0" />
+      <edge id="264" source="SAN.MC" target="BAC" weight="0.0" />
+      <edge id="265" source="SAN.MC" target="INGA.AS" weight="0.1" />
+      <edge id="266" source="SAN.MC" target="0939.HK" weight="0.0" />
+      <edge id="267" source="SAN.MC" target="MS" weight="0.00333889816360601" />
+      <edge id="268" source="SAN.MC" target="STAN.L" weight="0.0" />
+      <edge id="269" source="SAN.MC" target="CSGN.VX" weight="0.0138728323699422" />
+      <edge id="270" source="ACA.PA" target="JPM" weight="0.0184197770237518" />
+      <edge id="271" source="ACA.PA" target="GS" weight="0.00124843945068664" />
+      <edge id="272" source="ACA.PA" target="C" weight="0.0" />
+      <edge id="273" source="ACA.PA" target="BARC.L" weight="0.00613496932515337" />
+      <edge id="274" source="ACA.PA" target="BNP.PA" weight="0.0398230088495575" />
+      <edge id="275" source="ACA.PA" target="STT" weight="0.0106990014265335" />
+      <edge id="276" source="ACA.PA" target="NDA-SEK.ST" weight="0.0053763440860215" />
+      <edge id="277" source="ACA.PA" target="3988.HK" weight="0.0" />
+      <edge id="278" source="ACA.PA" target="SAN.MC" weight="0.0" />
+      <edge id="279" source="ACA.PA" target="ACA.PA" weight="0.0" />
+      <edge id="280" source="ACA.PA" target="8411.T" weight="0.0" />
+      <edge id="281" source="ACA.PA" target="UBSG.VX" weight="0.0157526254375729" />
+      <edge id="282" source="ACA.PA" target="UCG.MI" weight="0.0" />
+      <edge id="283" source="ACA.PA" target="DBK.DE" weight="0.00437956204379562" />
+      <edge id="284" source="ACA.PA" target="1288.HK" weight="0.0" />
+      <edge id="285" source="ACA.PA" target="1398.HK" weight="0.0" />
+      <edge id="286" source="ACA.PA" target="RBS.L" weight="0.0" />
+      <edge id="287" source="ACA.PA" target="HSBA.L" weight="0.0237691001697793" />
+      <edge id="288" source="ACA.PA" target="8316.T" weight="0.00170648464163823" />
+      <edge id="289" source="ACA.PA" target="WFC" weight="0.0" />
+      <edge id="290" source="ACA.PA" target="8306.T" weight="0.000725163161711385" />
+      <edge id="291" source="ACA.PA" target="RY.TO" weight="0.0" />
+      <edge id="292" source="ACA.PA" target="BK" weight="0.00273224043715847" />
+      <edge id="293" source="ACA.PA" target="GLE.PA" weight="0.0967741935483871" />
+      <edge id="294" source="ACA.PA" target="BAC" weight="0.0" />
+      <edge id="295" source="ACA.PA" target="INGA.AS" weight="0.0" />
+      <edge id="296" source="ACA.PA" target="0939.HK" weight="0.0" />
+      <edge id="297" source="ACA.PA" target="MS" weight="0.0" />
+      <edge id="298" source="ACA.PA" target="STAN.L" weight="0.0" />
+      <edge id="299" source="ACA.PA" target="CSGN.VX" weight="0.0069364161849711" />
+      <edge id="300" source="8411.T" target="JPM" weight="0.000969461948618517" />
+      <edge id="301" source="8411.T" target="GS" weight="0.00624219725343321" />
+      <edge id="302" source="8411.T" target="C" weight="0.0" />
+      <edge id="303" source="8411.T" target="BARC.L" weight="0.0" />
+      <edge id="304" source="8411.T" target="BNP.PA" weight="0.0117994100294985" />
+      <edge id="305" source="8411.T" target="STT" weight="0.0192582025677603" />
+      <edge id="306" source="8411.T" target="NDA-SEK.ST" weight="0.0" />
+      <edge id="307" source="8411.T" target="3988.HK" weight="0.0" />
+      <edge id="308" source="8411.T" target="SAN.MC" weight="0.0" />
+      <edge id="309" source="8411.T" target="ACA.PA" weight="0.0" />
+      <edge id="310" source="8411.T" target="8411.T" weight="0.0" />
+      <edge id="311" source="8411.T" target="UBSG.VX" weight="0.00758459743290548" />
+      <edge id="312" source="8411.T" target="UCG.MI" weight="0.0" />
+      <edge id="313" source="8411.T" target="DBK.DE" weight="0.00437956204379562" />
+      <edge id="314" source="8411.T" target="1288.HK" weight="0.0" />
+      <edge id="315" source="8411.T" target="1398.HK" weight="0.0" />
+      <edge id="316" source="8411.T" target="RBS.L" weight="0.0" />
+      <edge id="317" source="8411.T" target="HSBA.L" weight="0.0118845500848896" />
+      <edge id="318" source="8411.T" target="8316.T" weight="0.83617747440273" />
+      <edge id="319" source="8411.T" target="WFC" weight="0.0" />
+      <edge id="320" source="8411.T" target="8306.T" weight="0.0174039158810732" />
+      <edge id="321" source="8411.T" target="RY.TO" weight="0.0290909090909091" />
+      <edge id="322" source="8411.T" target="BK" weight="0.0382513661202186" />
+      <edge id="323" source="8411.T" target="GLE.PA" weight="0.0" />
+      <edge id="324" source="8411.T" target="BAC" weight="0.0" />
+      <edge id="325" source="8411.T" target="INGA.AS" weight="0.0" />
+      <edge id="326" source="8411.T" target="0939.HK" weight="0.0" />
+      <edge id="327" source="8411.T" target="MS" weight="0.013355592654424" />
+      <edge id="328" source="8411.T" target="STAN.L" weight="0.0" />
+      <edge id="329" source="8411.T" target="CSGN.VX" weight="0.0104046242774566" />
+      <edge id="330" source="UBSG.VX" target="JPM" weight="0.0479883664566166" />
+      <edge id="331" source="UBSG.VX" target="GS" weight="0.0511860174781523" />
+      <edge id="332" source="UBSG.VX" target="C" weight="0.125" />
+      <edge id="333" source="UBSG.VX" target="BARC.L" weight="0.0" />
+      <edge id="334" source="UBSG.VX" target="BNP.PA" weight="0.00294985250737463" />
+      <edge id="335" source="UBSG.VX" target="STT" weight="0.0278174037089872" />
+      <edge id="336" source="UBSG.VX" target="NDA-SEK.ST" weight="0.0" />
+      <edge id="337" source="UBSG.VX" target="3988.HK" weight="0.0" />
+      <edge id="338" source="UBSG.VX" target="SAN.MC" weight="0.0" />
+      <edge id="339" source="UBSG.VX" target="ACA.PA" weight="0.0" />
+      <edge id="340" source="UBSG.VX" target="8411.T" weight="0.0" />
+      <edge id="341" source="UBSG.VX" target="UBSG.VX" weight="0.0" />
+      <edge id="342" source="UBSG.VX" target="UCG.MI" weight="0.0" />
+      <edge id="343" source="UBSG.VX" target="DBK.DE" weight="0.0700729927007299" />
+      <edge id="344" source="UBSG.VX" target="1288.HK" weight="0.0" />
+      <edge id="345" source="UBSG.VX" target="1398.HK" weight="0.0" />
+      <edge id="346" source="UBSG.VX" target="RBS.L" weight="0.0" />
+      <edge id="347" source="UBSG.VX" target="HSBA.L" weight="0.0373514431239389" />
+      <edge id="348" source="UBSG.VX" target="8316.T" weight="0.00170648464163823" />
+      <edge id="349" source="UBSG.VX" target="WFC" weight="0.0606060606060606" />
+      <edge id="350" source="UBSG.VX" target="8306.T" weight="0.0" />
+      <edge id="351" source="UBSG.VX" target="RY.TO" weight="0.0218181818181818" />
+      <edge id="352" source="UBSG.VX" target="BK" weight="0.0227686703096539" />
+      <edge id="353" source="UBSG.VX" target="GLE.PA" weight="0.0" />
+      <edge id="354" source="UBSG.VX" target="BAC" weight="0.03515625" />
+      <edge id="355" source="UBSG.VX" target="INGA.AS" weight="0.0" />
+      <edge id="356" source="UBSG.VX" target="0939.HK" weight="0.0" />
+      <edge id="357" source="UBSG.VX" target="MS" weight="0.0350584307178631" />
+      <edge id="358" source="UBSG.VX" target="STAN.L" weight="0.0" />
+      <edge id="359" source="UBSG.VX" target="CSGN.VX" weight="0.411560693641618" />
+      <edge id="360" source="UCG.MI" target="JPM" weight="0.0261754726127" />
+      <edge id="361" source="UCG.MI" target="GS" weight="0.00499375780274657" />
+      <edge id="362" source="UCG.MI" target="C" weight="0.0" />
+      <edge id="363" source="UCG.MI" target="BARC.L" weight="0.0" />
+      <edge id="364" source="UCG.MI" target="BNP.PA" weight="0.0117994100294985" />
+      <edge id="365" source="UCG.MI" target="STT" weight="0.0263908701854494" />
+      <edge id="366" source="UCG.MI" target="NDA-SEK.ST" weight="0.010752688172043" />
+      <edge id="367" source="UCG.MI" target="3988.HK" weight="0.0" />
+      <edge id="368" source="UCG.MI" target="SAN.MC" weight="0.00641025641025641" />
+      <edge id="369" source="UCG.MI" target="ACA.PA" weight="0.0" />
+      <edge id="370" source="UCG.MI" target="8411.T" weight="0.0" />
+      <edge id="371" source="UCG.MI" target="UBSG.VX" weight="0.0180863477246208" />
+      <edge id="372" source="UCG.MI" target="UCG.MI" weight="0.0" />
+      <edge id="373" source="UCG.MI" target="DBK.DE" weight="0.0072992700729927" />
+      <edge id="374" source="UCG.MI" target="1288.HK" weight="0.0" />
+      <edge id="375" source="UCG.MI" target="1398.HK" weight="0.0" />
+      <edge id="376" source="UCG.MI" target="RBS.L" weight="0.0" />
+      <edge id="377" source="UCG.MI" target="HSBA.L" weight="0.0356536502546689" />
+      <edge id="378" source="UCG.MI" target="8316.T" weight="0.00170648464163823" />
+      <edge id="379" source="UCG.MI" target="WFC" weight="0.0" />
+      <edge id="380" source="UCG.MI" target="8306.T" weight="0.000362581580855692" />
+      <edge id="381" source="UCG.MI" target="RY.TO" weight="0.0" />
+      <edge id="382" source="UCG.MI" target="BK" weight="0.00182149362477231" />
+      <edge id="383" source="UCG.MI" target="GLE.PA" weight="0.021505376344086" />
+      <edge id="384" source="UCG.MI" target="BAC" weight="0.0" />
+      <edge id="385" source="UCG.MI" target="INGA.AS" weight="0.0666666666666667" />
+      <edge id="386" source="UCG.MI" target="0939.HK" weight="0.0" />
+      <edge id="387" source="UCG.MI" target="MS" weight="0.001669449081803" />
+      <edge id="388" source="UCG.MI" target="STAN.L" weight="0.0" />
+      <edge id="389" source="UCG.MI" target="CSGN.VX" weight="0.0138728323699422" />
+      <edge id="390" source="DBK.DE" target="JPM" weight="0.0305380513814833" />
+      <edge id="391" source="DBK.DE" target="GS" weight="0.14107365792759" />
+      <edge id="392" source="DBK.DE" target="C" weight="0.2421875" />
+      <edge id="393" source="DBK.DE" target="BARC.L" weight="0.0245398773006135" />
+      <edge id="394" source="DBK.DE" target="BNP.PA" weight="0.0988200589970501" />
+      <edge id="395" source="DBK.DE" target="STT" weight="0.0770328102710414" />
+      <edge id="396" source="DBK.DE" target="NDA-SEK.ST" weight="0.0" />
+      <edge id="397" source="DBK.DE" target="3988.HK" weight="0.0" />
+      <edge id="398" source="DBK.DE" target="SAN.MC" weight="0.166666666666667" />
+      <edge id="399" source="DBK.DE" target="ACA.PA" weight="1.0" />
+      <edge id="400" source="DBK.DE" target="8411.T" weight="0.0" />
+      <edge id="401" source="DBK.DE" target="UBSG.VX" weight="0.00116686114352392" />
+      <edge id="402" source="DBK.DE" target="UCG.MI" weight="0.0" />
+      <edge id="403" source="DBK.DE" target="DBK.DE" weight="0.0" />
+      <edge id="404" source="DBK.DE" target="1288.HK" weight="0.0" />
+      <edge id="405" source="DBK.DE" target="1398.HK" weight="0.0" />
+      <edge id="406" source="DBK.DE" target="RBS.L" weight="0.0" />
+      <edge id="407" source="DBK.DE" target="HSBA.L" weight="0.0882852292020373" />
+      <edge id="408" source="DBK.DE" target="8316.T" weight="0.00170648464163823" />
+      <edge id="409" source="DBK.DE" target="WFC" weight="0.0" />
+      <edge id="410" source="DBK.DE" target="8306.T" weight="0.0" />
+      <edge id="411" source="DBK.DE" target="RY.TO" weight="0.0218181818181818" />
+      <edge id="412" source="DBK.DE" target="BK" weight="0.0236794171220401" />
+      <edge id="413" source="DBK.DE" target="GLE.PA" weight="0.021505376344086" />
+      <edge id="414" source="DBK.DE" target="BAC" weight="0.158203125" />
+      <edge id="415" source="DBK.DE" target="INGA.AS" weight="0.0" />
+      <edge id="416" source="DBK.DE" target="0939.HK" weight="0.0" />
+      <edge id="417" source="DBK.DE" target="MS" weight="0.00834724540901502" />
+      <edge id="418" source="DBK.DE" target="STAN.L" weight="0.0" />
+      <edge id="419" source="DBK.DE" target="CSGN.VX" weight="0.0716763005780347" />
+      <edge id="420" source="1288.HK" target="JPM" weight="0.0" />
+      <edge id="421" source="1288.HK" target="GS" weight="0.0137328339575531" />
+      <edge id="422" source="1288.HK" target="C" weight="0.0" />
+      <edge id="423" source="1288.HK" target="BARC.L" weight="0.0" />
+      <edge id="424" source="1288.HK" target="BNP.PA" weight="0.00294985250737463" />
+      <edge id="425" source="1288.HK" target="STT" weight="0.0106990014265335" />
+      <edge id="426" source="1288.HK" target="NDA-SEK.ST" weight="0.0" />
+      <edge id="427" source="1288.HK" target="3988.HK" weight="0.0" />
+      <edge id="428" source="1288.HK" target="SAN.MC" weight="0.0" />
+      <edge id="429" source="1288.HK" target="ACA.PA" weight="0.0" />
+      <edge id="430" source="1288.HK" target="8411.T" weight="0.0" />
+      <edge id="431" source="1288.HK" target="UBSG.VX" weight="0.0169194865810969" />
+      <edge id="432" source="1288.HK" target="UCG.MI" weight="0.0" />
+      <edge id="433" source="1288.HK" target="DBK.DE" weight="0.00583941605839416" />
+      <edge id="434" source="1288.HK" target="1288.HK" weight="0.0" />
+      <edge id="435" source="1288.HK" target="1398.HK" weight="0.0" />
+      <edge id="436" source="1288.HK" target="RBS.L" weight="0.0" />
+      <edge id="437" source="1288.HK" target="HSBA.L" weight="0.0492359932088285" />
+      <edge id="438" source="1288.HK" target="8316.T" weight="0.00170648464163823" />
+      <edge id="439" source="1288.HK" target="WFC" weight="0.0" />
+      <edge id="440" source="1288.HK" target="8306.T" weight="0.000362581580855692" />
+      <edge id="441" source="1288.HK" target="RY.TO" weight="0.0" />
+      <edge id="442" source="1288.HK" target="BK" weight="0.0145719489981785" />
+      <edge id="443" source="1288.HK" target="GLE.PA" weight="0.0" />
+      <edge id="444" source="1288.HK" target="BAC" weight="0.0" />
+      <edge id="445" source="1288.HK" target="INGA.AS" weight="0.0" />
+      <edge id="446" source="1288.HK" target="0939.HK" weight="0.0" />
+      <edge id="447" source="1288.HK" target="MS" weight="0.0" />
+      <edge id="448" source="1288.HK" target="STAN.L" weight="0.0" />
+      <edge id="449" source="1288.HK" target="CSGN.VX" weight="0.0173410404624277" />
+      <edge id="450" source="1398.HK" target="JPM" weight="0.0591371788657295" />
+      <edge id="451" source="1398.HK" target="GS" weight="0.0237203495630462" />
+      <edge id="452" source="1398.HK" target="C" weight="0.0" />
+      <edge id="453" source="1398.HK" target="BARC.L" weight="0.0" />
+      <edge id="454" source="1398.HK" target="BNP.PA" weight="0.00442477876106195" />
+      <edge id="455" source="1398.HK" target="STT" weight="0.0706134094151212" />
+      <edge id="456" source="1398.HK" target="NDA-SEK.ST" weight="0.198924731182796" />
+      <edge id="457" source="1398.HK" target="3988.HK" weight="0.0" />
+      <edge id="458" source="1398.HK" target="SAN.MC" weight="0.0" />
+      <edge id="459" source="1398.HK" target="ACA.PA" weight="0.0" />
+      <edge id="460" source="1398.HK" target="8411.T" weight="0.0" />
+      <edge id="461" source="1398.HK" target="UBSG.VX" weight="0.0192532088681447" />
+      <edge id="462" source="1398.HK" target="UCG.MI" weight="0.0" />
+      <edge id="463" source="1398.HK" target="DBK.DE" weight="0.0306569343065693" />
+      <edge id="464" source="1398.HK" target="1288.HK" weight="0.0" />
+      <edge id="465" source="1398.HK" target="1398.HK" weight="0.0" />
+      <edge id="466" source="1398.HK" target="RBS.L" weight="0.0" />
+      <edge id="467" source="1398.HK" target="HSBA.L" weight="0.0628183361629881" />
+      <edge id="468" source="1398.HK" target="8316.T" weight="0.00341296928327645" />
+      <edge id="469" source="1398.HK" target="WFC" weight="0.0" />
+      <edge id="470" source="1398.HK" target="8306.T" weight="0.000362581580855692" />
+      <edge id="471" source="1398.HK" target="RY.TO" weight="0.00727272727272727" />
+      <edge id="472" source="1398.HK" target="BK" weight="0.0145719489981785" />
+      <edge id="473" source="1398.HK" target="GLE.PA" weight="0.0" />
+      <edge id="474" source="1398.HK" target="BAC" weight="0.0" />
+      <edge id="475" source="1398.HK" target="INGA.AS" weight="0.0" />
+      <edge id="476" source="1398.HK" target="0939.HK" weight="0.0" />
+      <edge id="477" source="1398.HK" target="MS" weight="0.0" />
+      <edge id="478" source="1398.HK" target="STAN.L" weight="0.0" />
+      <edge id="479" source="1398.HK" target="CSGN.VX" weight="0.0127167630057803" />
+      <edge id="480" source="RBS.L" target="JPM" weight="0.00436257876878333" />
+      <edge id="481" source="RBS.L" target="GS" weight="0.00499375780274657" />
+      <edge id="482" source="RBS.L" target="C" weight="0.0" />
+      <edge id="483" source="RBS.L" target="BARC.L" weight="0.0" />
+      <edge id="484" source="RBS.L" target="BNP.PA" weight="0.00147492625368732" />
+      <edge id="485" source="RBS.L" target="STT" weight="0.0164051355206847" />
+      <edge id="486" source="RBS.L" target="NDA-SEK.ST" weight="0.0161290322580645" />
+      <edge id="487" source="RBS.L" target="3988.HK" weight="0.0" />
+      <edge id="488" source="RBS.L" target="SAN.MC" weight="0.0128205128205128" />
+      <edge id="489" source="RBS.L" target="ACA.PA" weight="0.0" />
+      <edge id="490" source="RBS.L" target="8411.T" weight="0.0303030303030303" />
+      <edge id="491" source="RBS.L" target="UBSG.VX" weight="0.0268378063010502" />
+      <edge id="492" source="RBS.L" target="UCG.MI" weight="0.0" />
+      <edge id="493" source="RBS.L" target="DBK.DE" weight="0.00291970802919708" />
+      <edge id="494" source="RBS.L" target="1288.HK" weight="0.0" />
+      <edge id="495" source="RBS.L" target="1398.HK" weight="0.0" />
+      <edge id="496" source="RBS.L" target="RBS.L" weight="0.0" />
+      <edge id="497" source="RBS.L" target="HSBA.L" weight="0.0458404074702886" />
+      <edge id="498" source="RBS.L" target="8316.T" weight="0.0068259385665529" />
+      <edge id="499" source="RBS.L" target="WFC" weight="0.00378787878787879" />
+      <edge id="500" source="RBS.L" target="8306.T" weight="0.0" />
+      <edge id="501" source="RBS.L" target="RY.TO" weight="0.0" />
+      <edge id="502" source="RBS.L" target="BK" weight="0.0063752276867031" />
+      <edge id="503" source="RBS.L" target="GLE.PA" weight="0.010752688172043" />
+      <edge id="504" source="RBS.L" target="BAC" weight="0.0" />
+      <edge id="505" source="RBS.L" target="INGA.AS" weight="0.0166666666666667" />
+      <edge id="506" source="RBS.L" target="0939.HK" weight="0.0" />
+      <edge id="507" source="RBS.L" target="MS" weight="0.01669449081803" />
+      <edge id="508" source="RBS.L" target="STAN.L" weight="0.0" />
+      <edge id="509" source="RBS.L" target="CSGN.VX" weight="0.0023121387283237" />
+      <edge id="510" source="HSBA.L" target="JPM" weight="0.0290838584585555" />
+      <edge id="511" source="HSBA.L" target="GS" weight="0.00499375780274657" />
+      <edge id="512" source="HSBA.L" target="C" weight="0.015625" />
+      <edge id="513" source="HSBA.L" target="BARC.L" weight="0.00613496932515337" />
+      <edge id="514" source="HSBA.L" target="BNP.PA" weight="0.0176991150442478" />
+      <edge id="515" source="HSBA.L" target="STT" weight="0.072039942938659" />
+      <edge id="516" source="HSBA.L" target="NDA-SEK.ST" weight="0.010752688172043" />
+      <edge id="517" source="HSBA.L" target="3988.HK" weight="0.0" />
+      <edge id="518" source="HSBA.L" target="SAN.MC" weight="0.0192307692307692" />
+      <edge id="519" source="HSBA.L" target="ACA.PA" weight="0.0" />
+      <edge id="520" source="HSBA.L" target="8411.T" weight="0.424242424242424" />
+      <edge id="521" source="HSBA.L" target="UBSG.VX" weight="0.0536756126021003" />
+      <edge id="522" source="HSBA.L" target="UCG.MI" weight="0.0" />
+      <edge id="523" source="HSBA.L" target="DBK.DE" weight="0.0116788321167883" />
+      <edge id="524" source="HSBA.L" target="1288.HK" weight="0.0" />
+      <edge id="525" source="HSBA.L" target="1398.HK" weight="0.0" />
+      <edge id="526" source="HSBA.L" target="RBS.L" weight="0.0" />
+      <edge id="527" source="HSBA.L" target="HSBA.L" weight="0.0" />
+      <edge id="528" source="HSBA.L" target="8316.T" weight="0.0136518771331058" />
+      <edge id="529" source="HSBA.L" target="WFC" weight="0.00378787878787879" />
+      <edge id="530" source="HSBA.L" target="8306.T" weight="0.000362581580855692" />
+      <edge id="531" source="HSBA.L" target="RY.TO" weight="0.0" />
+      <edge id="532" source="HSBA.L" target="BK" weight="0.017304189435337" />
+      <edge id="533" source="HSBA.L" target="GLE.PA" weight="0.172043010752688" />
+      <edge id="534" source="HSBA.L" target="BAC" weight="0.0" />
+      <edge id="535" source="HSBA.L" target="INGA.AS" weight="0.0166666666666667" />
+      <edge id="536" source="HSBA.L" target="0939.HK" weight="0.0" />
+      <edge id="537" source="HSBA.L" target="MS" weight="0.0" />
+      <edge id="538" source="HSBA.L" target="STAN.L" weight="0.8" />
+      <edge id="539" source="HSBA.L" target="CSGN.VX" weight="0.0208092485549133" />
+      <edge id="540" source="8316.T" target="JPM" weight="0.0266602035870092" />
+      <edge id="541" source="8316.T" target="GS" weight="0.0199750312109863" />
+      <edge id="542" source="8316.T" target="C" weight="0.0" />
+      <edge id="543" source="8316.T" target="BARC.L" weight="0.0" />
+      <edge id="544" source="8316.T" target="BNP.PA" weight="0.00884955752212389" />
+      <edge id="545" source="8316.T" target="STT" weight="0.0242510699001427" />
+      <edge id="546" source="8316.T" target="NDA-SEK.ST" weight="0.043010752688172" />
+      <edge id="547" source="8316.T" target="3988.HK" weight="0.0" />
+      <edge id="548" source="8316.T" target="SAN.MC" weight="0.0" />
+      <edge id="549" source="8316.T" target="ACA.PA" weight="0.0" />
+      <edge id="550" source="8316.T" target="8411.T" weight="0.0" />
+      <edge id="551" source="8316.T" target="UBSG.VX" weight="0.00991831971995333" />
+      <edge id="552" source="8316.T" target="UCG.MI" weight="0.0" />
+      <edge id="553" source="8316.T" target="DBK.DE" weight="0.0072992700729927" />
+      <edge id="554" source="8316.T" target="1288.HK" weight="0.0" />
+      <edge id="555" source="8316.T" target="1398.HK" weight="0.0" />
+      <edge id="556" source="8316.T" target="RBS.L" weight="0.0" />
+      <edge id="557" source="8316.T" target="HSBA.L" weight="0.0118845500848896" />
+      <edge id="558" source="8316.T" target="8316.T" weight="0.0" />
+      <edge id="559" source="8316.T" target="WFC" weight="0.0" />
+      <edge id="560" source="8316.T" target="8306.T" weight="0.0181290790427846" />
+      <edge id="561" source="8316.T" target="RY.TO" weight="0.0254545454545455" />
+      <edge id="562" source="8316.T" target="BK" weight="0.0455373406193078" />
+      <edge id="563" source="8316.T" target="GLE.PA" weight="0.0" />
+      <edge id="564" source="8316.T" target="BAC" weight="0.0" />
+      <edge id="565" source="8316.T" target="INGA.AS" weight="0.0333333333333333" />
+      <edge id="566" source="8316.T" target="0939.HK" weight="0.0" />
+      <edge id="567" source="8316.T" target="MS" weight="0.0200333889816361" />
+      <edge id="568" source="8316.T" target="STAN.L" weight="0.0" />
+      <edge id="569" source="8316.T" target="CSGN.VX" weight="0.0104046242774566" />
+      <edge id="570" source="WFC" target="JPM" weight="0.0523509452253999" />
+      <edge id="571" source="WFC" target="GS" weight="0.0736579275905118" />
+      <edge id="572" source="WFC" target="C" weight="0.0625" />
+      <edge id="573" source="WFC" target="BARC.L" weight="0.110429447852761" />
+      <edge id="574" source="WFC" target="BNP.PA" weight="0.00589970501474926" />
+      <edge id="575" source="WFC" target="STT" weight="0.00713266761768902" />
+      <edge id="576" source="WFC" target="NDA-SEK.ST" weight="0.064516129032258" />
+      <edge id="577" source="WFC" target="3988.HK" weight="0.0" />
+      <edge id="578" source="WFC" target="SAN.MC" weight="0.0" />
+      <edge id="579" source="WFC" target="ACA.PA" weight="0.0" />
+      <edge id="580" source="WFC" target="8411.T" weight="0.0" />
+      <edge id="581" source="WFC" target="UBSG.VX" weight="0.0309218203033839" />
+      <edge id="582" source="WFC" target="UCG.MI" weight="0.0" />
+      <edge id="583" source="WFC" target="DBK.DE" weight="0.0948905109489051" />
+      <edge id="584" source="WFC" target="1288.HK" weight="0.0" />
+      <edge id="585" source="WFC" target="1398.HK" weight="0.0" />
+      <edge id="586" source="WFC" target="RBS.L" weight="0.0" />
+      <edge id="587" source="WFC" target="HSBA.L" weight="0.0254668930390492" />
+      <edge id="588" source="WFC" target="8316.T" weight="0.00341296928327645" />
+      <edge id="589" source="WFC" target="WFC" weight="0.0" />
+      <edge id="590" source="WFC" target="8306.T" weight="0.00797679477882523" />
+      <edge id="591" source="WFC" target="RY.TO" weight="0.0509090909090909" />
+      <edge id="592" source="WFC" target="BK" weight="0.0737704918032787" />
+      <edge id="593" source="WFC" target="GLE.PA" weight="0.010752688172043" />
+      <edge id="594" source="WFC" target="BAC" weight="0.076171875" />
+      <edge id="595" source="WFC" target="INGA.AS" weight="0.0166666666666667" />
+      <edge id="596" source="WFC" target="0939.HK" weight="0.0" />
+      <edge id="597" source="WFC" target="MS" weight="0.0767946577629382" />
+      <edge id="598" source="WFC" target="STAN.L" weight="0.0" />
+      <edge id="599" source="WFC" target="CSGN.VX" weight="0.0300578034682081" />
+      <edge id="600" source="8306.T" target="JPM" weight="0.0237518177411537" />
+      <edge id="601" source="8306.T" target="GS" weight="0.00624219725343321" />
+      <edge id="602" source="8306.T" target="C" weight="0.0" />
+      <edge id="603" source="8306.T" target="BARC.L" weight="0.0" />
+      <edge id="604" source="8306.T" target="BNP.PA" weight="0.0103244837758112" />
+      <edge id="605" source="8306.T" target="STT" weight="0.0192582025677603" />
+      <edge id="606" source="8306.T" target="NDA-SEK.ST" weight="0.0161290322580645" />
+      <edge id="607" source="8306.T" target="3988.HK" weight="0.0" />
+      <edge id="608" source="8306.T" target="SAN.MC" weight="0.0" />
+      <edge id="609" source="8306.T" target="ACA.PA" weight="0.0" />
+      <edge id="610" source="8306.T" target="8411.T" weight="0.0" />
+      <edge id="611" source="8306.T" target="UBSG.VX" weight="0.00700116686114352" />
+      <edge id="612" source="8306.T" target="UCG.MI" weight="0.0" />
+      <edge id="613" source="8306.T" target="DBK.DE" weight="0.0145985401459854" />
+      <edge id="614" source="8306.T" target="1288.HK" weight="0.0" />
+      <edge id="615" source="8306.T" target="1398.HK" weight="0.0" />
+      <edge id="616" source="8306.T" target="RBS.L" weight="0.0" />
+      <edge id="617" source="8306.T" target="HSBA.L" weight="0.0118845500848896" />
+      <edge id="618" source="8306.T" target="8316.T" weight="0.0443686006825939" />
+      <edge id="619" source="8306.T" target="WFC" weight="0.0" />
+      <edge id="620" source="8306.T" target="8306.T" weight="0.0" />
+      <edge id="621" source="8306.T" target="RY.TO" weight="0.0290909090909091" />
+      <edge id="622" source="8306.T" target="BK" weight="0.0264116575591986" />
+      <edge id="623" source="8306.T" target="GLE.PA" weight="0.0" />
+      <edge id="624" source="8306.T" target="BAC" weight="0.0" />
+      <edge id="625" source="8306.T" target="INGA.AS" weight="0.0166666666666667" />
+      <edge id="626" source="8306.T" target="0939.HK" weight="0.0" />
+      <edge id="627" source="8306.T" target="MS" weight="0.0" />
+      <edge id="628" source="8306.T" target="STAN.L" weight="0.0" />
+      <edge id="629" source="8306.T" target="CSGN.VX" weight="0.0104046242774566" />
+      <edge id="630" source="RY.TO" target="JPM" weight="0.00339311682016481" />
+      <edge id="631" source="RY.TO" target="GS" weight="0.0124843945068664" />
+      <edge id="632" source="RY.TO" target="C" weight="0.015625" />
+      <edge id="633" source="RY.TO" target="BARC.L" weight="0.0306748466257669" />
+      <edge id="634" source="RY.TO" target="BNP.PA" weight="0.00294985250737463" />
+      <edge id="635" source="RY.TO" target="STT" weight="0.00855920114122682" />
+      <edge id="636" source="RY.TO" target="NDA-SEK.ST" weight="0.010752688172043" />
+      <edge id="637" source="RY.TO" target="3988.HK" weight="0.0" />
+      <edge id="638" source="RY.TO" target="SAN.MC" weight="0.0" />
+      <edge id="639" source="RY.TO" target="ACA.PA" weight="0.0" />
+      <edge id="640" source="RY.TO" target="8411.T" weight="0.0" />
+      <edge id="641" source="RY.TO" target="UBSG.VX" weight="0.00350058343057176" />
+      <edge id="642" source="RY.TO" target="UCG.MI" weight="0.0" />
+      <edge id="643" source="RY.TO" target="DBK.DE" weight="0.0306569343065693" />
+      <edge id="644" source="RY.TO" target="1288.HK" weight="0.0" />
+      <edge id="645" source="RY.TO" target="1398.HK" weight="0.0" />
+      <edge id="646" source="RY.TO" target="RBS.L" weight="0.0" />
+      <edge id="647" source="RY.TO" target="HSBA.L" weight="0.032258064516129" />
+      <edge id="648" source="RY.TO" target="8316.T" weight="0.00170648464163823" />
+      <edge id="649" source="RY.TO" target="WFC" weight="0.00757575757575758" />
+      <edge id="650" source="RY.TO" target="8306.T" weight="0.0" />
+      <edge id="651" source="RY.TO" target="RY.TO" weight="0.0" />
+      <edge id="652" source="RY.TO" target="BK" weight="0.0136612021857923" />
+      <edge id="653" source="RY.TO" target="GLE.PA" weight="0.0" />
+      <edge id="654" source="RY.TO" target="BAC" weight="0.0234375" />
+      <edge id="655" source="RY.TO" target="INGA.AS" weight="0.0" />
+      <edge id="656" source="RY.TO" target="0939.HK" weight="0.0" />
+      <edge id="657" source="RY.TO" target="MS" weight="0.010016694490818" />
+      <edge id="658" source="RY.TO" target="STAN.L" weight="0.0" />
+      <edge id="659" source="RY.TO" target="CSGN.VX" weight="0.0242774566473988" />
+      <edge id="660" source="BK" target="JPM" weight="0.0397479398933592" />
+      <edge id="661" source="BK" target="GS" weight="0.0898876404494382" />
+      <edge id="662" source="BK" target="C" weight="0.0546875" />
+      <edge id="663" source="BK" target="BARC.L" weight="0.110429447852761" />
+      <edge id="664" source="BK" target="BNP.PA" weight="0.00884955752212389" />
+      <edge id="665" source="BK" target="STT" weight="0.00784593437945792" />
+      <edge id="666" source="BK" target="NDA-SEK.ST" weight="0.10752688172043" />
+      <edge id="667" source="BK" target="3988.HK" weight="0.0" />
+      <edge id="668" source="BK" target="SAN.MC" weight="0.0" />
+      <edge id="669" source="BK" target="ACA.PA" weight="0.0" />
+      <edge id="670" source="BK" target="8411.T" weight="0.0" />
+      <edge id="671" source="BK" target="UBSG.VX" weight="0.0449241540256709" />
+      <edge id="672" source="BK" target="UCG.MI" weight="0.0" />
+      <edge id="673" source="BK" target="DBK.DE" weight="0.0715328467153284" />
+      <edge id="674" source="BK" target="1288.HK" weight="0.0" />
+      <edge id="675" source="BK" target="1398.HK" weight="0.0" />
+      <edge id="676" source="BK" target="RBS.L" weight="0.0" />
+      <edge id="677" source="BK" target="HSBA.L" weight="0.0186757215619694" />
+      <edge id="678" source="BK" target="8316.T" weight="0.00341296928327645" />
+      <edge id="679" source="BK" target="WFC" weight="0.0643939393939394" />
+      <edge id="680" source="BK" target="8306.T" weight="0.00797679477882523" />
+      <edge id="681" source="BK" target="RY.TO" weight="0.0472727272727273" />
+      <edge id="682" source="BK" target="BK" weight="0.0" />
+      <edge id="683" source="BK" target="GLE.PA" weight="0.021505376344086" />
+      <edge id="684" source="BK" target="BAC" weight="0.03515625" />
+      <edge id="685" source="BK" target="INGA.AS" weight="0.0166666666666667" />
+      <edge id="686" source="BK" target="0939.HK" weight="0.0" />
+      <edge id="687" source="BK" target="MS" weight="0.0851419031719532" />
+      <edge id="688" source="BK" target="STAN.L" weight="0.0" />
+      <edge id="689" source="BK" target="CSGN.VX" weight="0.0289017341040462" />
+      <edge id="690" source="GLE.PA" target="JPM" weight="0.00290838584585555" />
+      <edge id="691" source="GLE.PA" target="GS" weight="0.0162297128589263" />
+      <edge id="692" source="GLE.PA" target="C" weight="0.0" />
+      <edge id="693" source="GLE.PA" target="BARC.L" weight="0.00613496932515337" />
+      <edge id="694" source="GLE.PA" target="BNP.PA" weight="0.200589970501475" />
+      <edge id="695" source="GLE.PA" target="STT" weight="0.0534950071326676" />
+      <edge id="696" source="GLE.PA" target="NDA-SEK.ST" weight="0.0053763440860215" />
+      <edge id="697" source="GLE.PA" target="3988.HK" weight="0.0" />
+      <edge id="698" source="GLE.PA" target="SAN.MC" weight="0.0769230769230769" />
+      <edge id="699" source="GLE.PA" target="ACA.PA" weight="0.0" />
+      <edge id="700" source="GLE.PA" target="8411.T" weight="0.0" />
+      <edge id="701" source="GLE.PA" target="UBSG.VX" weight="0.02975495915986" />
+      <edge id="702" source="GLE.PA" target="UCG.MI" weight="0.0" />
+      <edge id="703" source="GLE.PA" target="DBK.DE" weight="0.0437956204379562" />
+      <edge id="704" source="GLE.PA" target="1288.HK" weight="0.0" />
+      <edge id="705" source="GLE.PA" target="1398.HK" weight="0.0" />
+      <edge id="706" source="GLE.PA" target="RBS.L" weight="0.0" />
+      <edge id="707" source="GLE.PA" target="HSBA.L" weight="0.0475382003395586" />
+      <edge id="708" source="GLE.PA" target="8316.T" weight="0.00341296928327645" />
+      <edge id="709" source="GLE.PA" target="WFC" weight="0.0" />
+      <edge id="710" source="GLE.PA" target="8306.T" weight="0.000725163161711385" />
+      <edge id="711" source="GLE.PA" target="RY.TO" weight="0.0" />
+      <edge id="712" source="GLE.PA" target="BK" weight="0.00455373406193078" />
+      <edge id="713" source="GLE.PA" target="GLE.PA" weight="0.0" />
+      <edge id="714" source="GLE.PA" target="BAC" weight="0.0" />
+      <edge id="715" source="GLE.PA" target="INGA.AS" weight="0.1" />
+      <edge id="716" source="GLE.PA" target="0939.HK" weight="0.0" />
+      <edge id="717" source="GLE.PA" target="MS" weight="0.00500834724540901" />
+      <edge id="718" source="GLE.PA" target="STAN.L" weight="0.0" />
+      <edge id="719" source="GLE.PA" target="CSGN.VX" weight="0.015028901734104" />
+      <edge id="720" source="BAC" target="JPM" weight="0.086282113427048" />
+      <edge id="721" source="BAC" target="GS" weight="0.079900124843945" />
+      <edge id="722" source="BAC" target="C" weight="0.0546875" />
+      <edge id="723" source="BAC" target="BARC.L" weight="0.110429447852761" />
+      <edge id="724" source="BAC" target="BNP.PA" weight="0.0103244837758112" />
+      <edge id="725" source="BAC" target="STT" weight="0.00927246790299572" />
+      <edge id="726" source="BAC" target="NDA-SEK.ST" weight="0.032258064516129" />
+      <edge id="727" source="BAC" target="3988.HK" weight="0.0" />
+      <edge id="728" source="BAC" target="SAN.MC" weight="0.00641025641025641" />
+      <edge id="729" source="BAC" target="ACA.PA" weight="0.0" />
+      <edge id="730" source="BAC" target="8411.T" weight="0.0" />
+      <edge id="731" source="BAC" target="UBSG.VX" weight="0.0396732788798133" />
+      <edge id="732" source="BAC" target="UCG.MI" weight="0.0" />
+      <edge id="733" source="BAC" target="DBK.DE" weight="0.0437956204379562" />
+      <edge id="734" source="BAC" target="1288.HK" weight="0.0" />
+      <edge id="735" source="BAC" target="1398.HK" weight="0.0" />
+      <edge id="736" source="BAC" target="RBS.L" weight="0.0" />
+      <edge id="737" source="BAC" target="HSBA.L" weight="0.0271646859083192" />
+      <edge id="738" source="BAC" target="8316.T" weight="0.00341296928327645" />
+      <edge id="739" source="BAC" target="WFC" weight="0.0833333333333333" />
+      <edge id="740" source="BAC" target="8306.T" weight="0.00797679477882523" />
+      <edge id="741" source="BAC" target="RY.TO" weight="0.112727272727273" />
+      <edge id="742" source="BAC" target="BK" weight="0.0810564663023679" />
+      <edge id="743" source="BAC" target="GLE.PA" weight="0.043010752688172" />
+      <edge id="744" source="BAC" target="BAC" weight="0.0" />
+      <edge id="745" source="BAC" target="INGA.AS" weight="0.25" />
+      <edge id="746" source="BAC" target="0939.HK" weight="0.0" />
+      <edge id="747" source="BAC" target="MS" weight="0.0934891485809683" />
+      <edge id="748" source="BAC" target="STAN.L" weight="0.0" />
+      <edge id="749" source="BAC" target="CSGN.VX" weight="0.0289017341040462" />
+      <edge id="750" source="INGA.AS" target="JPM" weight="0.0659234125060592" />
+      <edge id="751" source="INGA.AS" target="GS" weight="0.00499375780274657" />
+      <edge id="752" source="INGA.AS" target="C" weight="0.0" />
+      <edge id="753" source="INGA.AS" target="BARC.L" weight="0.00613496932515337" />
+      <edge id="754" source="INGA.AS" target="BNP.PA" weight="0.196165191740413" />
+      <edge id="755" source="INGA.AS" target="STT" weight="0.0456490727532097" />
+      <edge id="756" source="INGA.AS" target="NDA-SEK.ST" weight="0.0268817204301075" />
+      <edge id="757" source="INGA.AS" target="3988.HK" weight="0.0" />
+      <edge id="758" source="INGA.AS" target="SAN.MC" weight="0.0705128205128205" />
+      <edge id="759" source="INGA.AS" target="ACA.PA" weight="0.0" />
+      <edge id="760" source="INGA.AS" target="8411.T" weight="0.0" />
+      <edge id="761" source="INGA.AS" target="UBSG.VX" weight="0.0338389731621937" />
+      <edge id="762" source="INGA.AS" target="UCG.MI" weight="0.0" />
+      <edge id="763" source="INGA.AS" target="DBK.DE" weight="0.147445255474453" />
+      <edge id="764" source="INGA.AS" target="1288.HK" weight="0.0" />
+      <edge id="765" source="INGA.AS" target="1398.HK" weight="0.0" />
+      <edge id="766" source="INGA.AS" target="RBS.L" weight="0.0" />
+      <edge id="767" source="INGA.AS" target="HSBA.L" weight="0.0288624787775891" />
+      <edge id="768" source="INGA.AS" target="8316.T" weight="0.00341296928327645" />
+      <edge id="769" source="INGA.AS" target="WFC" weight="0.0" />
+      <edge id="770" source="INGA.AS" target="8306.T" weight="0.000362581580855692" />
+      <edge id="771" source="INGA.AS" target="RY.TO" weight="0.0290909090909091" />
+      <edge id="772" source="INGA.AS" target="BK" weight="0.00455373406193078" />
+      <edge id="773" source="INGA.AS" target="GLE.PA" weight="0.021505376344086" />
+      <edge id="774" source="INGA.AS" target="BAC" weight="0.0" />
+      <edge id="775" source="INGA.AS" target="INGA.AS" weight="0.0" />
+      <edge id="776" source="INGA.AS" target="0939.HK" weight="0.0" />
+      <edge id="777" source="INGA.AS" target="MS" weight="0.0283806343906511" />
+      <edge id="778" source="INGA.AS" target="STAN.L" weight="0.0" />
+      <edge id="779" source="INGA.AS" target="CSGN.VX" weight="0.015028901734104" />
+      <edge id="780" source="0939.HK" target="JPM" weight="0.00630150266602036" />
+      <edge id="781" source="0939.HK" target="GS" weight="0.00998751560549313" />
+      <edge id="782" source="0939.HK" target="C" weight="0.0" />
+      <edge id="783" source="0939.HK" target="BARC.L" weight="0.0" />
+      <edge id="784" source="0939.HK" target="BNP.PA" weight="0.00442477876106195" />
+      <edge id="785" source="0939.HK" target="STT" weight="0.0335235378031384" />
+      <edge id="786" source="0939.HK" target="NDA-SEK.ST" weight="0.053763440860215" />
+      <edge id="787" source="0939.HK" target="3988.HK" weight="0.0" />
+      <edge id="788" source="0939.HK" target="SAN.MC" weight="0.0" />
+      <edge id="789" source="0939.HK" target="ACA.PA" weight="0.0" />
+      <edge id="790" source="0939.HK" target="8411.T" weight="0.0" />
+      <edge id="791" source="0939.HK" target="UBSG.VX" weight="0.0110851808634772" />
+      <edge id="792" source="0939.HK" target="UCG.MI" weight="0.0" />
+      <edge id="793" source="0939.HK" target="DBK.DE" weight="0.0102189781021898" />
+      <edge id="794" source="0939.HK" target="1288.HK" weight="0.0" />
+      <edge id="795" source="0939.HK" target="1398.HK" weight="0.5" />
+      <edge id="796" source="0939.HK" target="RBS.L" weight="0.0" />
+      <edge id="797" source="0939.HK" target="HSBA.L" weight="0.0220713073005093" />
+      <edge id="798" source="0939.HK" target="8316.T" weight="0.0" />
+      <edge id="799" source="0939.HK" target="WFC" weight="0.0" />
+      <edge id="800" source="0939.HK" target="8306.T" weight="0.0" />
+      <edge id="801" source="0939.HK" target="RY.TO" weight="0.00363636363636364" />
+      <edge id="802" source="0939.HK" target="BK" weight="0.00819672131147541" />
+      <edge id="803" source="0939.HK" target="GLE.PA" weight="0.0" />
+      <edge id="804" source="0939.HK" target="BAC" weight="0.0" />
+      <edge id="805" source="0939.HK" target="INGA.AS" weight="0.0" />
+      <edge id="806" source="0939.HK" target="0939.HK" weight="0.0" />
+      <edge id="807" source="0939.HK" target="MS" weight="0.00834724540901502" />
+      <edge id="808" source="0939.HK" target="STAN.L" weight="0.0" />
+      <edge id="809" source="0939.HK" target="CSGN.VX" weight="0.0069364161849711" />
+      <edge id="810" source="MS" target="JPM" weight="0.129423170140572" />
+      <edge id="811" source="MS" target="GS" weight="0.0649188514357053" />
+      <edge id="812" source="MS" target="C" weight="0.0546875" />
+      <edge id="813" source="MS" target="BARC.L" weight="0.098159509202454" />
+      <edge id="814" source="MS" target="BNP.PA" weight="0.00737463126843658" />
+      <edge id="815" source="MS" target="STT" weight="0.00570613409415121" />
+      <edge id="816" source="MS" target="NDA-SEK.ST" weight="0.010752688172043" />
+      <edge id="817" source="MS" target="3988.HK" weight="0.0" />
+      <edge id="818" source="MS" target="SAN.MC" weight="0.0128205128205128" />
+      <edge id="819" source="MS" target="ACA.PA" weight="0.0" />
+      <edge id="820" source="MS" target="8411.T" weight="0.0" />
+      <edge id="821" source="MS" target="UBSG.VX" weight="0.0326721120186698" />
+      <edge id="822" source="MS" target="UCG.MI" weight="0.0" />
+      <edge id="823" source="MS" target="DBK.DE" weight="0.035036496350365" />
+      <edge id="824" source="MS" target="1288.HK" weight="0.0" />
+      <edge id="825" source="MS" target="1398.HK" weight="0.0" />
+      <edge id="826" source="MS" target="RBS.L" weight="0.0" />
+      <edge id="827" source="MS" target="HSBA.L" weight="0.0254668930390492" />
+      <edge id="828" source="MS" target="8316.T" weight="0.00341296928327645" />
+      <edge id="829" source="MS" target="WFC" weight="0.0606060606060606" />
+      <edge id="830" source="MS" target="8306.T" weight="0.878172588832487" />
+      <edge id="831" source="MS" target="RY.TO" weight="0.0727272727272727" />
+      <edge id="832" source="MS" target="BK" weight="0.0646630236794171" />
+      <edge id="833" source="MS" target="GLE.PA" weight="0.010752688172043" />
+      <edge id="834" source="MS" target="BAC" weight="0.1015625" />
+      <edge id="835" source="MS" target="INGA.AS" weight="0.0" />
+      <edge id="836" source="MS" target="0939.HK" weight="0.0" />
+      <edge id="837" source="MS" target="MS" weight="0.0" />
+      <edge id="838" source="MS" target="STAN.L" weight="0.0" />
+      <edge id="839" source="MS" target="CSGN.VX" weight="0.0242774566473988" />
+      <edge id="840" source="STAN.L" target="JPM" weight="0.0668928744546777" />
+      <edge id="841" source="STAN.L" target="GS" weight="0.0149812734082397" />
+      <edge id="842" source="STAN.L" target="C" weight="0.0859375" />
+      <edge id="843" source="STAN.L" target="BARC.L" weight="0.0" />
+      <edge id="844" source="STAN.L" target="BNP.PA" weight="0.0752212389380531" />
+      <edge id="845" source="STAN.L" target="STT" weight="0.0791726105563481" />
+      <edge id="846" source="STAN.L" target="NDA-SEK.ST" weight="0.0" />
+      <edge id="847" source="STAN.L" target="3988.HK" weight="0.0" />
+      <edge id="848" source="STAN.L" target="SAN.MC" weight="0.474358974358974" />
+      <edge id="849" source="STAN.L" target="ACA.PA" weight="0.0" />
+      <edge id="850" source="STAN.L" target="8411.T" weight="0.424242424242424" />
+      <edge id="851" source="STAN.L" target="UBSG.VX" weight="0.02975495915986" />
+      <edge id="852" source="STAN.L" target="UCG.MI" weight="1.0" />
+      <edge id="853" source="STAN.L" target="DBK.DE" weight="0.0102189781021898" />
+      <edge id="854" source="STAN.L" target="1288.HK" weight="0.0" />
+      <edge id="855" source="STAN.L" target="1398.HK" weight="0.0" />
+      <edge id="856" source="STAN.L" target="RBS.L" weight="0.0" />
+      <edge id="857" source="STAN.L" target="HSBA.L" weight="0.0611205432937182" />
+      <edge id="858" source="STAN.L" target="8316.T" weight="0.0136518771331058" />
+      <edge id="859" source="STAN.L" target="WFC" weight="0.00378787878787879" />
+      <edge id="860" source="STAN.L" target="8306.T" weight="0.000362581580855692" />
+      <edge id="861" source="STAN.L" target="RY.TO" weight="0.0145454545454545" />
+      <edge id="862" source="STAN.L" target="BK" weight="0.0828779599271403" />
+      <edge id="863" source="STAN.L" target="GLE.PA" weight="0.139784946236559" />
+      <edge id="864" source="STAN.L" target="BAC" weight="0.0" />
+      <edge id="865" source="STAN.L" target="INGA.AS" weight="0.0666666666666667" />
+      <edge id="866" source="STAN.L" target="0939.HK" weight="0.0" />
+      <edge id="867" source="STAN.L" target="MS" weight="0.0" />
+      <edge id="868" source="STAN.L" target="STAN.L" weight="0.0" />
+      <edge id="869" source="STAN.L" target="CSGN.VX" weight="0.0242774566473988" />
+      <edge id="870" source="CSGN.VX" target="JPM" weight="0.0222976248182259" />
+      <edge id="871" source="CSGN.VX" target="GS" weight="0.00499375780274657" />
+      <edge id="872" source="CSGN.VX" target="C" weight="0.0" />
+      <edge id="873" source="CSGN.VX" target="BARC.L" weight="0.0" />
+      <edge id="874" source="CSGN.VX" target="BNP.PA" weight="0.00589970501474926" />
+      <edge id="875" source="CSGN.VX" target="STT" weight="0.0378031383737518" />
+      <edge id="876" source="CSGN.VX" target="NDA-SEK.ST" weight="0.021505376344086" />
+      <edge id="877" source="CSGN.VX" target="3988.HK" weight="0.0" />
+      <edge id="878" source="CSGN.VX" target="SAN.MC" weight="0.0" />
+      <edge id="879" source="CSGN.VX" target="ACA.PA" weight="0.0" />
+      <edge id="880" source="CSGN.VX" target="8411.T" weight="0.0" />
+      <edge id="881" source="CSGN.VX" target="UBSG.VX" weight="0.101516919486581" />
+      <edge id="882" source="CSGN.VX" target="UCG.MI" weight="0.0" />
+      <edge id="883" source="CSGN.VX" target="DBK.DE" weight="0.0102189781021898" />
+      <edge id="884" source="CSGN.VX" target="1288.HK" weight="0.0" />
+      <edge id="885" source="CSGN.VX" target="1398.HK" weight="0.0" />
+      <edge id="886" source="CSGN.VX" target="RBS.L" weight="0.0" />
+      <edge id="887" source="CSGN.VX" target="HSBA.L" weight="0.0067911714770798" />
+      <edge id="888" source="CSGN.VX" target="8316.T" weight="0.00170648464163823" />
+      <edge id="889" source="CSGN.VX" target="WFC" weight="0.0" />
+      <edge id="890" source="CSGN.VX" target="8306.T" weight="0.000362581580855692" />
+      <edge id="891" source="CSGN.VX" target="RY.TO" weight="0.0" />
+      <edge id="892" source="CSGN.VX" target="BK" weight="0.00364298724954463" />
+      <edge id="893" source="CSGN.VX" target="GLE.PA" weight="0.0" />
+      <edge id="894" source="CSGN.VX" target="BAC" weight="0.0" />
+      <edge id="895" source="CSGN.VX" target="INGA.AS" weight="0.0" />
+      <edge id="896" source="CSGN.VX" target="0939.HK" weight="0.0" />
+      <edge id="897" source="CSGN.VX" target="MS" weight="0.001669449081803" />
+      <edge id="898" source="CSGN.VX" target="STAN.L" weight="0.0" />
+      <edge id="899" source="CSGN.VX" target="CSGN.VX" weight="0.0" />
     </edges>
   </graph>
 </gexf>
