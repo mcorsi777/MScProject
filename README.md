@@ -105,7 +105,8 @@ G_2018Corr.gexf
 # Financial_Network.py
  Define the class FinancialNetwork and the utility function to calculate the debt rank
  
-# Graph_Builder.py construct 3 different networks based on ownership data (in 2010 and 2018) and correlation data (for 2018).
+# Graph_Builder.py 
+Construct 3 different networks based on ownership data (in 2010 and 2018) and correlation data (for 2018).
  For each network the centrality debtRank measure is calculated on each node. The final networks and attributes are then stored in .gexf file.
 
 # Description.html
