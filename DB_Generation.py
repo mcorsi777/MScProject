@@ -148,9 +148,9 @@ def cleanRawdata(data, mapNodes):
     
     maxImpact = network.max(axis = 1)
     
-    # Normalization as per the suggestion in [] (will not be used)
+    # Normalization as per the suggestion in [Cardarelli1] (will not be used)
     networkAdj = network.div(maxImpact, axis = 0)
-    networkAdj = networkAdj*ALPHA
+    networkAdj = networkAdj * settings.ALPHA
     networkAdj = networkAdj.applymap(lambda x: min(x, 1))
     networkAdj = networkAdj.replace(np.nan, 0)
     
@@ -234,7 +234,7 @@ def main():
         # Get the return data and calculate correlation only if there are at leat 100 datapoints available
         if position >=100:
             relevantPrices = allPrices.iloc[:position,:]
-            correlationAdj[year] = correlationNetwork(relevantPrices, 5, 200, nodesAttributes)
+            correlationAdj[year] = correlationNetwork(relevantPrices, settings.PERIOD, settings.WINDOW, nodesAttributes)
 
     
     # load data into sql tables
@@ -260,41 +260,3 @@ def main():
 
 
 main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

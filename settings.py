@@ -5,7 +5,7 @@ Use this file to set up the values for all the parameters to be used in the proj
 from os.path import join
 
 # path where the database tables are stored
-PATH = '/Users/Marco/Documents/MSc/Project/Code/'
+PATH = '/Users/marcocorsi/MyPython/Project/'
 
 # names for the differemt databases (this needs to be modified only if you are creating the DBs)
 DB = join(PATH , 'allData_db')  # static information for each node
@@ -46,3 +46,7 @@ DISTRESS_SCALING = 1.3
 
 ##  Parameter for the Function get_edges_specs in GUI
 EDGE_SCALING = 0.6
+
+# PArameters for correlation network
+PERIOD = 5 #(5 means returns over 5 business day)
+WINDOW = 200 # data points for the calculation of the correll
