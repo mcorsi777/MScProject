@@ -82,7 +82,8 @@ G_2018.gexf
 G_2018Corr.gexf
  Network based on correlation data for 2018
 
-
+# # IMPORTANT:
+An additional database file called allDat_alpha_adj_db has been added in order to run the full test with this alternative version of the network. The three graph files will have to be generated separately using the instructions provided here.
 
 
 
