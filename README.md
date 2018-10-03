@@ -32,29 +32,6 @@ Update older version by using: $ pip install --upgrade networkx
 The project is based on a set of 30 financial institutions that in the following will be called nodes (of the network). refer to the project documentation for more details.
 
 
-RawData_2010.csv
- Source: Facstect
- Priod: point in time 2010
- For each node (as a columns and identified via its full name) provides the percentage of it owned by any listed financial institution
- worldwide (as rows). 
-
-RawData_2018.csv
- Source: Facstect
- Priod: point in time 2018
- For each node (as a columns and identified via its full name) provides the percentage of it owned by any listed financial institution
- worldwide (as rows). 
-
-AllPrices.csv
- Source: Yahoo Finance
- Priod: historical - since 2010
- For each node (as a columns and identified via its yahoo ticker) provides the daily closing price in local currency since 2010. Same information is also
- provided for the relevant market benchmark and for the different currency x versus the USD
- 
-AllPricesUSD.csv
- Source: Yahoo Finance
- Priod: historical - since 2010
- For each node (as a columns and identified via its yahoo ticker) provides the daily clsing price in USD currency since 2010. 
-
 allData_db: SQLite database containing the following tables
 
 nodesStatic
